@@ -231,6 +231,38 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 # Objetivos SMART
 
+**1. Aiquipa Poma, Sebastian Andres**
+
+* **Objetivo SMART 1:** Aprobar el examen de certificación *AWS Certified Solutions Architect* en los primeros 6 meses tras graduarme, estudiando 5 horas a la semana para diseñar aplicaciones en la nube de forma profesional.
+
+* **Objetivo SMART 2:** Culminar un curso en línea de arquitectura de software en un plazo de 6 meses post-titulación, dedicando 4 horas semanales para mejorar la organización y calidad del código en mis proyectos laborales.
+
+---
+
+**2. Choy Robles, Vanessa May Lang**
+
+* **Objetivo SMART 1:** Obtener la certificación *Scrum Product Owner (PSPO I)* dentro de los primeros 4 meses tras egresar, estudiando la guía oficial 3 horas por semana para liderar la gestión de proyectos de software.
+
+* **Objetivo SMART 2:** Completar un curso práctico de analítica web en un plazo de 6 meses después de graduarme, dedicando 3 horas a la semana para tomar decisiones de diseño basadas en datos de usuarios.
+
+---
+
+**3. Seminario Castillo, Diego Vicente**
+
+* **Objetivo SMART 1:** Realizar un curso certificado de investigación de usuarios (UX Research) en los primeros 6 meses tras terminar la carrera, dedicando 4 horas semanales para mejorar la usabilidad de los productos que diseñe.
+
+* **Objetivo SMART 2:** Aprender pautas de accesibilidad web (WCAG) completando un taller práctico en un plazo de 6 meses tras graduarme, con el fin de diseñar interfaces fáciles de usar para todo tipo de personas.
+
+---
+
+**4. Valverde Portuguez, Natalia Ximena**
+
+* **Objetivo SMART 1:** Llevar un curso de gestión de productos digitales (Product Management) durante los primeros 6 meses tras egresar, estudiando 4 horas a la semana para aprender a lanzar y mejorar aplicaciones en el mercado.
+
+* **Objetivo SMART 2:** Culminar un curso sobre Internet de las Cosas (IoT) e Industria 4.0 en un plazo de 8 meses tras graduarme, dedicando 3 horas semanales para entender cómo conectar sensores a sistemas de software.
+
+---
+
 # Capítulo I: Presentación
 
 ## 1.1. Startup Profile
