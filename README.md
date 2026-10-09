@@ -1850,24 +1850,30 @@ Las relaciones del modelo son: UserAccount (1) → UserRole (1..*), contiene; Ro
 
 #### 3.1.1.1. General Style Guidelines
 
-El repositorio central de estilos (*Design System*) de **PredictiveMaintain** está diseñado para mantener consistencia visual entre la *Landing Page* y la *Mobile Application*.
+En **PredictiveMaintain**, el sistema de estilos (*Design System*) establece las pautas visuales y normativas de la interfaz para garantizar una experiencia consistente, limpia y centrada en los operadores y gestores de mantenimiento industrial.
 
-* **Branding:** Transmite robustez, innovación industrial y confiabilidad técnica.
-* **Typography:**
-  * **Fuente Principal (Headings & UI):** *Inter* (Sans-serif técnica de alta legibilidad en pantallas industriales).
-  * **Fuente Secundaria (Data & Metrics):** *Roboto Mono* (utilizada para lecturas de telemetría, frecuencias de vibración, registros RUL e identificadores de sensores).
-* **Colors (Paleta Industrial Cromática):**
-  * **Primary Dark (Base de Interfaz):** `#1E293B` (Slate 800 - Fondo sofisticado y técnico).
-  * **Primary Accent (Confianza y Conectividad):** `#0284C7` (Sky 600 - Botones principales y navegación).
-  * **Status - Success / Normal:** `#16A34A` (Green 600 - Máquina operando en rangos seguros).
-  * **Status - Warning / Precaución:** `#CA8A04` (Yellow 600 - Desviación incipiente en vibración/temperatura).
-  * **Status - Critical / Falla:** `#DC2626` (Red 600 - Alerta de anomalía inminente o sobrepaso de umbral RUL).
-* **Spacing:** Basado en una rejilla de 8px (*8-pt grid system*) para garantizar un alineamiento simétrico y proporciones limpias en la app móvil.
-* **Tono de Comunicación:**
-  * **Serio / Formal:** Lenguaje corporativo e industrial orientado a ingenieros y gerentes.
-  * **Respetuoso y Directo:** Mensajes breves que minimizan la carga cognitiva de los operadores a pie de planta.
+* **Branding:** La identidad visual de la marca proyecta modernidad industrial, robustez técnica y automatización predictiva. Está concebida para inspirar confianza y facilitar la toma de decisiones rápidas tanto en la plataforma web como en la aplicación móvil.
+* **Tipografía:** 
+  * *Tipografía Principal (Headings y UI):* Se emplea una fuente geométrica contemporánea de alta legibilidad para títulos de secciones, tarjetas de activos y elementos de navegación principal.
+  * *Tipografía Secundaria (Cuerpo y Métricas):* Utilizada en los registros de telemetría, descripciones de equipos, umbrales de vibración y temperaturas para asegurar una lectura fluida en escritorios y pantallas móviles.
+  </br>![Paleta de Colores](assets/cap3/tipografia.jpg).</br>
 
----
+* **Colores (Paleta Cromática y Estados):**
+  * *Color Principal / Acciones (`#0284C7` - Azul / Sky):* Utilizado en los botones de acción principal (*Explorar demo*, *Descargar resumen del piloto*), enlaces de navegación y elementos interactivos clave.
+  * *Fondo Oscuro Corporativo (`#1E293B` - Slate / Azul Oscuro):* Usado en bloques de contraste, secciones de cabecera y paneles interactivos (*Centro de operaciones*).
+  * *Estados de Alerta y Monitoreo:*
+    * **Normal / Success (`#16A34A` - Verde):** Indica equipos operando en rangos seguros o variables dentro de los límites establecidos.
+    * **Warning / Precaución (`#CA8A04` - Amarillo):** Señala desviaciones incipientes (como en la vibración de motores o bombas) que requieren atención preventiva.
+    * **Critical / Falla (`#DC2626` - Rojo):** Denota anomalías críticas o sobrepaso de umbrales en el tiempo de vida útil restante.
+</br>![Paleta de Colores](assets/cap3/paletacolores.jpg).</br>
+* **Spacing y Layout:** Las interfaces se estructuran mediante un sistema de retícula simétrica con tarjetas de bordes redondeados y contenedores limpios, priorizando el espacio en blanco para reducir la carga cognitiva del usuario.
+* **Tono de Comunicación:** 
+  * *Técnico y Analítico:* Empleado en secciones de impacto, flujos de simulación de paradas y reportes de telemetría de planta.
+  * *Directo y Orientado a la Acción:* Mensajes claros que guían al jefe de mantenimiento o al operador en la priorización de intervenciones.
+* **Logo:** 
+</br>![Logo](assets/cap3/logo.png).</br>
+
+  ---
 
 ### 3.1.2. Information Architecture
 
