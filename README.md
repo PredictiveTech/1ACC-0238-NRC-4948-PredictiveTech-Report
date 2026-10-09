@@ -2242,6 +2242,8 @@ Documentación de los endpoints RESTful implementados en el Sprint 1, disponible
 
 **Landing Page:** publicada mediante **GitHub Pages**, conectada al branch `main` del repositorio de la landing page con despliegue continuo.
 
+* **URL de producción:** `https://predictivetech.github.io/Landing-Page/`
+
 **Mobile Application:** distribuida para pruebas internas mediante instalación directa del APK generado desde Android Studio. La distribución mediante Firebase App Distribution está planificada para el siguiente sprint.
 
 **Evidencias:**
