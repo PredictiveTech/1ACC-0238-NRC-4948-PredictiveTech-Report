@@ -1918,20 +1918,65 @@ Diseñado en Figma aplicando el *Design System* (paleta Slate 800 y Sky 600) con
 ### 3.1.4. Mobile Applications UX/UI Design
 
 #### 3.1.4.1. Mobile Applications Wireframes
-Esquemas de baja/media fidelidad desarrollados para la aplicación móvil nativa (Kotlin) centrados en las vistas de *Monitoreo en Tiempo Real*, *Detalle de Telemetría* y *Creación de Orden de Trabajo*.
+Esquemas de media fidelidad desarrollados para la aplicación móvil nativa
+(Android, Kotlin + Jetpack Compose) centrados en las vistas de Monitoreo
+de Activos en Tiempo Real, Gestión de Alertas y Ciclo Completo de
+Órdenes de Trabajo.
+
+![Login](assets/cap3/wireframes/Login.png)
+![Lista de Activos](assets/cap3/wireframes/Lista_de_activos.png)
+![Lista de Alertas](assets/cap3/wireframes/Lista_de_alertas.png)
+![Detalle de Alerta](assets/cap3/wireframes/Detalle_de_alerta.png)
+![Alerta Confirmada](assets/cap3/wireframes/Alerta_confirmada.png)
+![Detalle de Orden Creada](assets/cap3/wireframes/Detalle_de_orden_creada.png)
+![Diálogo de Asignación](assets/cap3/wireframes/Dialogo_asignacion.png)
+![Orden Asignada](assets/cap3/wireframes/Orden_asignada.png)
+![Mis Órdenes](assets/cap3/wireframes/Mis_ordenes.png)
+![Detalle de Orden - Iniciar](assets/cap3/wireframes/Detalle_de_orden-boton_Iniciar.png)
+![Orden en Curso](assets/cap3/wireframes/Orden_en_curso-boton_Completar.png)
+![Diálogo de Completar](assets/cap3/wireframes/Dialogo_de_completar.png)
+![Orden Completada](assets/cap3/wireframes/Orden_completada.png)
+
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
-* **User Goal 1 (Operador):** Reportar una avería en 1-Clic tras recibir una alerta crítica de temperatura.
-* **User Goal 2 (Jefe de Mantenimiento):** Consultar la estimación de Vida Útil Restante (RUL) de un motor y asignar una Orden de Trabajo al técnico de turno.
+
+**User Goal 1 — Jefe de Mantenimiento:**
+Detectar una alerta crítica, confirmarla y generar una orden de trabajo
+asignada al técnico disponible.
+
+**User Goal 2 — Técnico de Mantenimiento:**
+Recibir una orden de trabajo asignada, ejecutarla en campo y registrar
+las acciones correctivas realizadas para cerrarla.
+
+[imagen wireflow 1]
+[imagen wireflow 2]
 
 #### 3.1.4.3. Mobile Applications Mock-ups
-Visuales de alta fidelidad con apoyo cromático de seguridad (verde, amarillo, rojo) diseñados para alta visibilidad en entornos de planta con poca luz o pantallas industriales.
+Visuales de media-alta fidelidad basados en Material Design 3 con código
+cromático de estado: verde (operativo), ámbar (advertencia), rojo (crítico)
+y gris (sin comunicación), diseñados para alta visibilidad en entornos
+industriales. Los mock-ups corresponden a capturas de la aplicación
+ejecutándose en un dispositivo físico Android.
+
+[capturas del celular que ya tienes]
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
-Rutas interactivas que mapean los senderos ideales (*happy paths*) e interrupciones (*unhappy paths*, como la pérdida de conexión a internet a pie de planta con reintento offline).
+Rutas que mapean el happy path del recorrido principal
+(sensor → alerta → orden → cierre) y el unhappy path de pérdida de
+conexión a internet, donde la app conserva los datos en pantalla
+y muestra el estado de error con opción de reintento.
+
+[imagen user flow]
 
 #### 3.1.4.5. Mobile Applications Prototyping
-Prototipo interactivo en Figma que simula el flujo de navegación completo.
+Prototipo funcional ejecutable en dispositivo físico Android que simula
+el flujo de navegación completo: monitoreo de activos en tiempo real,
+gestión de alertas con confirmación y descarte, y ciclo completo de
+órdenes de trabajo desde la creación hasta el cierre con registro de
+acciones correctivas.
+
+El prototipo está disponible como APK de depuración instalable en
+cualquier dispositivo Android 8.0 o superior.
 
 
 ---
