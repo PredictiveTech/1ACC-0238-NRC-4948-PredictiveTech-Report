@@ -1915,10 +1915,12 @@ Estructura de metadatos optimizada para motores de búsqueda en el *Landing Page
 #### 3.1.3.1. Landing Page Wireframe
 * **Desktop Web Browser:** Diseño multisección responsive con *Hero Section* (titular + gráfico del dashboard), sección de propuestas de valor, tabla comparativa B2B, calculadora de ROI e integración del video *About-the-Product*.
 * **Mobile Web Browser:** Estructura colapsable en una sola columna con menú tipo *hamburger* y botones de acción rápida (*CTAs*) adaptados a pantallas táctiles.
+</br>![Landingpage](assets/cap3/landing.jpg).</br>
 
 #### 3.1.3.2. Landing Page Mock-up
 Diseñado en Figma aplicando el *Design System* (paleta Slate 800 y Sky 600) con contraste accesible (cumpliendo WCAG 2.1 AA) e inclusión de componentes reutilizables.
 
+</br>![Landingpage Mock up](assets/cap3/landingMock.jpg).</br>
 ---
 
 ### 3.1.4. Mobile Applications UX/UI Design
@@ -1954,8 +1956,7 @@ asignada al técnico disponible.
 Recibir una orden de trabajo asignada, ejecutarla en campo y registrar
 las acciones correctivas realizadas para cerrarla.
 
-[imagen wireflow 1]
-[imagen wireflow 2]
+</br>![Wireflow Diagrams](assets/cap3/wireflow.jpg).</br>
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 Visuales de media-alta fidelidad basados en Material Design 3 con código
@@ -1964,7 +1965,7 @@ y gris (sin comunicación), diseñados para alta visibilidad en entornos
 industriales. Los mock-ups corresponden a capturas de la aplicación
 ejecutándose en un dispositivo físico Android.
 
-[capturas del celular que ya tienes]
+</br>![Mock-up](assets/cap3/mockup.jpg).</br>
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 Rutas que mapean el happy path del recorrido principal
@@ -1972,7 +1973,7 @@ Rutas que mapean el happy path del recorrido principal
 conexión a internet, donde la app conserva los datos en pantalla
 y muestra el estado de error con opción de reintento.
 
-[imagen user flow]
+</br>![User Flow Diagrams](assets/cap3/userflow.jpg).</br>
 
 #### 3.1.4.5. Mobile Applications Prototyping
 Prototipo funcional ejecutable en dispositivo físico Android que simula
@@ -1984,7 +1985,17 @@ acciones correctivas.
 El prototipo está disponible como APK de depuración instalable en
 cualquier dispositivo Android 8.0 o superior.
 
-
+![Evidencia 1](assets/cap3/evidencias/evidencia1.jpeg)
+![Evidencia 2](assets/cap3/evidencias/evidencia2.jpeg)
+![Evidencia 3](assets/cap3/evidencias/evidencia3.jpeg)
+![Evidencia 4](assets/cap3/evidencias/evidencia4.jpeg)
+![Evidencia 5](assets/cap3/evidencias/evidencia5.jpeg)
+![Evidencia 6](assets/cap3/evidencias/evidencia6.jpeg)
+![Evidencia 7](assets/cap3/evidencias/evidencia7.jpeg)
+![Evidencia 8](assets/cap3/evidencias/evidencia8.jpeg)
+![Evidencia 9](assets/cap3/evidencias/evidencia9.jpeg)
+![Evidencia 10](assets/cap3/evidencias/evidencia10.jpeg)
+![Evidencia 11](assets/cap3/evidencias/evidencia11.jpeg)
 ---
 
 # Capítulo IV: Product Implementation & Validation
@@ -2084,9 +2095,9 @@ Se realiza el despliegue del backend en la plataforma Render y la aplicación m�
 | `predictivemaintain-android-app` | `develop` | `de17de0` | `build: add Hilt, Retrofit, serialization, DataStore and navigation dependencies` | Adds Hilt with KSP, Retrofit, kotlinx.serialization, DataStore Preferences and Navigation Compose to the build. | 07/10/2026 |
 | `predictivemaintain-android-app` | `develop` | `efb2c71` | `chore: create empty Compose project` | Initial Android Studio project with package pe.edu.upc.predictivemaintain.app, minSdk 26, Kotlin DSL and Material 3. | 07/10/2026 |
 
-![Sprint Back 1](assets/cap4/SprintBack1.jpeg)
+![Sprint Back 1](assets/cap4/SprintBack1.png)
 ![Sprint Front 1](assets/cap4/SprintFront1.jpeg)
-![Sprint Landing 1](assets/cap4/SprintLanding1.jpeg)
+![Sprint Landing 1](assets/cap4/SprintLanding1.png)
 ![Sprint Doc 1](assets/cap4/SprintDoc1.jpeg)
 
 
