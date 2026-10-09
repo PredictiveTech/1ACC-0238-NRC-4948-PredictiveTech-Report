@@ -1924,20 +1924,65 @@ Diseñado en Figma aplicando el *Design System* (paleta Slate 800 y Sky 600) con
 ### 3.1.4. Mobile Applications UX/UI Design
 
 #### 3.1.4.1. Mobile Applications Wireframes
-Esquemas de baja/media fidelidad desarrollados para la aplicación móvil nativa (Kotlin) centrados en las vistas de *Monitoreo en Tiempo Real*, *Detalle de Telemetría* y *Creación de Orden de Trabajo*.
+Esquemas de media fidelidad desarrollados para la aplicación móvil nativa
+(Android, Kotlin + Jetpack Compose) centrados en las vistas de Monitoreo
+de Activos en Tiempo Real, Gestión de Alertas y Ciclo Completo de
+Órdenes de Trabajo.
+
+![Login](assets/cap3/wireframes/Login.png)
+![Lista de Activos](assets/cap3/wireframes/Lista_de_activos.png)
+![Lista de Alertas](assets/cap3/wireframes/Lista_de_alertas.png)
+![Detalle de Alerta](assets/cap3/wireframes/Detalle_de_alerta.png)
+![Alerta Confirmada](assets/cap3/wireframes/Alerta_confirmada.png)
+![Detalle de Orden Creada](assets/cap3/wireframes/Detalle_de_orden_creada.png)
+![Diálogo de Asignación](assets/cap3/wireframes/Dialogo_asignacion.png)
+![Orden Asignada](assets/cap3/wireframes/Orden_asignada.png)
+![Mis Órdenes](assets/cap3/wireframes/Mis_ordenes.png)
+![Detalle de Orden - Iniciar](assets/cap3/wireframes/Detalle_de_orden-boton_Iniciar.png)
+![Orden en Curso](assets/cap3/wireframes/Orden_en_curso-boton_Completar.png)
+![Diálogo de Completar](assets/cap3/wireframes/Dialogo_de_completar.png)
+![Orden Completada](assets/cap3/wireframes/Orden_completada.png)
+
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
-* **User Goal 1 (Operador):** Reportar una avería en 1-Clic tras recibir una alerta crítica de temperatura.
-* **User Goal 2 (Jefe de Mantenimiento):** Consultar la estimación de Vida Útil Restante (RUL) de un motor y asignar una Orden de Trabajo al técnico de turno.
+
+**User Goal 1 — Jefe de Mantenimiento:**
+Detectar una alerta crítica, confirmarla y generar una orden de trabajo
+asignada al técnico disponible.
+
+**User Goal 2 — Técnico de Mantenimiento:**
+Recibir una orden de trabajo asignada, ejecutarla en campo y registrar
+las acciones correctivas realizadas para cerrarla.
+
+[imagen wireflow 1]
+[imagen wireflow 2]
 
 #### 3.1.4.3. Mobile Applications Mock-ups
-Visuales de alta fidelidad con apoyo cromático de seguridad (verde, amarillo, rojo) diseñados para alta visibilidad en entornos de planta con poca luz o pantallas industriales.
+Visuales de media-alta fidelidad basados en Material Design 3 con código
+cromático de estado: verde (operativo), ámbar (advertencia), rojo (crítico)
+y gris (sin comunicación), diseñados para alta visibilidad en entornos
+industriales. Los mock-ups corresponden a capturas de la aplicación
+ejecutándose en un dispositivo físico Android.
+
+[capturas del celular que ya tienes]
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
-Rutas interactivas que mapean los senderos ideales (*happy paths*) e interrupciones (*unhappy paths*, como la pérdida de conexión a internet a pie de planta con reintento offline).
+Rutas que mapean el happy path del recorrido principal
+(sensor → alerta → orden → cierre) y el unhappy path de pérdida de
+conexión a internet, donde la app conserva los datos en pantalla
+y muestra el estado de error con opción de reintento.
+
+[imagen user flow]
 
 #### 3.1.4.5. Mobile Applications Prototyping
-Prototipo interactivo en Figma que simula el flujo de navegación completo.
+Prototipo funcional ejecutable en dispositivo físico Android que simula
+el flujo de navegación completo: monitoreo de activos en tiempo real,
+gestión de alertas con confirmación y descarte, y ciclo completo de
+órdenes de trabajo desde la creación hasta el cierre con registro de
+acciones correctivas.
+
+El prototipo está disponible como APK de depuración instalable en
+cualquier dispositivo Android 8.0 o superior.
 
 
 ---
@@ -2008,19 +2053,36 @@ Se realiza el despliegue del backend en la plataforma Render y la aplicación m�
 
 | Sprint # | User Story Id | User Story Title | Work-Item Id | Work-Item Title | Description | Estimation (Hours) | Assigned To | Status |
 | :---: | :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
-| **1** | US-01 | Ingesta de Telemetría IoT | TK-01 | Backend Telemetry Ingestion Endpoint | Crear controlador REST POST para recibir lecturas de sensores. | 8 | Aiquipa P. | Done |
-| **1** | US-01 | Ingesta de Telemetría IoT | TK-02 | Database Entity Mapping | Configurar entidades JPA para almacenar variables de vibración/temperatura. | 6 | Aiquipa P. | Done |
-| **1** | US-02 | Visualización de Alertas Mobile | TK-03 | Mobile Alert Dashboard UI | Construir pantalla principal con tarjeta de estado (Verde/Amarillo/Rojo). | 10 | Choy R. / Valverde N. | Done |
-| **1** | US-03 | Landing Page Informativa | TK-04 | Landing Page HTML/CSS Layout | Maquetación responsive de la sección Hero y Características del producto. | 8 | Seminario D. | Done |
+| **1** | US-01 | Registro e inicio de sesión | TK-01 | IAM bounded context — domain, application and infrastructure | Implement JWT authentication, BCrypt password hashing, company registration, login and password recovery endpoints. | 10 | Aiquipa P. | Done |
+| **1** | US-01 | Registro e inicio de sesión | TK-02 | IAM — paginated user list with role and active filters | GET /api/v1/users endpoint for maintenance managers, with role and active filters, ordered by name. | 6 | Aiquipa P. | Done |
+| **1** | US-02 | Monitoreo de activos en tiempo real | TK-03 | Maintenance bounded context — assets and telemetry endpoints | Asset list and detail endpoints; sensor readings ingestion authenticated by device key; anomaly detection with configurable thresholds and 10-minute alert cooldown. | 12 | Aiquipa P. | Done |
+| **1** | US-03 | Gestión de alertas y órdenes de trabajo | TK-04 | Maintenance — alerts and work orders endpoints | Alert lifecycle (in review, confirmed, discarded, resolved); work order creation, assignment, start and completion; offline sync endpoint (US-28). | 14 | Aiquipa P. | Done |
+| **1** | US-04 | Suscripción y notificaciones | TK-05 | Subscription and Notifications bounded contexts | Subscription plans with capacity validation; FCM push notifications; email notifications; expiry reminder job. | 8 | Aiquipa P. | Done |
+| **1** | US-05 | Despliegue en producción | TK-06 | Railway deployment with PostgreSQL 16 and smoke tests | Dockerfile, docker-compose for local testing, Railway configuration and automated smoke test covering all 54 endpoints. | 6 | Aiquipa P. | Done |
+| **1** | US-06 | Aplicación móvil — base y autenticación | TK-07 | Android app foundation: network, session and login | Retrofit + OkHttp network layer, DataStore session, strict error model (AppError, Outcome), splash screen, login screen and role-based bottom navigation. | 10 | Choy R. / Valverde N. | Done |
+| **1** | US-07 | Aplicación móvil — activos y sensores | TK-08 | Android app: assets list and live sensor panel | Assets list with status filter chips; asset detail with sensor panel that auto-refreshes every 15 seconds while visible (repeatOnLifecycle STARTED). | 10 | Choy R. / Valverde N. | Done |
+| **1** | US-08 | Aplicación móvil — alertas | TK-09 | Android app: alerts list, detail and review | Alerts list with status filter chips; alert detail with diagnostic; confirm and discard actions for the maintenance manager with version conflict handling. | 10 | Choy R. / Valverde N. | Done |
+| **1** | US-09 | Aplicación móvil — órdenes de trabajo | TK-10 | Android app: work orders for manager and technician | Manager: create order from confirmed alert, assign technician, list and detail. Technician: start and complete with corrective actions summary. | 14 | Choy R. / Valverde N. | Done |
+| **1** | US-10 | Scripts de demostración | TK-11 | Demo seed and simulator scripts | Python scripts (standard library only) that create a demo company with 5 assets, 12 sensors and 24 hours of history, and simulate live sensor readings to trigger alerts. | 4 | Aiquipa P. | Done |
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
 | :--- | :--- | :---: | :--- | :--- | :---: |
-| `predictivemaintain-backend` | `feature/develop` | `a1b2c3d` | `feat: add telemetry ingestion REST endpoint` | Created `/api/v1/telemetry` POST route with payload validation. | 18/09/2026 |
-| `predictivemaintain-android-app` | `feature/develop` | `e5f6g7h` | `feat: implement alert status cards in home view` | Added color-coded machine status cards according to sensor thresholds. | 20/09/2026 |
-| `predictivemaintain/landing` | `feature/develop` | `i8j9k0l` | `style: implement responsive hero section and branding` | Integrated Slate 800 background and Sky 600 CTA buttons. | 21/09/2026 |
-| `1ACC-0238-NRC-4948-PredictiveTech-Report` | `feature/develop` | `i8j9k0l` | `style: implement responsive hero section and branding` | Add chapter 3 and 4 | 09/10/2026 |
+| `predictivemaintain-backend` | `main` | `f9ad34a` | `release: users list, asset names in alerts and orders, demo toolkit` | Merges paginated user list endpoint, asset labels in alerts and work orders, and demo seed and simulator scripts into main. | 06/10/2026 |
+| `predictivemaintain-backend` | `develop` | `0a279de` | `feat(maintenance): add asset code and name to alerts and work orders` | Alerts and work orders now include assetCode, assetName and severity. One batched lookup per page instead of one per row. | 06/10/2026 |
+| `predictivemaintain-backend` | `develop` | `165c69b` | `feat(iam): add the paginated list of company users` | GET /api/v1/users for maintenance managers, with role and active filters, pagination and ordering by name. | 06/10/2026 |
+| `predictivemaintain-backend` | `develop` | `5eec62f` | `chore(demo): add the seed and simulator scripts for demonstrations` | Python scripts (standard library only) that create a demo company with sensors and history, and simulate sensor readings to trigger alerts live. | 06/10/2026 |
+| `predictivemaintain-backend` | `main` | `2c938d9` | `release: backend v0.1.0` | First stable release deployed to Railway with PostgreSQL 16, JWT authentication, 5 bounded contexts and 54 REST endpoints. | 05/10/2026 |
+| `predictivemaintain-backend` | `develop` | `76203df` | `feat(deployment): add Docker Compose setup with PostgreSQL, application image, and smoke tests` | Adds docker-compose.yml for local production-like environment and automated smoke tests covering all 54 endpoints. | 05/10/2026 |
+| `predictivemaintain-android-app` | `develop` | `7f45c7f` | `feat(app): add work order start and completion for the technician` | Technician can start an assigned work order and complete it with a corrective actions summary. Validates summary before calling the server. | 08/10/2026 |
+| `predictivemaintain-android-app` | `develop` | `4a8249c` | `feat(app): add work orders for the manager (create, assign, list, detail)` | Manager can create a work order from a confirmed alert, assign it to a technician picked from the active technician list, and track it from the Orders tab. | 08/10/2026 |
+| `predictivemaintain-android-app` | `develop` | `e5ef03b` | `feat(app): add alerts list, detail and review` | Alerts list with status filter chips, detail with diagnostic, and confirm or discard actions for the maintenance manager. | 08/10/2026 |
+| `predictivemaintain-android-app` | `develop` | `c1671a3` | `feat(app): add assets list and live sensor panel` | Assets list with status filter chips and a live sensor panel that refreshes every 15 seconds while the screen is visible. | 08/10/2026 |
+| `predictivemaintain-android-app` | `develop` | `d1897ad` | `feat(app): add the app foundation (network, session, login and role-based navigation)` | Merges network layer, DataStore session, splash, login, home and role-based bottom navigation into develop. | 08/10/2026 |
+| `predictivemaintain-android-app` | `develop` | `ec123b0` | `feat(core): add error model and network setup` | Sealed AppError and Outcome types, Retrofit and OkHttp setup, auth interceptor, error parser, and unit tests for the error model. | 07/10/2026 |
+| `predictivemaintain-android-app` | `develop` | `de17de0` | `build: add Hilt, Retrofit, serialization, DataStore and navigation dependencies` | Adds Hilt with KSP, Retrofit, kotlinx.serialization, DataStore Preferences and Navigation Compose to the build. | 07/10/2026 |
+| `predictivemaintain-android-app` | `develop` | `efb2c71` | `chore: create empty Compose project` | Initial Android Studio project with package pe.edu.upc.predictivemaintain.app, minSdk 26, Kotlin DSL and Material 3. | 07/10/2026 |
 
 ![Sprint Back 1](assets/cap4/SprintBack1.jpeg)
 ![Sprint Front 1](assets/cap4/SprintFront1.jpeg)
@@ -2029,21 +2091,42 @@ Se realiza el despliegue del backend en la plataforma Render y la aplicación m�
 
 
 #### 4.2.1.5. Testing Suite Evidence for Sprint Review
-* **Pruebas Unitarias / Integración (Backend):**
-  * `TelemetryControllerTest`: Verifica el procesamiento adecuado de lecturas enviadas por los sensores.
-  * `ThresholdAlertServiceTest`: Valida que la alerta cambie a estado `CRITICAL` cuando la temperatura supere los 85°C.
 
-* **Archivo `.feature` (Gherkin BDD - Acceptance Test):**
-- Feature: Automatic Threshold Alert Generation
-  As a Maintenance Chief
-  I want the system to analyze incoming IoT telemetry
-  So that an automatic alert is triggered when machine variables exceed safe thresholds
+**Pruebas unitarias — Backend (JUnit 5, hand-written fakes):**
 
-- Scenario: High temperature threshold breached
-    Given an active vibration sensor attached to "Motor Pump #03"
-    When the sensor sends a telemetry payload with temperature "92.5" Celsius
-    Then the system should change the machine status to "CRITICAL"
-    And an automated alert notification should be dispatched to the mobile app
+| Test Class | Bounded Context | What it verifies |
+| :--- | :---: | :--- |
+| `OfflineSyncRulesTest` | Maintenance | Clock normalization and conflict resolution rules for offline work order sync (US-28): max 24 h clock skew, max 14 days action age, max 100 ops per batch; APPLIED, ALREADY_APPLIED, SUPERSEDED and REJECTED outcomes. |
+
+**Pruebas unitarias — Mobile Application (JUnit 4, hand-written fakes, kotlinx-coroutines-test):**
+
+| Test Class | Layer | What it verifies |
+| :--- | :---: | :--- |
+| `ErrorParserTest` | core/network | RFC 7807 error JSON maps to AppError.Api with its code and fieldErrors; unknown keys are ignored. |
+| `EmailTest` | iam/domain | Valid email formats are accepted; blank, malformed and missing-domain emails are rejected. |
+| `PasswordAndTokenMaskingTest` | iam/domain | Password and AccessToken toString() never prints the raw value. |
+| `AuthMapperTest` | iam/infrastructure | Valid login and profile responses map to domain entities; unknown role, empty roles and malformed expiresAt produce InvalidResponse. |
+| `TechnicianMapperTest` | iam/infrastructure | Valid user page maps to Technician list; invalid id produces InvalidResponse. |
+| `AuthRepositoryImplTest` | iam/infrastructure | Repository delegates to the API and maps the response correctly. |
+| `LoginUseCaseTest` | iam/application | Successful login saves the session; wrong credentials return Failure and save nothing. |
+| `GetProfileUseCaseTest` | iam/application | Fetches and returns the profile; network failure returns Failure without clearing the session. |
+| `RestoreSessionUseCaseTest` | iam/application | Valid stored session succeeds offline; expired session is cleared; explicit SessionExpired clears it; invalid server response keeps the session. |
+| `AssetMapperTest` | maintenance/infrastructure | Valid asset maps correctly; unknown status maps to UNKNOWN; invalid id produces InvalidResponse. |
+| `AlertMapperTest` | maintenance/infrastructure | Valid response maps to Alert; null diagnostic is accepted; unknown severity and status map to UNKNOWN; invalid date produces InvalidResponse. |
+| `WorkOrderMapperTest` | maintenance/infrastructure | Valid response maps to WorkOrder; null assignedUserId, summary and completedAt are accepted; unknown status maps to UNKNOWN; invalid date produces InvalidResponse. |
+| `AlertActionPolicyTest` | maintenance/application | Manager can review an IN_REVIEW alert; technician and operator cannot; manager cannot review a non-IN_REVIEW alert. |
+| `WorkOrderActionPolicyTest` | maintenance/application | Assigned technician can start and complete; another technician cannot; manager can create and assign; wrong status blocks every action. |
+| `ReviewAlertUseCaseTest` | maintenance/application | Blank discard reason is rejected before calling the repository; valid reason calls the repository. |
+| `WorkOrderUseCasesTest` | maintenance/application | Blank or oversized summary is rejected before calling the repository; valid summary calls it. |
+| `AssetsViewModelTest` | maintenance/presentation | Items load; failed refresh keeps previous items; filter change restarts at page 0. |
+| `AlertsViewModelTest` | maintenance/presentation | Items load; failed refresh keeps previous items; null or placeholder assetId sends no filter to the server. |
+| `AlertDetailViewModelTest` | maintenance/presentation | Confirm and discard update the screen from the server answer; a 409 reloads the alert. |
+| `WorkOrdersViewModelTest` | maintenance/presentation | Items load; failed refresh keeps previous items; filter change restarts at page 0; technician names are not requested for a technician actor. |
+| `WorkOrderDetailViewModelTest` | maintenance/presentation | Assign updates the state; a 409 reloads the order; start moves to IN_PROGRESS; complete shows the summary. |
+| `SensorPanelMapperTest` | telemetry/infrastructure | Valid sensor maps correctly; null reading or threshold is accepted; unknown rangeStatus maps to UNKNOWN; invalid id produces InvalidResponse. |
+| `SensorPanelViewModelTest` | telemetry/presentation | Refresh replaces the data; failed refresh keeps previous data and sets the error. |
+| `RoleDestinationsTest` | navigation | Manager gets 5 destinations; technician gets 5 with My orders; operator gets 4. |
+
 
 #### 4.2.1.6. Execution Evidence for Sprint Review
 * **Resumen:** En este sprint se logró la integración exitosa de la API REST de telemetría (desarrollada en Spring Boot) con la interfaz de monitoreo en tiempo real de la aplicación móvil nativa Android (Kotlin). Se validó el flujo de datos completo permitiendo reflejar automáticamente la transición del semáforo de estado de máquina (de verde a rojo) cuando se simulan desviaciones térmicas que sobrepasan los umbrales de seguridad definidos.
@@ -2063,33 +2146,106 @@ Se realiza el despliegue del backend en la plataforma Render y la aplicación m�
 ---
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
-Documentación detallada de las APIs RESTful implementadas para el Sprint 1 utilizando la especificación OpenAPI (Swagger UI)[cite: 3]:
 
-* **URL del repositorio Backend:** `https://github.com/PredictiveTech/predictivemaintain-backend.git`
-* **Commits de Documentación:** `d4e5f6g` (`docs: add OpenAPI definitions for telemetry and machine endpoints`)
+Documentación de los endpoints RESTful implementados en el Sprint 1, disponible en Swagger UI:
 
-| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Ejemplo y Explicación del Response |
+* **URL de producción:** `https://predictivemaintain-backend-production.up.railway.app`
+* **Swagger UI:** `https://predictivemaintain-backend-production.up.railway.app/swagger-ui/index.html`
+* **OpenAPI spec:** `https://predictivemaintain-backend-production.up.railway.app/v3/api-docs`
+* **Repositorio backend:** `https://github.com/PredictiveTech/predictivemaintain-backend`
+
+##### IAM — Autenticación y usuarios (`/api/v1/auth`, `/api/v1/users`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
 | :--- | :---: | :--- | :--- | :--- |
-| **Telemetry Ingestion** | `POST` | `/api/v1/telemetry` | **Body (JSON):**<br>`sensorId` (String),<br>`vibration` (Double),<br>`temperature` (Double),<br>`timestamp` (ISO-8601) | **Response:** `201 Created`<br>```json\n{\n  "status": "SUCCESS",\n  "message": "Telemetry record saved",\n  "alertLevel": "NORMAL"\n}\n```<br>Procesa la lectura del sensor IoT y evalúa si sobrepasa los umbrales configurados. |
-| **Get Machine Status** | `GET` | `/api/v1/machines/{id}/status` | **Path Parameter:**<br>`id` (String - ID del activo) | **Response:** `200 OK`<br>```json\n{\n  "machineId": "MOT-101",\n  "name": "Motor Extrusor #01",\n  "healthIndex": 94.2,\n  "status": "GREEN",\n  "lastReading": {\n    "temperature": 42.1,\n    "vibration": 1.2\n  }\n}\n```<br>Retorna el estado de salud consolidado y el nivel del semáforo para la app móvil. |
+| Registro de empresa | `POST` | `/api/v1/auth/register` | **Body:** `companyName`, `email`, `password`, `registrationId` (UUID cliente, hace el registro idempotente) | `201` `{id, tenantId, email, displayName, roles}` |
+| Inicio de sesión | `POST` | `/api/v1/auth/login` | **Body:** `email`, `password` | `200` `{accessToken, tokenType, expiresAt, userId, tenantId, roles}` |
+| Solicitar recuperación de contraseña | `POST` | `/api/v1/auth/password-reset-requests` | **Body:** `email` | `204` |
+| Restablecer contraseña | `POST` | `/api/v1/auth/password-reset` | **Body:** `token`, `newPassword` | `204` |
+| Perfil del usuario autenticado | `GET` | `/api/v1/users/me` | — | `200` `{id, tenantId, email, displayName, active, roles}` |
+| Actualizar perfil | `PATCH` | `/api/v1/users/me` | **Body:** `displayName` | `200` perfil actualizado |
+| Listar usuarios de la empresa | `GET` | `/api/v1/users` | **Query:** `role`, `active`, `page`, `size` | `200` página de `{id, email, displayName, active, roles}`. Solo MAINTENANCE_MANAGER. |
+| Crear usuario | `POST` | `/api/v1/users` | **Body:** `email`, `displayName`, `initialPassword`, `roles` | `201` usuario creado |
+| Cambiar roles | `PUT` | `/api/v1/users/{userId}/roles` | **Body:** `roles[]` | `200` usuario actualizado |
+| Desactivar usuario | `POST` | `/api/v1/users/{userId}/deactivate` | — | `200` usuario desactivado |
 
+##### Maintenance — Activos (`/api/v1/assets`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Listar activos | `GET` | `/api/v1/assets` | **Query:** `status`, `sensorType`, `productionLine`, `assetType`, `includeInactive`, `page`, `size` | `200` página de `{id, code, name, location, assetType, criticality, active, status, sensorTypes}` |
+| Detalle de activo | `GET` | `/api/v1/assets/{assetId}` | — | `200` activo con coordenadas y campos completos |
+| Panel de sensores en vivo | `GET` | `/api/v1/assets/{assetId}/sensors` | — | `200` array de `{id, metric, unit, communication, latestReading, threshold, rangeStatus}` |
+| Registrar activo | `POST` | `/api/v1/assets` | **Body:** `code`, `name`, `assetType`, `criticality`, `location` | `201` activo creado |
+| Actualizar activo | `PUT` | `/api/v1/assets/{assetId}` | **Body:** campos del activo | `200` activo actualizado |
+| Desactivar activo | `DELETE` | `/api/v1/assets/{assetId}` | **Query:** `force` | `200` activo desactivado |
+
+##### Maintenance — Alertas (`/api/v1/alerts`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Listar alertas | `GET` | `/api/v1/alerts` | **Query:** `severity`, `status`, `assetId`, `page`, `size` | `200` página de `{id, assetId, assetCode, assetName, severity, status, raisedAt, discardReason, version, diagnostic}` |
+| Detalle de alerta | `GET` | `/api/v1/alerts/{alertId}` | — | `200` alerta completa |
+| Cambiar estado | `PATCH` | `/api/v1/alerts/{alertId}/status` | **Body:** `status` (CONFIRMED o DISCARDED), `reason` (obligatorio al descartar), `expectedVersion` | `200` alerta actualizada. Solo MAINTENANCE_MANAGER. `409` si ya no está IN_REVIEW. |
+
+##### Maintenance — Órdenes de trabajo (`/api/v1/work-orders`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Listar órdenes | `GET` | `/api/v1/work-orders` | **Query:** `status`, `page`, `size` | `200` página de `{id, alertId, assetId, assetCode, assetName, severity, assignedUserId, status, summary, openedAt, completedAt, version}`. El técnico ve solo las suyas. |
+| Detalle de orden | `GET` | `/api/v1/work-orders/{workOrderId}` | — | `200` orden completa |
+| Crear orden | `POST` | `/api/v1/work-orders` | **Body:** `alertId` | `201` orden creada. `409 ALERT_NOT_CONFIRMED` o `409 WORK_ORDER_ALREADY_EXISTS`. |
+| Asignar técnico | `PATCH` | `/api/v1/work-orders/{workOrderId}/assign` | **Body:** `technicianId`, `expectedVersion` | `200` orden actualizada. Solo MAINTENANCE_MANAGER. |
+| Iniciar orden | `POST` | `/api/v1/work-orders/{workOrderId}/start` | **Body:** `expectedVersion` (opcional) | `200` orden en IN_PROGRESS. Solo el técnico asignado. `403 NOT_ASSIGNED_TECHNICIAN`. |
+| Completar orden | `PATCH` | `/api/v1/work-orders/{workOrderId}/status` | **Body:** `status: COMPLETED`, `summary` (obligatorio, máx. 2000 car.), `expectedVersion` | `200` orden completada. Resuelve automáticamente la alerta. |
+| Historial de cambios | `GET` | `/api/v1/work-orders/{workOrderId}/history` | — | `200` lista de cambios con actor y timestamp |
+
+##### Telemetry — Sensores (`/api/v1/sensors`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Registrar lectura | `POST` | `/api/v1/sensors/readings` | **Header:** `X-Device-Key` **Body:** `sensorId`, `value`, `measuredAt` | `201` lectura registrada. Intervalo mínimo 1 s. Si supera el umbral y han pasado 10 min desde la última alerta, crea una nueva alerta automáticamente. |
+| Leer lecturas históricas | `GET` | `/api/v1/sensors/{sensorId}/readings` | **Query:** `from`, `to`, `page`, `size` | `200` página de lecturas con valor y timestamp |
+
+##### Subscription (`/api/v1/subscription`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Ver suscripción activa | `GET` | `/api/v1/subscription` | — | `200` `{plan, startDate, endDate, assetCapacity, usedCapacity}` |
+| Contratar plan | `POST` | `/api/v1/subscription` | **Body:** `plan` (STARTER, PROFESSIONAL, ENTERPRISE) | `201` suscripción creada |
+| Renovar suscripción | `POST` | `/api/v1/subscription/renewal` | — | `200` suscripción renovada |
+
+##### Sync — Sincronización offline (`/api/v1/sync`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Sincronizar órdenes offline | `POST` | `/api/v1/sync/work-orders` | **Body:** `deviceSentAt`, `operations[]` (máx. 100, máx. 14 días de antigüedad) | `200` array de resultados: `APPLIED`, `ALREADY_APPLIED`, `SUPERSEDED` o `REJECTED` por operación |
 ---
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
-* **Backend Web Services:** Configuración y despliegue automatizado en la plataforma PaaS **Render**, conectado directamente al branch `main` del repositorio de GitHub con integración continua.
-* **Landing Page:** Publicada mediante **GitHub Pages** para acceso público continuo.
-* **Mobile Application:** Distribuida internamente para pruebas de campo y validación con usuarios mediante **Firebase App Distribution**.
-* **Evidencias en imagen:**
-  * <img src="assets/cap4/deploy_render_backend.png" alt="Despliegue de Backend en Render" width="300">
-  * <img src="assets/cap4/deploy_firebase_mobile.png" alt="Distribución en Firebase App Distribution" width="300">
 
+**Backend Web Services:** desplegado en **Railway** (Hobby Plan), con PostgreSQL 16 como servicio en el mismo proyecto. El redespliegue es automático en cada push a `main`. Variables de entorno configuradas directamente en el panel de Railway; ninguna credencial está en el repositorio.
+
+* **URL de producción:** `https://predictivemaintain-backend-production.up.railway.app`
+* **Health check:** `https://predictivemaintain-backend-production.up.railway.app/actuator/health`
+
+**Landing Page:** publicada mediante **GitHub Pages**, conectada al branch `main` del repositorio de la landing page con despliegue continuo.
+
+**Mobile Application:** distribuida para pruebas internas mediante instalación directa del APK generado desde Android Studio. La distribución mediante Firebase App Distribution está planificada para el siguiente sprint.
+
+**Evidencias:**
+
+![Despliegue backend en Railway](assets/cap4/deploy_railway_backend.png)
+![Swagger UI con los 54 endpoints documentados](assets/cap4/swagger_sprint1.png)
 ---
 
 #### 4.2.1.9. Team Collaboration Insights for Sprint Review
-* **Análisis de Colaboración:** Durante el desarrollo del Sprint 1, el equipo registró un total de **48 commits** distribuidos equitativamente en los tres repositorios principales de GitHub. La adopción del flujo *GitFlow* y la convención de *Conventional Commits* garantizó una integración limpia de código, minimizando conflictos en la rama `develop` y manteniendo una velocidad de desarrollo constante conforme a los Story Points asignados.
-* **Estadísticas de GitHub:**
-  * <img src="assets/cap4/github_insights_sprint1.png" alt="GitHub Collaboration Insights Sprint 1" width="300">
 
+**Análisis de colaboración:** Durante el Sprint 1 el equipo registró un total de **155 commits** distribuidos en los tres repositorios principales: 84 en el backend, 17 en la aplicación móvil y 54 en el repositorio del informe. El flujo GitFlow y la convención Conventional Commits garantizaron una integración limpia en la rama `develop` y una rama `main` estable en producción.
+
+**Estadísticas de GitHub:**
+
+![GitHub Collaboration Insights Sprint 1](assets/cap4/github_insights_sprint1.png)
 ---
 
 ## 4.3. Validation Interviews
