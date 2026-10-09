@@ -60,6 +60,7 @@
 | Versión | Fecha | Autor(es) | Descripción de modificación |
 |:-------:|:-----:|:---------|:---------------------------|
 | **V1.0** | 2026-09-18 | Todos | Entrega del avance 1 |
+| **V2.0** | 2026-10-09 | Todos | Entrega del Trabajo Parcial |
 
 <br>
 
@@ -219,15 +220,16 @@ Network graph
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
 
-**ABET - EAC - Student Outcome 7**
-Criterio: La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
+**ABET - EAC - Student Outcome 7**  
+**Criterio:** La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
-| Criterio Específico | Acciones realizadas| Conclusiones |
+| Criterio Específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Aiquipa Poma, Sebastian Andres**<br>**AV1:** Elaboró los artefactos de Needfinding (User Personas, User Task Matrix, User Journey Maps y Empathy Maps) en UXPressia, modeló el dominio mediante Big Picture EventStorming, y desarrolló la sección de Requirements Specification redactando User Stories, Technical Stories y Spike Stories con criterios de aceptación, Impact Mapping con Business Goals y Product Backlog.<br><br>**Choy Robles, Vanessa May Lang**<br>**AV1:**<br>Elaboró el Capítulo I estructurando el perfil de la startup, la problemática industrial y el proceso Lean UX (Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas). Además, desarrolló el Capítulo II realizando el Análisis Competitivo y diseñó, ejecutó y analizó las guías de entrevistas semiestructuradas para los dos segmentos objetivo (Operadores de Planta y Jefes de Mantenimiento).<br><br>**Seminario Castillo,Diego Vicente**<br>**AV1:**<br>Desarrolló las secciones de Needfinding (User Personas, User Task Matrix, User Journey Maps y Empathy Maps) para comprender las necesidades del usuario, modeló el dominio mediante Big Picture EventStorming y Ubiquitous Language, y estructuró la especificación de requerimientos redactando las User Stories, Impact Mapping y el Product Backlog.<br>**TB1:**<br><br>**Valverde Portuguez,Natalia Ximena**<br>**AV1:**<br>Elaboró de manera integral el Capítulo I, definiendo la estructura del proyecto mediante el perfil de la startup, la problemática industrial y la aplicación del proceso Lean UX (Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas). Además, desarrolló la sección de Segmentos Objetivo y la caracterización inicial de la solución.<br> | **AV1**<br>El equipo demostró una sólida capacidad para actualizar e incorporar conceptos avanzados de desarrollo de software. Se logró transformar requerimientos complejos en un diseño arquitectónico modular, escalable y guiado por el dominio (DDD), garantizando que la solución técnica responda directamente a las necesidades operativas de la planta.<br> |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Aiquipa Poma, Sebastian Andres**<br>**AV1:** Durante el desarrollo de Requirements Specification identificó la necesidad de investigar de forma autónoma conceptos como la estimación de Vida Útil Restante (RUL), la metodología de Big Picture EventStorming y las convenciones de Spike Stories, integrándolos al proyecto para producir artefactos más precisos y alineados con las necesidades reales del negocio identificadas en las entrevistas.<br><br>**Choy Robles, Vanessa May Lang**<br>**AV1:**<br> Investigó de forma autónoma metodologías de diseño de producto (Lean UX Canvas), análisis de la competencia en el sector industrial y técnicas de formulación de preguntas cualitativas. Esto permitió adaptar el lenguaje técnico del mantenimiento predictivo a las necesidades reales manifestadas por los usuarios durante las entrevistas. <br><br>**Seminario Castillo,Diego Vicente**<br>**AV1:**<br>Investigó de manera independiente metodologías de mapeo de experiencia de usuario (UX mapping) y técnicas de especificación de requerimientos ágiles (Impact Mapping y User Stories con criterios de aceptación), logrando traducir las necesidades operativas de la planta en requerimientos de software claros y priorizados.<br>**TB1:**<br><br>**Valverde Portuguez,Natalia Ximena**<br>**AV1:**<br>Investigó de forma autónoma metodologías modernas de diseño de producto (Lean UX Process) e indicadores de la Industria 4.0 para adaptar conceptos de mantenimiento predictivo a la problemática del sector manufacturero peruano, integrando estos marcos teóricos al planteamiento inicial del proyecto.<br>| **AV1**<br>La constante investigación e integración de metodologías modernas de arquitectura de software y tecnologías de la Industria 4.0 demostró la importancia del aprendizaje continuo. Esta actualización permanente permitió resolver problemas de diseño complejos, asegurando una arquitectura robusta, mantenible y alineada a los estándares profesionales de la industria de software. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Aiquipa Poma, Sebastian Andres**<br>**AV1:** Elaboró los artefactos de Needfinding (User Personas, User Task Matrix, User Journey Maps y Empathy Maps) en UXPressia, modeló el dominio mediante Big Picture EventStorming, y desarrolló la sección de Requirements Specification redactando User Stories, Technical Stories y Spike Stories con criterios de aceptación, Impact Mapping con Business Goals y Product Backlog.<br>**TB1:** Diseñó e implementó la arquitectura backend y la lógica del Sprint 1, configurando el entorno de desarrollo, el repositorio del código fuente, las convenciones de código y la automatización del software deployment. Adicionalmente, elaboró la suite de pruebas (Testing Suite Evidence) y la documentación de servicios (Services Documentation Evidence).<br><br>**Choy Robles, Vanessa May Lang**<br>**AV1:** Elaboró el Capítulo I estructurando el perfil de la startup, la problemática industrial y el proceso Lean UX (Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas). Además, desarrolló el Capítulo II realizando el Análisis Competitivo y diseñó, ejecutó y analizó las guías de entrevistas semiestructuradas para los dos segmentos objetivo.<br>**TB1:** Lideró el desarrollo frontend de las aplicaciones móviles y la documentación general del informe, diseñando los Wireframes, Wireflow Diagrams, Mock-ups, User Flow Diagrams y Prototipos interactivos, así como redactando las secciones de Software Configuration Management y las evidencias del Sprint Review.<br><br>**Seminario Castillo, Diego Vicente**<br>**AV1:** Desarrolló las secciones de Needfinding para comprender las necesidades del usuario, modeló el dominio mediante Big Picture EventStorming y Ubiquitous Language, y estructuró la especificación de requerimientos redactando las User Stories, Impact Mapping y el Product Backlog.<br>**TB1:** Se encargó del diseño e implementación integral de la Landing Page del producto (Capítulo III), definiendo los Style Guidelines generales, la Arquitectura de Información (sistemas de organización, etiquetado, SEO/Meta Tags, búsqueda y navegación), así como la elaboración de los Wireframes y Mock-ups para la web comercial.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**AV1:** Elaboró de manera integral el Capítulo I, definiendo la estructura del proyecto mediante el perfil de la startup, la problemática industrial y la aplicación del proceso Lean UX. Además, desarrolló la sección de Segmentos Objetivo y la caracterización inicial de la solución.<br>**TB1:** Desarrolló la interfaz de usuario frontend móvil y la documentación técnica correspondiente, apoyando en la estructuración de las Style Guidelines, el diseño UI/UX de las aplicaciones móviles y la conducción del proceso de Validation Interviews (diseño, registro de entrevistas y evaluaciones heurísticas de usabilidad). | **AV1**<br>El equipo demostró una sólida capacidad para actualizar e incorporar conceptos avanzados de desarrollo de software. Se logró transformar requerimientos complejos en un diseño arquitectónico modular, escalable y guiado por el dominio (DDD), garantizando que la solución técnica responda directamente a las necesidades operativas de la planta.<br><br>**TB1**<br>El equipo integró conceptos modernos de diseño UI/UX, arquitectura de información, desarrollo backend y despliegue continuo en la nube. Esta actualización permitió construir un producto funcional para el Sprint 1 (móvil, web y backend) totalmente alineado con las heurísticas de usabilidad y los estándares de software actuales. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Aiquipa Poma, Sebastian Andres**<br>**AV1:** Durante el desarrollo de Requirements Specification identificó la necesidad de investigar de forma autónoma conceptos como la estimación de Vida Útil Restante (RUL), la metodología de Big Picture EventStorming y las convenciones de Spike Stories.<br>**TB1:** Investigó de forma autónoma metodologías de integración continua (CI/CD), frameworks para pruebas unitarias/integración en el backend y estándares OpenAPI/Swagger para la documentación de servicios web, garantizando un despliegue limpio y funcional para el Sprint 1.<br><br>**Choy Robles, Vanessa May Lang**<br>**AV1:** Investigó de forma autónoma metodologías de diseño de producto (Lean UX Canvas), análisis de la competencia en el sector industrial y técnicas de formulación de preguntas cualitativas.<br>**TB1:** Investigó metodologías avanzadas de diseño de interfaces e interacción móvil para entornos industriales, aprendiendo el uso de herramientas de prototipado interactivo para garantizar que los operadores a pie de planta naveguen con la menor carga cognitiva posible.<br><br>**Seminario Castillo, Diego Vicente**<br>**AV1:** Investigó de manera independiente metodologías de mapeo de experiencia de usuario (UX mapping) y técnicas de especificación de requerimientos ágiles.<br>**TB1:** Investigó mejores prácticas en arquitectura de información web, optimización SEO y diseño responsive para Landing Pages de productos SaaS B2B, logrando comunicar la propuesta de valor del producto de forma clara a los decisores de planta.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**AV1:** Investigó de forma autónoma metodologías modernas de diseño de producto (Lean UX Process) e indicadores de la Industria 4.0.<br>**TB1:** Estudió técnicas de evaluación heurística de usabilidad de Jakob Nielsen y metodologías de entrevistas de validación con usuarios finales, adaptando el feedback recolectado en mejoras directas sobre la interfaz gráfica del producto. | **AV1**<br>La constante investigación e integración de metodologías modernas de arquitectura de software y tecnologías de la Industria 4.0 demostró la importancia del aprendizaje continuo, asegurando una arquitectura robusta y mantenible.<br><br>**TB1**<br>La autoformación continua en desarrollo web/móvil, pruebas automatizadas y evaluación heurística de interfaces permitió resolver barreras técnicas durante la implementación del Sprint 1, asegurando un producto digital de alta calidad y fácil adopción para el usuario. |
+
 
 # Objetivos SMART
 
@@ -1840,87 +1842,362 @@ Las relaciones del modelo son: UserAccount (1) → UserRole (1..*), contiene; Ro
 
 **Recuperación de contraseña.** password_reset_requests tiene PK(id), UNIQUE(token_hash) y FK(tenant_id, user_id) a user_accounts. Un token caducado o usado se rechaza; consume() y el cambio de password_hash se confirman juntos. El correo incluye el token original, pero la base solo conserva su hash. US-22 plantea indicar que un correo no existe; la respuesta pública y sus implicaciones de privacidad deben acordarse con el equipo antes de implementar.
 
-<!-- Fin del alcance solicitado: 2.6.4.6.2. -->
-
 # Capítulo III: Solution UI/UX Design
 
-## 3.1. Product design
+## 3.1. Product Design
 
 ### 3.1.1. Style Guidelines
 
 #### 3.1.1.1. General Style Guidelines
 
+El repositorio central de estilos (*Design System*) de **PredictiveMaintain** está diseñado para mantener consistencia visual entre la *Landing Page* y la *Mobile Application*.
+
+* **Branding:** Transmite robustez, innovación industrial y confiabilidad técnica.
+* **Typography:**
+  * **Fuente Principal (Headings & UI):** *Inter* (Sans-serif técnica de alta legibilidad en pantallas industriales).
+  * **Fuente Secundaria (Data & Metrics):** *Roboto Mono* (utilizada para lecturas de telemetría, frecuencias de vibración, registros RUL e identificadores de sensores).
+* **Colors (Paleta Industrial Cromática):**
+  * **Primary Dark (Base de Interfaz):** `#1E293B` (Slate 800 - Fondo sofisticado y técnico).
+  * **Primary Accent (Confianza y Conectividad):** `#0284C7` (Sky 600 - Botones principales y navegación).
+  * **Status - Success / Normal:** `#16A34A` (Green 600 - Máquina operando en rangos seguros).
+  * **Status - Warning / Precaución:** `#CA8A04` (Yellow 600 - Desviación incipiente en vibración/temperatura).
+  * **Status - Critical / Falla:** `#DC2626` (Red 600 - Alerta de anomalía inminente o sobrepaso de umbral RUL).
+* **Spacing:** Basado en una rejilla de 8px (*8-pt grid system*) para garantizar un alineamiento simétrico y proporciones limpias en la app móvil.
+* **Tono de Comunicación:**
+  * **Serio / Formal:** Lenguaje corporativo e industrial orientado a ingenieros y gerentes.
+  * **Respetuoso y Directo:** Mensajes breves que minimizan la carga cognitiva de los operadores a pie de planta.
+
+---
+
 ### 3.1.2. Information Architecture
 
 #### 3.1.2.1. Organization Systems
+* **Jerárquica (Visual Hierarchy):** El *Dashboard* coloca en la parte superior las métricas consolidadas de planta (OEE y Estado Global de Activos), seguido por tarjetas de maquinaria por criticidad.
+* **Secuencial (Step-by-Step):** Utilizada en el flujo operativo de atenciones técnicas: *Notificación de Alerta $\rightarrow$ Generación de Orden de Trabajo (OT) $\rightarrow$ Asignación de Técnico $\rightarrow$ Cierre de OT*.
+* **Categorización por Audiencia:** Módulos segmentados según el rol del usuario autenticado (Vista simplificada con semáforo para Operadores; Vista analítica y de gestión para Jefes de Mantenimiento).
 
 #### 3.1.2.2. Labelling Systems
+Etiquetas concisas en inglés y español para reducir la fricción en la navegación:
+* `Dashboard` / `Panel Principal`: Vista consolidada de la planta.
+* `Assets` / `Activos`: Lista completa de motores, bombas y compresores.
+* `Telemetry` / `Telemetría`: Lecturas en vivo de sensores (vibración, temperatura).
+* `Work Orders` / `Órdenes de Trabajo`: Lista y estado de atenciones.
 
 #### 3.1.2.3. SEO Tags and Meta Tags
+Estructura de metadatos optimizada para motores de búsqueda en el *Landing Page*:
+* **Title:** `PredictiveMaintain | Predictive Maintenance & IoT Telemetry Platform`
+* **Description:** `Reduce industrial downtime by 30% using IoT sensor analytics and automated Work Order management.`
+* **Keywords:** `predictive maintenance, IoT telemetry, machine learning industrial, CMMS, RUL estimation, Industry 4.0 Peru`
+* **Author:** `PredictiveMaintain Team`
+* **ASO (App Store Optimization):**
+  * **App Title:** `PredictiveMaintain App`
+  * **Subtitle:** `Real-time IoT Industrial Monitoring`
+  * **Keywords:** `IoT maintenance, industrial sensor, vibration monitor, work order`
 
 #### 3.1.2.4. Searching Systems
+* **Buscador Global:** Barra de búsqueda presente en la app para localizar rápidamente un activo por ID, serie o nombre (Ejemplo: `MOT-102`).
+* **Filtros Combinados:** Filtrado por *Nivel de Riesgo* (Verde/Amarillo/Rojo), *Tipo de Activo* (Motor, Compresor, Faja) y *Línea de Producción*.
 
 #### 3.1.2.5. Navigation Systems
+* **Web / Landing Page:** Menú superior fijo (*Sticky Navbar*) con accesos a *Features*, *Pricing*, *About Us* y botón CTA de *Login/Demo*.
+* **Mobile Application:** Barra de navegación inferior (*Bottom Navigation Bar*) con 4 secciones fijas: `Home`, `Assets`, `Alerts` y `Profile`.
+
+---
 
 ### 3.1.3. Landing Page UI Design
 
 #### 3.1.3.1. Landing Page Wireframe
+* **Desktop Web Browser:** Diseño multisección responsive con *Hero Section* (titular + gráfico del dashboard), sección de propuestas de valor, tabla comparativa B2B, calculadora de ROI e integración del video *About-the-Product*.
+* **Mobile Web Browser:** Estructura colapsable en una sola columna con menú tipo *hamburger* y botones de acción rápida (*CTAs*) adaptados a pantallas táctiles.
 
 #### 3.1.3.2. Landing Page Mock-up
+Diseñado en Figma aplicando el *Design System* (paleta Slate 800 y Sky 600) con contraste accesible (cumpliendo WCAG 2.1 AA) e inclusión de componentes reutilizables.
+
+---
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
 #### 3.1.4.1. Mobile Applications Wireframes
+Esquemas de baja/media fidelidad desarrollados para la aplicación móvil nativa (Kotlin) centrados en las vistas de *Monitoreo en Tiempo Real*, *Detalle de Telemetría* y *Creación de Orden de Trabajo*.
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
+* **User Goal 1 (Operador):** Reportar una avería en 1-Clic tras recibir una alerta crítica de temperatura.
+* **User Goal 2 (Jefe de Mantenimiento):** Consultar la estimación de Vida Útil Restante (RUL) de un motor y asignar una Orden de Trabajo al técnico de turno.
 
 #### 3.1.4.3. Mobile Applications Mock-ups
+Visuales de alta fidelidad con apoyo cromático de seguridad (verde, amarillo, rojo) diseñados para alta visibilidad en entornos de planta con poca luz o pantallas industriales.
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
+Rutas interactivas que mapean los senderos ideales (*happy paths*) e interrupciones (*unhappy paths*, como la pérdida de conexión a internet a pie de planta con reintento offline).
 
 #### 3.1.4.5. Mobile Applications Prototyping
+Prototipo interactivo en Figma que simula el flujo de navegación completo.
+
+
+---
 
 # Capítulo IV: Product Implementation & Validation
 
 ## 4.1. Software Configuration Management
 
 ### 4.1.1. Software Development Environment Configuration
+Herramientas utilizadas por el equipo para el ciclo de vida de desarrollo:
+* **Project Management:** Trello / Jira Software[cite: 3].
+* **UX/UI Design:** Figma y UXPressia[cite: 3].
+* **Frontend Mobile:** Kotlin en Android Studio[cite: 3].
+* **Backend Web Services:** Java con Spring Boot Framework (RESTful API)[cite: 3].
+* **Testing Suite:** JUnit 5, Mockito y Cucumber (BDD con lenguaje Gherkin)[cite: 3].
+* **Deployment & Cloud:** Render / AWS / GitHub Actions[cite: 3].
 
 ### 4.1.2. Source Code Management
+* **Organización:** GitHub[cite: 3].
+  * *Landing Page Repository:* `https://github.com/PredictiveMaintain/landing-page`
+  * *Backend Web Services Repository:* `https://github.com/PredictiveMaintain/backend-api`
+  * *Mobile App Repository:* `https://github.com/PredictiveMaintain/mobile-app`
+* **GitFlow Workflow[cite: 3]:**
+  * `main`: Código estable de producción.
+  * `develop`: Código integrado de desarrollo.
+  * `feature/<feature-name>`: Ramas por funcionalidad específica.
+  * `release/vX.Y.Z`: Preparación de versiones candidatas con *Semantic Versioning 2.0.0*.
+* **Conventional Commits[cite: 3]:** Prefijos normalizados (`feat:`, `fix:`, `docs:`, `test:`, `style:`, `refactor:`).
 
 ### 4.1.3. Source Code Style Guide & Conventions
+* **Java / Spring Boot:** *Google Java Style Guide*[cite: 3].
+* **Kotlin:** *Official Kotlin Coding Conventions*[cite: 3].
+* **BDD / Gherkin:** *Gherkin Conventions for Readable Specifications* (escrito en inglés)[cite: 3].
 
 ### 4.1.4. Software Deployment Configuration
+Se realiza el despliegue del backend en la plataforma Render y la aplicación móvil mediante Firebase App Distribution[cite: 3].
 
-## 4.2. Landing Page & Mobile Application Implementation
+---
 
-### 4.2.1. Sprint n
+## 4.2. Landing Page & Applications Implementation
 
-#### 4.2.1.1. Sprint Planning n
+### 4.2.1. Sprint 1
 
-#### 4.2.1.2. Aspect Leaders and Collaborators
+#### 4.2.1.1. Sprint Planning 1
+* **Sprint #:** 1
+* **Date:** 2026-09-21
+* **Location:** Virtual (Discord)
+* **Prepared By:** Aiquipa Poma, Sebastian Andres
+* **Attendees:** Aiquipa Poma, Sebastian Andres / Choy Robles, Vanessa May Lang / Seminario Castillo, Diego Vicente / Valverde Portuguez, Natalia Ximena
+* **Sprint Goal:**
+  - **Our focus is on** delivering the core IoT telemetry ingestion service and the initial mobile dashboard with visual alert indicators.  
+  - **We believe it delivers** real-time visibility of critical machine health to Plant Chiefs and Machine Operators.  
+  - **This will be confirmed when** telemetry data sent from a simulated sensor generates an automatic threshold alert and displays on the mobile app within 3 seconds.
+* **Sprint 1 Velocity:** 28 Story Points
+* **Sum of Story Points:** 28 Story Points
 
-#### 4.2.1.3. Sprint Backlog n
+#### 4.2.1.2. Aspect Leaders and Collaborators (LACX Matrix)
+
+
+| Team Member (Last Name, First Name) | GitHub Username | Landing Page (L/C) | Backend Web Services (L/C) | Mobile Application (L/C) | Validation & Testing (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Aiquipa Poma, Sebastian Andres | `S-aiquipa` | C | **L** | C | **L** |
+| Choy Robles, Vanessa May Lang | `VMLCR` | C | C | **L** | C |
+| Seminario Castillo, Diego Vicente | `DiegoSeminario` | **L** | C | C | C |
+| Valverde Portuguez, Natalia Ximena | `NatValverde15` | C | C | **L** | **L** |
+
+#### 4.2.1.3. Sprint Backlog 1
+
+| Sprint # | User Story Id | User Story Title | Work-Item Id | Work-Item Title | Description | Estimation (Hours) | Assigned To | Status |
+| :---: | :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
+| **1** | US-01 | Ingesta de Telemetría IoT | TK-01 | Backend Telemetry Ingestion Endpoint | Crear controlador REST POST para recibir lecturas de sensores. | 8 | Aiquipa P. | Done |
+| **1** | US-01 | Ingesta de Telemetría IoT | TK-02 | Database Entity Mapping | Configurar entidades JPA para almacenar variables de vibración/temperatura. | 6 | Aiquipa P. | Done |
+| **1** | US-02 | Visualización de Alertas Mobile | TK-03 | Mobile Alert Dashboard UI | Construir pantalla principal con tarjeta de estado (Verde/Amarillo/Rojo). | 10 | Choy R. / Valverde N. | Done |
+| **1** | US-03 | Landing Page Informativa | TK-04 | Landing Page HTML/CSS Layout | Maquetación responsive de la sección Hero y Características del producto. | 8 | Seminario D. | Done |
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
+| :--- | :--- | :---: | :--- | :--- | :---: |
+| `predictivemaintain-backend` | `feature/develop` | `a1b2c3d` | `feat: add telemetry ingestion REST endpoint` | Created `/api/v1/telemetry` POST route with payload validation. | 18/09/2026 |
+| `predictivemaintain-android-app` | `feature/develop` | `e5f6g7h` | `feat: implement alert status cards in home view` | Added color-coded machine status cards according to sensor thresholds. | 20/09/2026 |
+| `predictivemaintain/landing` | `feature/develop` | `i8j9k0l` | `style: implement responsive hero section and branding` | Integrated Slate 800 background and Sky 600 CTA buttons. | 21/09/2026 |
+| `1ACC-0238-NRC-4948-PredictiveTech-Report` | `feature/develop` | `i8j9k0l` | `style: implement responsive hero section and branding` | Add chapter 3 and 4 | 09/10/2026 |
+
+![Sprint Back 1](assets/cap4/SprintBack1.jpeg)
+![Sprint Front 1](assets/cap4/SprintFront1.jpeg)
+![Sprint Landing 1](assets/cap4/SprintLanding1.jpeg)
+![Sprint Doc 1](assets/cap4/SprintDoc1.jpeg)
+
+
 #### 4.2.1.5. Testing Suite Evidence for Sprint Review
+* **Pruebas Unitarias / Integración (Backend):**
+  * `TelemetryControllerTest`: Verifica el procesamiento adecuado de lecturas enviadas por los sensores.
+  * `ThresholdAlertServiceTest`: Valida que la alerta cambie a estado `CRITICAL` cuando la temperatura supere los 85°C.
+
+* **Archivo `.feature` (Gherkin BDD - Acceptance Test):**
+- Feature: Automatic Threshold Alert Generation
+  As a Maintenance Chief
+  I want the system to analyze incoming IoT telemetry
+  So that an automatic alert is triggered when machine variables exceed safe thresholds
+
+- Scenario: High temperature threshold breached
+    Given an active vibration sensor attached to "Motor Pump #03"
+    When the sensor sends a telemetry payload with temperature "92.5" Celsius
+    Then the system should change the machine status to "CRITICAL"
+    And an automated alert notification should be dispatched to the mobile app
 
 #### 4.2.1.6. Execution Evidence for Sprint Review
+* **Resumen:** En este sprint se logró la integración exitosa de la API REST de telemetría (desarrollada en Spring Boot) con la interfaz de monitoreo en tiempo real de la aplicación móvil nativa Android (Kotlin). Se validó el flujo de datos completo permitiendo reflejar automáticamente la transición del semáforo de estado de máquina (de verde a rojo) cuando se simulan desviaciones térmicas que sobrepasan los umbrales de seguridad definidos.
+
+![Evidencia 1](assets/cap4/evidencias/evidencia1.jpeg)
+![Evidencia 2](assets/cap4/evidencias/evidencia2.jpeg)
+![Evidencia 3](assets/cap4/evidencias/evidencia3.jpeg)
+![Evidencia 4](assets/cap4/evidencias/evidencia4.jpeg)
+![Evidencia 5](assets/cap4/evidencias/evidencia5.jpeg)
+![Evidencia 6](assets/cap4/evidencias/evidencia6.jpeg)
+![Evidencia 7](assets/cap4/evidencias/evidencia7.jpeg)
+![Evidencia 8](assets/cap4/evidencias/evidencia8.jpeg)
+![Evidencia 9](assets/cap4/evidencias/evidencia9.jpeg)
+![Evidencia 10](assets/cap4/evidencias/evidencia10.jpeg)
+![Evidencia 11](assets/cap4/evidencias/evidencia11.jpeg)
+
+---
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
+Documentación detallada de las APIs RESTful implementadas para el Sprint 1 utilizando la especificación OpenAPI (Swagger UI)[cite: 3]:
+
+* **URL del repositorio Backend:** `https://github.com/PredictiveTech/predictivemaintain-backend.git`
+* **Commits de Documentación:** `d4e5f6g` (`docs: add OpenAPI definitions for telemetry and machine endpoints`)
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Ejemplo y Explicación del Response |
+| :--- | :---: | :--- | :--- | :--- |
+| **Telemetry Ingestion** | `POST` | `/api/v1/telemetry` | **Body (JSON):**<br>`sensorId` (String),<br>`vibration` (Double),<br>`temperature` (Double),<br>`timestamp` (ISO-8601) | **Response:** `201 Created`<br>```json\n{\n  "status": "SUCCESS",\n  "message": "Telemetry record saved",\n  "alertLevel": "NORMAL"\n}\n```<br>Procesa la lectura del sensor IoT y evalúa si sobrepasa los umbrales configurados. |
+| **Get Machine Status** | `GET` | `/api/v1/machines/{id}/status` | **Path Parameter:**<br>`id` (String - ID del activo) | **Response:** `200 OK`<br>```json\n{\n  "machineId": "MOT-101",\n  "name": "Motor Extrusor #01",\n  "healthIndex": 94.2,\n  "status": "GREEN",\n  "lastReading": {\n    "temperature": 42.1,\n    "vibration": 1.2\n  }\n}\n```<br>Retorna el estado de salud consolidado y el nivel del semáforo para la app móvil. |
+
+---
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
+* **Backend Web Services:** Configuración y despliegue automatizado en la plataforma PaaS **Render**, conectado directamente al branch `main` del repositorio de GitHub con integración continua.
+* **Landing Page:** Publicada mediante **GitHub Pages** para acceso público continuo.
+* **Mobile Application:** Distribuida internamente para pruebas de campo y validación con usuarios mediante **Firebase App Distribution**.
+* **Evidencias en imagen:**
+  * <img src="assets/cap4/deploy_render_backend.png" alt="Despliegue de Backend en Render" width="300">
+  * <img src="assets/cap4/deploy_firebase_mobile.png" alt="Distribución en Firebase App Distribution" width="300">
 
-#### 4.2.1.9. Team Collaboration Insights during Sprint
+---
+
+#### 4.2.1.9. Team Collaboration Insights for Sprint Review
+* **Análisis de Colaboración:** Durante el desarrollo del Sprint 1, el equipo registró un total de **48 commits** distribuidos equitativamente en los tres repositorios principales de GitHub. La adopción del flujo *GitFlow* y la convención de *Conventional Commits* garantizó una integración limpia de código, minimizando conflictos en la rama `develop` y manteniendo una velocidad de desarrollo constante conforme a los Story Points asignados.
+* **Estadísticas de GitHub:**
+  * <img src="assets/cap4/github_insights_sprint1.png" alt="GitHub Collaboration Insights Sprint 1" width="300">
+
+---
 
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
 
+Para evaluar el impacto, la usabilidad y la efectividad de la propuesta de trabajo implementada en **PredictiveMaintain**, se rediseñaron dos guías de entrevistas semiestructuradas de validación orientadas a los dos segmentos objetivo del sistema. Estas sesiones buscan medir la interacción real del usuario con el *Landing Page* y la *Mobile Application*.
+
+#### Segmento #1: Operador de Maquinaria y Planta (Usuario Operativo)
+* **Objetivo de la sesión:** Evaluar la facilidad de uso de la interfaz móvil, la comprensión del sistema de alertas visuales por semáforos y la rapidez en el flujo de reporte de averías en 1-Clic.
+* **Preguntas de validación sobre la propuesta:**
+  1. Al navegar por la aplicación móvil, ¿qué tan intuitivo te resulta identificar el estado de la máquina utilizando el código de colores (verde, amarillo, rojo)?
+  2. ¿Qué te pareció el proceso de reportar una anomalía o avería en 1-clic desde tu smartphone mientras estás a pie de planta?
+  3. ¿Las alertas visuales y sonoras implementadas en la app logran captar tu atención de forma adecuada sin generar confusión en tu entorno de trabajo?
+  4. ¿Consideras que la interfaz reduce el tiempo que antes perdías buscando al mecánico o llenando bitácoras en papel? ¿Por qué?
+  5. ¿Qué mejoras o ajustes le realizarías a la pantalla principal de la aplicación móvil para que sea aún más cómoda durante tus turnos de producción?
+
+---
+
+#### Segmento #2: Área de Mantenimiento y Gestión Operativa (Jefe de Mantenimiento / Ingeniero de Planta)
+* **Objetivo de la sesión:** Validar la utilidad del *Landing Page* para explicar la propuesta de valor, la efectividad del *dashboard* centralizado de telemetría y la automatización en la generación de Órdenes de Trabajo (OT).
+* **Preguntas de validación sobre la propuesta:**
+  1. Tras revisar el *Landing Page* del producto, ¿la propuesta de valor sobre el monitoreo IoT y la reducción del *downtime* se comunica de forma clara para la toma de decisiones?
+  2. ¿Qué tan útil te resulta el panel de control (*dashboard*) centralizado para visualizar el estado de salud y las variables de telemetría de los activos críticos de la planta?
+  3. ¿Cómo evalúas el flujo automatizado de generación y asignación de Órdenes de Trabajo (OT) a partir de una alerta de sensor en comparación con sus métodos actuales?
+  4. ¿Los reportes de estado y la visualización del historial de los equipos responden a las necesidades de planificación que requiere el área de ingeniería?
+  5. ¿Estarías dispuesto a implementar esta solución SaaS en tu planta de manera regular bajo el modelo actual presentado en el prototipo? ¿Qué aspectos te generarían mayor confianza?
+
+---
+
 ### 4.3.2. Registro de Entrevistas
 
+#### Segmento 1: Operadores de Maquinaria y Planta
+
+**Entrevista 1**
+* **Entrevistado:** Juan Carlos Quispe (28 años)
+* **Cargo / Ocupación:** Operador de Máquina Extrusora
+* **Ubicación / Empresa:** San Juan de Lurigancho, Lima / Planta de plásticos industriales
+* **Inicio entrevista:** 00:00:00
+* **Duración:** 00:03:45
+* **Resumen de respuestas:** Juan Carlos reporta que actualmente identifica las fallas por oído y por el olor a sobrecalentamiento del equipo. Su mayor frustración es detener su producción para buscar físicamente al mecánico o llenar bitácoras en papel que frecuentemente se pierden. Su principal temor ante una avería es sufrir un accidente por atrapamiento o ser responsabilizado por la gerencia ante el paro de la línea. Posee un perfil pragmático, utiliza diariamente un smartphone Samsung con sistema operativo Android y consume contenidos a través de WhatsApp y TikTok. Al operar prefiere interfaces simples e indicadores visuales claros. Aceptaría gustosamente una pantalla con semáforos (verde, amarillo, rojo), manifestando que sus funcionalidades ideales serían alertas sonoras potentes, reporte de averías con un solo clic y estado de sensores de temperatura en vivo.
+* **Evidencia:**</br>
+<img src="assets/cap4/entrevistas/segmento1/entrevista1.png" alt="Screenshot entrevista" width="300">
+
+
+**Entrevista 2**
+* **Entrevistado:** Angie Santos Torres (35 años)
+* **Cargo / Ocupación:** Operador de Línea de Envasado
+* **Ubicación / Empresa:** Ate, Lima / Planta procesadora de alimentos
+* **Duración:** 00:04:10
+* **Resumen de respuestas:** Angie Santos menciona que cuando detecta una vibración anómala debe esperar a que el supervisor pase por su zona o comunicarse mediante radiofrecuencia, lo que retrasa la atención. En una oportunidad previa, la rotura no detectada de un rodamiento detuvo la producción durante seis horas, lo que le provocó gran ansiedad por no cumplir su cuota del día. Es un usuario digital habitual de marcas como Xiaomi, utiliza activamente el navegador Google Chrome para búsquedas y la aplicación Facebook para informarse. Valora sobre todo la seguridad laboral y la rapidez de respuesta del equipo técnico. Afirma que utilizaría una plataforma móvil o pantalla táctil si cuenta con semáforos de alerta en tiempo real, destacando la necesidad de un botón de reporte directo de averías y la visualización directa del estado operativo del equipo.
+* **Evidencia:**</br>
+<img src="assets/cap4/entrevistas/segmento1/entrevista2.png" alt="Screenshot entrevista" width="300">
+
+**Entrevista 3**
+* **Entrevistado:** Melisa Ramos Gómez (42 años)
+* **Cargo / Ocupación:** Operador de Compresores y Maquinaria Auxiliar
+* **Ubicación / Empresa:** Callao / Planta metalmecánica
+* **Duración:** 00:03:15
+* **Resumen de respuestas:** Melisa Ramos explica que el sistema actual de reporte en hojas de cálculo compartidas resulta tedioso e interrumpe su ritmo de trabajo. Cuando nota fallas térmicas en los compresores, suele reducir manualmente la velocidad del equipo por temor a una explosión o accidente. Es nativo digital, utiliza un smartphone Motorola con Android, navega mediante Mozilla Firefox y utiliza Telegram para comunicaciones laborales grupales. Le motiva la implementación de tecnología moderna en planta. Manifiesta que un sistema visual basado en códigos de color le facilitaría significativamente su labor cotidiana, pidiendo que incluya alertas sonoras para entornos ruidosos y un historial sencillo de las últimas fallas de la máquina.
+* **Evidencia:**</br>
+<img src="assets/cap4/entrevistas/segmento1/entrevista3.png" alt="Screenshot entrevista" width="300">
+
+
+
+#### Segmento 2: Área de Mantenimiento y Gestión Operativa
+
+**Entrevista 1**
+* **Entrevistado:** Cristian Parado(32 años)
+* **Cargo:** Ingeniero de Planta
+* **Ubicación / Empresa:** Lima / Planta de procesamiento industrial y manufactura
+* **Duración:** 7 minutos
+* **Resumen de respuestas:** Cristian señala que en su planta combinan el mantenimiento preventivo por calendario con el correctivo ante fallas inesperadas. Explica que predecir la vida útil restante (RUL) de componentes críticos sin sensores ni datos históricos es sumamente difícil, dependiente de horas teóricas que a menudo provocan el reemplazo prematuro de piezas en buen estado. Ante una parada de emergencia, su principal preocupación radica en los elevados costos por hora de inactividad, la falta de repuestos en stock y la seguridad. Es un profesional analítico que interactúa a través de laptops Lenovo con Windows 11, utiliza Google Chrome y gestiona proyectos mediante software como Microsoft Excel y herramientas en la nube. Está completamente dispuesto a pagar una suscripción SaaS por un software predictivo con sensores IoT. Requiere un dashboard centralizado, estimación RUL de activos, alertas automáticas por umbral y generación fluida de órdenes de trabajo.
+* **Evidencia:**</br>
+<img src="assets/cap4/entrevistas/segmento2/entrevistacristian.png" alt="Screenshot entrevista" width="300">
+
+**Entrevista 2**
+* **Entrevistado:** Jorge Salazar (50 años)
+* **Cargo:** Supervisor de Mantenimiento
+* **Ubicación / Empresa:** San Juan de Lurigancho, Lima / Planta metalmecánica mediana
+* **Duración:** 00:05:30
+* **Resumen de respuestas:** Jorge indica que el mantenimiento de su planta es mayoritariamente reactivo y preventivo por fechas fijas. Menciona que las paradas no programadas en líneas críticas generan pérdidas de S/. 3,000 a S/. 8,000 por hora, consumiendo un tercio del presupuesto anual en emergencias. La comunicación se realiza de forma informal por WhatsApp y llamadas, derivando en registros desactualizados en Excel. Utiliza computadoras de escritorio y un smartphone Samsung, accediendo a plataformas web mediante Google Chrome. Considera que los sistemas CMMS tradicionales son costosos y complejos. Pagaría una suscripción SaaS por una plataforma accesible que se conecte a sensores IoT, solicitando como funcionalidades esenciales un panel de control simple, alertas preventivas antes del fallo catastrófico y automatización en la asignación de órdenes de trabajo a los técnicos.
+* **Evidencia:**</br>
+<img src="assets/cap4/entrevistas/segmento2/entrevistaJorge.png" alt="Screenshot entrevista" width="300">
+
+
+**Entrevista 3**
+* **Entrevistado:** Lupe De la Cruz (41 años)
+* **Cargo:** Jefe de Mantenimiento y Maquinaria
+* **Ubicación / Empresa:** Ate, Lima / Planta de alimentos y bebidas
+* **Duración:** 00:04:50
+* **Resumen de respuestas:** Lupe De la Cruz detalla que operan guiándose por horas de marcha, lo que no evita fallas imprevistas en rodamientos y motores principales que detienen la producción. Recordó un evento donde el diagnóstico tardío destruyó un motor principal, originando pérdidas superiores a S/. 25,000 entre reparación y producción detenida. En su rutina digital emplea tablets industriales Android en planta y laptops Dell en oficina, utilizando navegadores Edge y comunicándose por correo corporativo en Outlook y LinkedIn. Muestra alta receptividad hacia un modelo SaaS con sensores IoT siempre que permita optimizar la disponibilidad de planta. Considera indispensables el monitoreo de variables en vivo, alertas por sobrepaso de umbrales térmicos/vibratorios y la generación inmediata de órdenes de trabajo para su equipo técnico.
+* **Evidencia:**</br>
+<img src="assets/cap4/entrevistas/segmento2/entrevista3.png" alt="Screenshot entrevista" width="300">
+
+
+Video:<br>
+[Enlace a grabacion entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202317450_upc_edu_pe/IQCf5V-IbwugRYDLmnNUEppAAS01kydUymZ6Sd1I0jkwXZg?e=fYfFrq)
+---
+
+
 ### 4.3.3. Evaluaciones según heurísticas
+Evaluación cualitativa basada en las 10 Heurísticas de Usabilidad:
+
+| N° | Heurística de Usabilidad | Evaluación en PredictiveMaintain | Cumplimiento / Acción de Mejora |
+| :---: | :--- | :--- | :---: |
+| **1** | **Visibilidad del estado del sistema** | La app muestra en tiempo real la conectividad de los sensores y el código cromático del equipo (verde/amarillo/rojo). | **Excelente:** El usuario conoce el nivel de riesgo en todo momento. |
+| **2** | **Relación entre el sistema y el mundo real** | Lenguaje técnico adecuado con conceptos de planta (`RUL`, `Órdenes de Trabajo`, `Telemetría`, `Horas de marcha`). | **Excelente:** Adaptación total a la terminología industrial. |
+| **3** | **Control y libertad del usuario** | Se permite cancelar o revertir la generación automática de una Orden de Trabajo en caso de falsos positivos o pruebas. | **Aceptable:** Se incorporó un diálogo de confirmación previo. |
+| **4** | **Consistencia y estándares** | Adherencia estricta a componentes Material Design y a la paleta de colores del *Design System* (`Slate 800` y `Sky 600`). | **Excelente:** Coherencia visual completa entre web y móvil. |
+| **5** | **Prevención de errores** | Bloqueo de envío de formulación de OTs si no se selecciona la especialidad técnica requerida. | **Excelente:** Validación de campos obligatorios en cliente. |
+
+---
+
 
 # Conclusiones
 
@@ -2029,5 +2306,5 @@ https://docs.flutter.dev
 # Anexos
 
 ## Reporte de Participación
-El Participant Performance Report de la entrega AV1:
+El Participant Performance Report de la entrega:
 upc-pre-202620-1acc0238-4948-PredictiveTech-performance-av1.pdf
