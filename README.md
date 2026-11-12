@@ -2302,6 +2302,196 @@ Documentación de los endpoints RESTful implementados en el Sprint 1, disponible
 | **2** | US-28 | Continuar gestión de órdenes sin conexión | TK-21 | Android app: offline sync UI | Implement connectivity monitoring in the Android app; queue work order actions when offline and display a sync banner; trigger `POST /api/v1/sync/work-orders` automatically when connectivity is restored. | 6 | Aiquipa P. |    Done     |
 | **2** | — | Correcciones del informe y artefactos | TK-22 | Report corrections: C4 diagram, User Stories and Landing Page | Correct the C4 context diagram to reflect the actual user-to-system relationships (users interact directly with the mobile app, not through the landing page); fix actor names in User Stories; add final app screenshots to the Landing Page. | 4 | Seminario D. | In Progress |
 
+#### 4.2.2.4. Development Evidence for Sprint Review
+
+Evidencia de los commits realizados durante el Sprint 2 en los tres repositorios del proyecto.
+
+##### Backend (`predictivemaintain-backend`)
+
+| Commit | Autor | Descripción |
+| :--- | :--- | :--- |
+| `5154fc1` | Aiquipa P. | spike(SP-01): MQTT broker research and working PoC — Mosquitto + Paho + Spring Boot |
+| `31e6d57` | Aiquipa P. | spike(SP-02): anomaly detection research and z-score PoC with Apache Commons Math |
+| `d973cb4` | Aiquipa P. | feat(spike): MQTT broker integration and anomaly detection research (SP-01, SP-02) |
+| `bb2dbff` | Aiquipa P. | feat(notifications): expose device-token registration at /api/v1/notifications/device-tokens |
+
+##### Android App Kotlin (`predictivemaintain-android-app`)
+
+| Commit | Autor | Descripción |
+| :--- | :--- | :--- |
+| `3806034` | Aiquipa P. | feat(sync): implement offline sync UI with DataStore queue and SyncCoordinator (US-28) |
+| `c229230` | Aiquipa P. | feat(ui): dark login theme, app icon, light theme for main screens, improved asset cards |
+| `36fcb43` | Valverde N. | feat(android): add FCM push notifications (TK-18) |
+| `71d60af` | Aiquipa P. | fix(firebase): add missing google-services plugin and config |
+| `2796557` | Aiquipa P. | feat(android): add photo evidence display and fix upload bugs (TK-19) |
+| `508c154` | Aiquipa P. | feat(notifications): register FCM device token and request POST_NOTIFICATIONS permission |
+| `452b5a9` | Aiquipa P. | feat(iam): add profile tab with edit name, app info and logout |
+| `b2ebf6b` | Aiquipa P. | feat(app): add asset creation for the manager (US-11) |
+| `cc840ec` | Aiquipa P. | feat(maintenance): add asset editing (US-12) |
+| `9923f08` | Aiquipa P. | feat(maintenance): add asset deactivation with open work orders handling (US-13) |
+| `2dac355`, `29c58cf` | Aiquipa P. | style(ui): card redesign, accent navigation bar, screen headers, distinct asset type icons |
+
+##### Flutter App (`predictivemaintain_flutter_app`)
+
+| Commit | Autor | Descripción |
+| :--- | :--- | :--- |
+| `f2b17b1` | Aiquipa P. | chore: initial Flutter project setup |
+| `412d298` | Aiquipa P. | chore: set up Clean Architecture folder structure with DDD bounded contexts |
+| `d92d6d3` | Aiquipa P. | feat(core): add domain models, DTOs, mappers and HTTP client |
+| `36eb60f` | Aiquipa P. | feat(navigation): add home screen with bottom navigation bar and login redirect |
+| `d28d6cd` | Aiquipa P. | feat(maintenance): add assets screen connected to backend |
+| `7d59cd1` | Aiquipa P. | feat(maintenance): add alerts screen connected to backend |
+| `862cbb6` | Aiquipa P. | feat(maintenance): add work orders screen connected to backend |
+| `2eae9c9` | Choy R. | feat(flutter): add asset detail screen |
+| `78731c9` | Aiquipa P. | fix(maintenance): correct asset and sensor DTOs to match backend contract |
+
+#### 4.2.2.5. Testing Suite Evidence for Sprint Review
+
+##### Backend (`predictivemaintain-backend`)
+
+Pruebas unitarias con JUnit 5. El spike SP-02 incluye un test del detector de anomalías por z-score:
+
+* `ZScoreAnomalyDetectorTest` — 5 casos, cubriendo el cálculo de z-score, el umbral configurable de desviación (|z| > 3), y el caso límite de desviación estándar cero.
+
+Suite completa del backend: **17 tests**, 0 fallos (`./mvnw test`).
+
+##### Android App Kotlin (`predictivemaintain-android-app`)
+
+Pruebas unitarias con JUnit 4 y `kotlinx-coroutines-test`. Nuevos tests agregados en el Sprint 2:
+
+| Clase de test | Casos | Cubre |
+| :--- | :---: | :--- |
+| `RegisterDeviceTokenUseCaseTest` | — | Registro del token FCM, incluyendo el caso de sesión expirada |
+| `ProfileViewModelTest` | 8 | Carga de perfil, edición de nombre, guardado, logout |
+| `UpdateMyProfileUseCaseTest` | 2 | Actualización del perfil vía PATCH |
+| `AuthMapperTest` | +3 | Mapeo del request de actualización de perfil |
+| `CreateAssetViewModelTest` | 10 | Validación de formulario, envío, errores 409/403, red |
+| `EditAssetViewModelTest` | 11 | Precarga, validaciones, código inmutable, reenvío de `plantId`, errores |
+| `AssetDetailViewModelTest` | 10 | Desactivación, confirmación, órdenes abiertas, errores 403/404 |
+| `AssetTypeIconTest` | — | Mapeo de tipo de activo a ícono, incluyendo variantes en español |
+| `RoleDestinationsTest` | — | Reescrito para reflejar la nueva barra de navegación (tab Perfil) |
+
+Suite completa de la app Android: **105 tests**, 0 fallos (`./gradlew testDebugUnitTest`).
+
+##### Flutter App (`predictivemaintain_flutter_app`)
+
+Pruebas unitarias con `flutter_test`. Nuevos tests agregados en el Sprint 2:
+
+* `sensor_reading_dto_test.dart` — cubre la estructura anidada real del backend (`latestReading`, `threshold` como objetos nulables), los estados `CommunicationStatus` (ONLINE/NO_COMMUNICATION) y `RangeStatus` (NORMAL/OUT_OF_RANGE/UNKNOWN).
+
+Suite completa de la app Flutter: **5 tests**, 0 fallos (`flutter test`).
+
+#### 4.2.2.6. Execution Evidence for Sprint Review
+
+Recorrido funcional que demuestra las funcionalidades completadas en el Sprint 2, capturado en dispositivo/emulador físico con datos reales del backend desplegado en Railway.
+
+| Evidencia | Qué muestra | Cuenta |
+| :--- | :--- | :--- |
+| `evidencia_sprint2_01.jpeg` | Pantalla de perfil de usuario con edición de nombre (US-23) | Jefe |
+| `evidencia_sprint2_02.jpeg` | Formulario de creación de nuevo activo (US-11) | Jefe |
+| `evidencia_sprint2_03.jpeg` | Activo recién creado visible en el listado | Jefe |
+| `evidencia_sprint2_04.jpeg` | Formulario de edición de activo con datos precargados (US-12) | Jefe |
+| `evidencia_sprint2_05.jpeg` | Confirmación de desactivación de activo (US-13) | Jefe |
+| `evidencia_sprint2_06.jpeg` | Notificación push recibida en el dispositivo tras una alerta generada (TS-08) | Jefe |
+| `evidencia_sprint2_07.jpeg` | Orden de trabajo completada con evidencia fotográfica adjunta (TS-10) | Técnico |
+| `evidencia_sprint2_08.jpeg` | Banner de modo offline con acciones en cola (US-28) | Técnico |
+| `evidencia_sprint2_09.jpeg` | Confirmación de sincronización al restablecer la conexión (US-28) | Técnico |
+| `evidencia_flutter_01.jpeg` | App Flutter: login del jefe de mantenimiento | Jefe |
+| `evidencia_flutter_02.jpeg` | App Flutter: listado de activos conectado al backend | Jefe |
+| `evidencia_flutter_03.jpeg` | App Flutter: detalle de activo con panel de sensores en tiempo real | Jefe |
+| `evidencia_flutter_04.jpeg` | App Flutter: listado de alertas | Jefe |
+| `evidencia_flutter_05.jpeg` | App Flutter: listado de órdenes de trabajo | Jefe |
+
+![Perfil de usuario](assets/cap4/evidencias/evidencia_sprint2_01.png)
+![Creación de activo](assets/cap4/evidencias/evidencia_sprint2_02.png)
+![Activo creado en el listado](assets/cap4/evidencias/evidencia_sprint2_03.jpeg)
+![Edición de activo](assets/cap4/evidencias/evidencia_sprint2_04.jpeg)
+![Desactivación de activo](assets/cap4/evidencias/evidencia_sprint2_05.jpeg)
+![Notificación push recibida](assets/cap4/evidencias/evidencia_sprint2_06.jpeg)
+![Evidencia fotográfica en orden completada](assets/cap4/evidencias/evidencia_sprint2_07.jpeg)
+![Banner de modo offline](assets/cap4/evidencias/evidencia_sprint2_08.jpeg)
+![Sincronización al reconectar](assets/cap4/evidencias/evidencia_sprint2_09.jpeg)
+![Flutter - Login](assets/cap4/evidencias/evidencia_flutter_01.jpeg)
+![Flutter - Listado de activos](assets/cap4/evidencias/evidencia_flutter_02.jpeg)
+![Flutter - Detalle de activo](assets/cap4/evidencias/evidencia_flutter_03.jpeg)
+![Flutter - Listado de alertas](assets/cap4/evidencias/evidencia_flutter_04.jpeg)
+![Flutter - Listado de órdenes](assets/cap4/evidencias/evidencia_flutter_05.jpeg)
+
+#### 4.2.2.7. Services Documentation Evidence for Sprint Review
+
+Documentación de los endpoints RESTful nuevos implementados en el Sprint 2, disponible en Swagger UI:
+
+* **Swagger UI:** `https://predictivemaintain-backend-production.up.railway.app/swagger-ui/index.html`
+* **OpenAPI spec:** `https://predictivemaintain-backend-production.up.railway.app/v3/api-docs`
+
+##### Notifications - Dispositivos y push (`/api/v1/notifications/device-tokens`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Registrar token de dispositivo | `POST` | `/api/v1/notifications/device-tokens` | **Body:** `token`, `platform` (ANDROID) | `201` `{id, platform, registeredAt}`. Upsert por token: si ya existe, actualiza `lastSeenAt` y puede reasignar el usuario. |
+| Eliminar token de dispositivo | `DELETE` | `/api/v1/notifications/device-tokens/{deviceId}` | — | `204`. Usado al cerrar sesión para no notificar al siguiente usuario del dispositivo. |
+
+##### Maintenance - Evidencia fotográfica de órdenes (`/api/v1/work-orders/{workOrderId}/attachments`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Subir evidencia | `POST` | `/api/v1/work-orders/{workOrderId}/attachments` | **Multipart:** `file` (JPEG/PNG/WebP, máx. 5 MB) | `201` `{id, workOrderId, mimeType, uploadedAt}`. Solo el técnico asignado; la orden debe estar `IN_PROGRESS`. `413` si excede el tamaño. |
+| Listar evidencias | `GET` | `/api/v1/work-orders/{workOrderId}/attachments` | — | `200` array de evidencias |
+| Descargar evidencia | `GET` | `/api/v1/work-orders/{workOrderId}/attachments/{attachmentId}` | — | `200` archivo binario |
+
+##### Sync - Sincronización offline (`/api/v1/sync/work-orders`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Sincronizar acciones en cola | `POST` | `/api/v1/sync/work-orders` | **Body:** lote de hasta 100 operaciones del usuario (acciones realizadas offline) | `200` resultado por operación (aplicada, `SUPERSEDED` o `REJECTED`) |
+
+##### Maintenance - Edición y baja de activos (ya referenciados en Sprint 1, usados activamente en Sprint 2)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Actualizar activo | `PUT` | `/api/v1/assets/{assetId}` | **Body:** `name`, `location`, `assetType`, `criticality`, `plantId`, `productionLine`, `latitude`, `longitude` (`code` no editable) | `200` activo actualizado. Solo MAINTENANCE_MANAGER. `409 ASSET_INACTIVE` si el activo está desactivado. |
+| Desactivar activo | `DELETE` | `/api/v1/assets/{assetId}` | **Query:** `force` | `200` activo desactivado (baja lógica, idempotente). `409 ASSET_HAS_OPEN_WORK_ORDERS` si tiene órdenes abiertas y no se usa `force=true`. |
+
+#### 4.2.2.8. Deployment Evidence for Sprint Review
+
+**Backend:** desplegado en **Railway** (continuidad del Sprint 1), con redespliegue automático en cada push a `main`. En el Sprint 2 se agregó la credencial de servicio de Firebase (`FIREBASE_CREDENTIALS_JSON`) como variable de entorno para habilitar el envío de notificaciones push.
+
+* **URL de producción:** `https://predictivemaintain-backend-production.up.railway.app`
+* **Health check:** `https://predictivemaintain-backend-production.up.railway.app/actuator/health`
+* **Swagger UI:** `https://predictivemaintain-backend-production.up.railway.app/swagger-ui/index.html`
+
+**Landing Page:** continúa desplegada mediante **GitHub Pages**, sin cambios de infraestructura en este sprint.
+
+**Firebase Cloud Messaging:** proyecto `predictivemaintain-be84b` configurado para el envío de notificaciones push a la app Android. Service account generado y almacenado únicamente como variable de entorno en Railway (nunca en el repositorio).
+
+**Mobile Application (Android):** distribuida para pruebas internas mediante instalación directa del APK generado desde Android Studio, en dispositivo físico y emulador. La distribución mediante Firebase App Distribution continúa planificada para el Sprint 3.
+
+**Flutter Application:** ejecutada localmente desde el entorno de desarrollo (`flutter run`) apuntando al backend de producción en Railway. Sin distribución empaquetada en este sprint; validada en emulador Android (limitación de plataforma: compilación iOS requiere macOS/Xcode, no disponible en el entorno de desarrollo del equipo).
+
+**Evidencias:**
+
+![Despliegue backend en Railway (Sprint 2)](assets/cap4/deploy_railway_backend_sprint2.png)
+![Proyecto Firebase Cloud Messaging configurado](assets/cap4/firebase_fcm_config.png)
+
+#### 4.2.2.9. Team Collaboration Insights
+
+Resumen de commits a `develop` por repositorio durante el Sprint 2 (desde 2026-10-28), obtenido con `git shortlog -sn`:
+
+| Repositorio | Aiquipa P. | Choy R. | Seminario D. | Valverde N. | Total |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Backend | 4 | — | — | — | 4 |
+| Android App | 17 | — | — | 2 | 19 |
+| Flutter App | 8 | 1 | — | — | 9 |
+| Report | 7 | — | — | — | 7 |
+| **Total** | **36** | **1** | **0** | **2** | **39** |
+
+**Evidencias:**
+
+![GitHub Insights - Backend](assets/cap4/github_insights_backend_sprint2.png)
+![GitHub Insights - Android App](assets/cap4/github_insights_android_sprint2.png)
+![GitHub Insights - Flutter App](assets/cap4/github_insights_flutter_sprint2.png)
+
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
