@@ -321,7 +321,7 @@ Hemos observado que no existe una herramienta digital SaaS especializada que con
 
 **¿QUIÉN ES EL USUARIO?**
 
-Nuestros usuarios pertenecen a dos grupos clave dentro de la planta: el Área de Mantenimiento y Gestión Operativa (Jefes e Ingenieros de Mantenimiento que planifican y toman decisiones sobre los activos) y los Operadores de Maquinaria y Planta (técnicos a pie de planta que interactúan directamente con los equipos y ejecutan las labores operativas).
+Nuestros usuarios pertenecen a dos grupos clave dentro de la planta: los Jefes de Mantenimiento que planifican y toman decisiones sobre los activos, y los Técnicos Operadores de maquinarias que trabajan a pie de planta, interactúan directamente con los equipos y ejecutan las labores operativas).
 
 **¿DÓNDE ENCAJA NUESTRO PRODUCTO EN SU VIDA?**
 
@@ -366,15 +366,15 @@ El producto debe ser intuitivo, claro y con un alto nivel de precisión técnica
 
 **User Assumptions**
 * Creemos que los Jefes de Mantenimiento necesitan un tablero centralizado para monitorear la salud de los activos y justificar presupuestos con datos reales.
-* Creemos que los Operadores de Maquinaria necesitan un sistema visual simple (código de colores) que les alerte inmediatamente sobre anomalías sin interrumpir su trabajo.
-* Creemos que el personal técnico busca eliminar la carga administrativa de llenar bitácoras físicas en papel tras cada turno.
-* Creemos que los decisores prefieren un software agnóstico que pueda conectarse con diversos tipos de sensores IoT del mercado (MQTT/Modbus).
+* Creemos que los Técnicos Operadores de Maquinaria necesitan un sistema visual simple (código de colores) que les alerte inmediatamente sobre anomalías sin interrumpir su trabajo.
+* Creemos que los Técnicos Operadores buscan eliminar la carga administrativa de llenar bitácoras físicas en papel tras cada turno.
+* Creemos que los Jefes de Mantenimiento prefieren un software agnóstico que pueda conectarse con diversos tipos de sensores IoT del mercado (MQTT/Modbus).
 
 **User Outcome and Benefit Assumptions**
 * Los Jefes de Mantenimiento logran planificar intervenciones con días de anticipación sin afectar la cuota de producción de la planta.
 * Los Operadores de Maquinaria trabajan en un entorno laboral más seguro al prevenir fallas catastróficas o sobrecalentamientos en los activos.
-* El equipo técnico reduce en un 40% el tiempo empleado en diagnósticos manuales o inspecciones visuales de rutina.
-* La gerencia de operaciones obtiene visibilidad clara sobre el ROI del mantenimiento y la vida útil restante de sus inversiones en maquinaria.
+* Los Técnicos Operadores reducen en un 40% el tiempo empleado en diagnósticos manuales o inspecciones visuales de rutina.
+* Los Jefes de Mantenimiento obtienen visibilidad clara sobre el ROI del mantenimiento y la vida útil restante de sus inversiones en maquinaria.
 
 **Feature Assumptions**
 * **Feature 1:** Panel de monitoreo de telemetría IoT en tiempo real (temperatura, vibración y presión) con tableros visuales dinámicos.
@@ -389,31 +389,31 @@ El producto debe ser intuitivo, claro y con un alto nivel de precisión técnica
 
 * **Hypothesis 1 (para Feature 1):**
   Creemos que lograremos un incremento del 20% en la Eficiencia General de los Equipos (OEE)
-  Si los Operadores de Maquinaria y Jefes de Mantenimiento
+  Si los Técnicos Operadores de Maquinaria y Jefes de Mantenimiento
   Consiguen una reducción del 40% en el tiempo dedicado a inspecciones rutinarias manuales
   Con un panel de monitoreo de telemetría IoT en tiempo real que muestre temperatura, vibración y presión.
 
 * **Hypothesis 2 (para Feature 2):**
   Creemos que lograremos una reducción del 30% en el tiempo de inactividad no planificado de la planta
-  Si los Jefes de Mantenimiento y Gerentes de Operaciones
+  Si los Jefes de Mantenimiento y Técnico Operadores de Maquinaria
   Consiguen la capacidad de programar reparaciones con días de anticipación sin interrumpir las cuotas de producción
   Con un algoritmo predictivo para el cálculo de Vida Útil Restante (RUL) y detección temprana de anomalías.
 
 * **Hypothesis 3 (para Feature 3):**
   Creemos que lograremos una disminución del 35% en el tiempo de resolución de anomalías críticas en los equipos
-  Si los Operadores de Maquinaria
+  Si los Técnicos Operadores de Maquinaria
   Consiguen visibilidad inmediata de la salud del equipo y trabajan en un entorno de planta más seguro
   Con un sistema de alertas multicanal automatizado activado por sobrepaso de umbrales críticos en los sensores.
 
 * **Hypothesis 4 (para Feature 4):**
   Creemos que lograremos reducir el tiempo promedio entre la detección de anomalías y la emisión de Órdenes de Trabajo a menos de 5 minutos
-  Si los Jefes de Mantenimiento y el Personal Técnico
+  Si los Jefes de Mantenimiento y los Técnicos Operadores de Maquinaria
   Consiguen un flujo de trabajo automatizado y sin papel para asignar y rastrear tareas de mantenimiento
   Con un módulo automatizado de generación y asignación de Órdenes de Trabajo vinculado directamente a las alertas de los sensores.
 
 * **Hypothesis 5 (para Feature 5):**
   Creemos que lograremos una tasa de retención mensual de clientes SaaS superior al 95%
-  Si los Gerentes de Operaciones
+  Si los Jefes de Mantenimiento
   Consiguen visibilidad histórica completa sobre las tendencias de degradación de las máquinas y una clara justificación del ROI
   Con un catálogo digital centralizado de activos y un tablero consolidado de historial de fallas.
 
@@ -427,7 +427,7 @@ El producto debe ser intuitivo, claro y con un alto nivel de precisión técnica
 
 ## 1.3. Segmentos objetivo
 
-**Segmento Objetivo 1:** Operadores de Maquinaria y Planta (Usuarios operativos)  
+**Segmento Objetivo 1:** Técnicos Operadores de Maquinaria (Usuarios operativos)  
 Este segmento está conformado por el personal técnico a pie de planta directamente responsable de la operación diaria de la maquinaria, líneas de producción y equipos electromecánicos.
 
 * **Características demográficas:**
@@ -449,7 +449,7 @@ Este segmento está conformado por el personal técnico a pie de planta directam
 
 ---
 
-**Segmento Objetivo 2:** Área de Mantenimiento y Gestión Operativa (Decisores y planificadores)  
+**Segmento Objetivo 2:** Jefe de Mantenimiento (Decisores y planificadores)  
 Este segmento está compuesto por los responsables de la planificación estratégica, ejecución de mantenimientos y toma de decisiones sobre la continuidad operativa y presupuestal de los activos de la planta.
 
 * **Características demográficas:**
@@ -522,7 +522,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 ---
 
-**Segmento #1: Operador de Maquinaria y Planta (Usuario Operativo)**
+**Segmento #1: Técnico Operador de Maquinaria  (Usuario Operativo)**
 
 **Preguntas principales:**
 1. ¿Cómo te va actualmente con la forma en que identificas y reportas las fallas mecánicas en los equipos de tu turno?
@@ -537,7 +537,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 ---
 
-**Segmento #2: Área de Mantenimiento y Gestión Operativa (Jefe de Mantenimiento / Ingeniero de Planta)**
+**Segmento #2: Jefe de Mantenimiento (Ingeniero de Planta)**
 
 **Preguntas principales:**
 1. ¿Cómo está actualmente la planta con la forma en que gestionan las fallas e intervenciones de la maquinaria crítica?
@@ -554,11 +554,11 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 ### 2.2.2. Registro de entrevistas
 
-#### Segmento 1: Operadores de Maquinaria y Planta
+#### Segmento 1: Técnicos Operadores de Maquinaria
 
 **Entrevista 1**
 * **Entrevistado:** Juan Carlos Quispe (28 años)
-* **Cargo / Ocupación:** Operador de Máquina Extrusora
+* **Cargo / Ocupación:** Técnico Operador de Máquina Extrusora
 * **Ubicación / Empresa:** San Juan de Lurigancho, Lima / Planta de plásticos industriales
 * **Inicio entrevista:** 00:00:00
 * **Duración:** 00:03:45
@@ -569,7 +569,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 **Entrevista 2**
 * **Entrevistado:** Angie Santos Torres (35 años)
-* **Cargo / Ocupación:** Operador de Línea de Envasado
+* **Cargo / Ocupación:** Técnico Operador de Línea de Envasado
 * **Ubicación / Empresa:** Ate, Lima / Planta procesadora de alimentos
 * **Duración:** 00:04:10
 * **Resumen de respuestas:** Angie Santos menciona que cuando detecta una vibración anómala debe esperar a que el supervisor pase por su zona o comunicarse mediante radiofrecuencia, lo que retrasa la atención. En una oportunidad previa, la rotura no detectada de un rodamiento detuvo la producción durante seis horas, lo que le provocó gran ansiedad por no cumplir su cuota del día. Es un usuario digital habitual de marcas como Xiaomi, utiliza activamente el navegador Google Chrome para búsquedas y la aplicación Facebook para informarse. Valora sobre todo la seguridad laboral y la rapidez de respuesta del equipo técnico. Afirma que utilizaría una plataforma móvil o pantalla táctil si cuenta con semáforos de alerta en tiempo real, destacando la necesidad de un botón de reporte directo de averías y la visualización directa del estado operativo del equipo.
@@ -578,7 +578,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 **Entrevista 3**
 * **Entrevistado:** Melisa Ramos Gómez (42 años)
-* **Cargo / Ocupación:** Operador de Compresores y Maquinaria Auxiliar
+* **Cargo / Ocupación:** Técnica Operadora de Compresores y Maquinaria Auxiliar
 * **Ubicación / Empresa:** Callao / Planta metalmecánica
 * **Duración:** 00:03:15
 * **Resumen de respuestas:** Melisa Ramos explica que el sistema actual de reporte en hojas de cálculo compartidas resulta tedioso e interrumpe su ritmo de trabajo. Cuando nota fallas térmicas en los compresores, suele reducir manualmente la velocidad del equipo por temor a una explosión o accidente. Es nativo digital, utiliza un smartphone Motorola con Android, navega mediante Mozilla Firefox y utiliza Telegram para comunicaciones laborales grupales. Le motiva la implementación de tecnología moderna en planta. Manifiesta que un sistema visual basado en códigos de color le facilitaría significativamente su labor cotidiana, pidiendo que incluya alertas sonoras para entornos ruidosos y un historial sencillo de las últimas fallas de la máquina.
@@ -587,7 +587,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 
 
-#### Segmento 2: Área de Mantenimiento y Gestión Operativa
+#### Segmento 2: Jefe de Mantenimiento
 
 **Entrevista 1**
 * **Entrevistado:** Cristian Parado(32 años)
@@ -624,7 +624,7 @@ Video:<br>
 
 ### 2.2.3. Análisis de entrevistas
 
-### Análisis del Segmento 1: Operadores de Maquinaria y Planta (Usuarios operativos)
+### Análisis del Segmento 1: Técnicos Operadores de Maquinaria (Usuarios operativos)
 
 Este segmento ($N = 3$) está compuesto por Juan Carlos Quispe (28 años), Miguel Ángel Torres (35 años) y Luis Alberto Gómez (24 años). A continuación, se presenta la consolidación estadística de sus características demográficas, tecnológicas, puntos de dolor y requerimientos de solución.
 
@@ -653,7 +653,7 @@ Este segmento ($N = 3$) está compuesto por Juan Carlos Quispe (28 años), Migue
 
 ---
 
-### Análisis del Segmento 2: Área de Mantenimiento y Gestión Operativa (Decisores)
+### Análisis del Segmento 2: Jefes de Mantenimiento (Decisores)
 
 Este segmento ($N = 3$) está compuesto por Cristian Parado (32 años, Ingeniero de Planta), Jorge Salazar (50 años, Supervisor de Mantenimiento) y Carlos Mendoza (41 años, Jefe de Mantenimiento). A continuación, se detalla el análisis estadístico de sus respuestas.
 
@@ -696,16 +696,14 @@ y afinidad tecnológica; constituyeron la fuente principal para la
 construcción de cada arquetipo.
 
 Se elaboró una ficha por cada segmento objetivo:
-- **Renzo Huamán** representa al Área de Mantenimiento y Gestión
-  Operativa (Jefe de Mantenimiento).
-- **Jhonatan Torres** representa a los Operadores de Maquinaria y
-  Planta (Técnico de Mantenimiento).
+- **Renzo Huamán** representa al Jefe de Mantenimiento (decisores).
+- **Jhonatan Torres** representa a los Técnicos Operadores de Maquinaria (operadores).
 
 ![User Persona - JefeDeMantenimiento](assets/cap2/userPersonas/renzoHuaman.png)
 ![User Persona - Tecnico](assets/cap2/userPersonas/jhonatanTorres.png)
 ### 2.3.2. User Task Matrix
 
-| Tarea | Renzo Huamán (Jefe de Mantenimiento) — Frecuencia / Importancia | Jhonatan Torres (Técnico de Mantenimiento) — Frecuencia / Importancia |
+| Tarea | Renzo Huamán (Jefe de Mantenimiento) — Frecuencia / Importancia | Jhonatan Torres (Técnico Operador de Mantenimiento) — Frecuencia / Importancia |
 |---|---|---|
 | Inspeccionar el estado físico de la maquinaria | Semanal / Media | Diaria / Alta |
 | Detectar señales de anomalía durante la operación (ruido, vibración, calor) | No aplica | Diaria / Alta |
