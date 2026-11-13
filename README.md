@@ -58,27 +58,40 @@
 ---
 
 | Versión | Fecha | Autor(es) | Descripción de modificación |
-|:-------:|:-----:|:---------|:---------------------------|
-| **V1.0** | 2026-09-18 | Todos | Entrega del avance 1 |
-| **V2.0** | 2026-10-09 | Todos | Entrega del Trabajo Parcial |
-
+|:-------:|:-----:|:----------|:---------------------------|
+| **V1.0** | 2026-09-18 | Todos     | Entrega del avance 1 |
+| **V2.0** | 2026-10-09 | Todos     | Entrega del Trabajo Parcial |
+| **V2.1** | 2026-10-28 | Todos     | Se agregó Sprint Planning 2, Aspect Leaders and Collaborators y Sprint Backlog 2. Se corrigieron los nombres de actores en las User Stories según retroalimentación del docente. |
+| **V2.2** | 2026-11-12 | Todos | Entrega del avance 2: evidencias del Sprint 2, corrección del diagrama C4 y Landing Page, video About-the-Product, y actualización del Student Outcome. |
 <br>
 
-# Project Report Collaboration Insights  
+# Project Report Collaboration Insights
 
 ## Evidencia de colaboración en GitHub
 
-Contributors
+**AV1 / TB1**
 
-<p align="center">
-    <img src="assets/cap1/Contributors.png" alt="Contributors" width="700px"/>
-</p>
+Para la elaboración del informe, el equipo trabajó de forma colaborativa en el repositorio `1ACC-0238-NRC-4948-PredictiveTech-Report`, aplicando GitFlow y Conventional Commits para mantener un historial ordenado de los aportes de cada integrante.
 
+**Contributors**
 
-Network graph
-<p align="center">
-    <img src="assets/cap1/Network graph.png" alt="Network graph" width="700px"/>
-</p>
+![Contributors](assets/cap1/Contributors.png)
+
+**Network graph**
+
+![Network graph](assets/cap1/Network%20graph.png)
+
+**AV2**
+
+Durante el Sprint 2, la elaboración del informe continuó sobre el mismo repositorio, incorporando el Sprint Planning 2, el Sprint Backlog 2, las evidencias de implementación del Sprint 2, la corrección del diagrama C4, la actualización del Landing Page y la sección Video About-the-Product.
+
+**Contributors AV2**
+
+![Contributors AV2](assets/cap1/contributors_av2.png)
+
+**Network graph AV2**
+
+![Network graph AV2](assets/cap1/network_graph_av2.png)
 
 # Contenido
 
@@ -191,29 +204,38 @@ Network graph
     - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide--conventions)
     - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
   - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
-    - [4.2.1. Sprint n](#421-sprint-n)
-      - [4.2.1.1. Sprint Planning n](#4211-sprint-planning-n)
+    - [4.2.1. Sprint 1](#421-sprint-1)
+      - [4.2.1.1. Sprint Planning 1](#4211-sprint-planning-1)
       - [4.2.1.2. Aspect Leaders and Collaborators](#4212-aspect-leaders-and-collaborators)
-      - [4.2.1.3. Sprint Backlog n](#4213-sprint-backlog-n)
+      - [4.2.1.3. Sprint Backlog 1](#4213-sprint-backlog-1)
       - [4.2.1.4. Development Evidence for Sprint Review](#4214-development-evidence-for-sprint-review)
       - [4.2.1.5. Testing Suite Evidence for Sprint Review](#4215-testing-suite-evidence-for-sprint-review)
       - [4.2.1.6. Execution Evidence for Sprint Review](#4216-execution-evidence-for-sprint-review)
       - [4.2.1.7. Services Documentation Evidence for Sprint Review](#4217-services-documentation-evidence-for-sprint-review)
       - [4.2.1.8. Software Deployment Evidence for Sprint Review](#4218-software-deployment-evidence-for-sprint-review)
       - [4.2.1.9. Team Collaboration Insights during Sprint](#4219-team-collaboration-insights-during-sprint)
+    - [4.2.2. Sprint 2](#422-sprint-2)
+      - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
+      - [4.2.2.2. Aspect Leaders and Collaborators](#4222-aspect-leaders-and-collaborators)
+      - [4.2.2.3. Sprint Backlog 2](#4223-sprint-backlog-2)
+      - [4.2.2.4. Development Evidence for Sprint Review](#4224-development-evidence-for-sprint-review)
+      - [4.2.2.5. Testing Suite Evidence for Sprint Review](#4225-testing-suite-evidence-for-sprint-review)
+      - [4.2.2.6. Execution Evidence for Sprint Review](#4226-execution-evidence-for-sprint-review)
+      - [4.2.2.7. Services Documentation Evidence for Sprint Review](#4227-services-documentation-evidence-for-sprint-review)
+      - [4.2.2.8. Software Deployment Evidence for Sprint Review](#4228-software-deployment-evidence-for-sprint-review)
+      - [4.2.2.9. Team Collaboration Insights during Sprint](#4229-team-collaboration-insights-during-sprint)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
     - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Conclusiones](#conclusiones)
 - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-- [Video App Validation](#video-app-validation)
 - [Video About the product](#video-about-the-product)
+- [Video App Validation](#video-app-validation)
 - [Video About the team](#video-about-the-team)
 - [Glosario](#glosario)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
-
 ---
 
 # Student Outcome
@@ -225,10 +247,10 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
-| Criterio Específico | Acciones realizadas | Conclusiones |
-|---|---|---|
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Aiquipa Poma, Sebastian Andres**<br>**AV1:** Elaboró los artefactos de Needfinding (User Personas, User Task Matrix, User Journey Maps y Empathy Maps) en UXPressia, modeló el dominio mediante Big Picture EventStorming, y desarrolló la sección de Requirements Specification redactando User Stories, Technical Stories y Spike Stories con criterios de aceptación, Impact Mapping con Business Goals y Product Backlog.<br>**TB1:** Diseñó e implementó la arquitectura backend y la lógica del Sprint 1, configurando el entorno de desarrollo, el repositorio del código fuente, las convenciones de código y la automatización del software deployment. Adicionalmente, elaboró la suite de pruebas (Testing Suite Evidence) y la documentación de servicios (Services Documentation Evidence).<br><br>**Choy Robles, Vanessa May Lang**<br>**AV1:** Elaboró el Capítulo I estructurando el perfil de la startup, la problemática industrial y el proceso Lean UX (Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas). Además, desarrolló el Capítulo II realizando el Análisis Competitivo y diseñó, ejecutó y analizó las guías de entrevistas semiestructuradas para los dos segmentos objetivo.<br>**TB1:** Lideró el desarrollo frontend de las aplicaciones móviles y la documentación general del informe, diseñando los Wireframes, Wireflow Diagrams, Mock-ups, User Flow Diagrams y Prototipos interactivos, así como redactando las secciones de Software Configuration Management y las evidencias del Sprint Review.<br><br>**Seminario Castillo, Diego Vicente**<br>**AV1:** Desarrolló las secciones de Needfinding para comprender las necesidades del usuario, modeló el dominio mediante Big Picture EventStorming y Ubiquitous Language, y estructuró la especificación de requerimientos redactando las User Stories, Impact Mapping y el Product Backlog.<br>**TB1:** Se encargó del diseño e implementación integral de la Landing Page del producto (Capítulo III), definiendo los Style Guidelines generales, la Arquitectura de Información (sistemas de organización, etiquetado, SEO/Meta Tags, búsqueda y navegación), así como la elaboración de los Wireframes y Mock-ups para la web comercial.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**AV1:** Elaboró de manera integral el Capítulo I, definiendo la estructura del proyecto mediante el perfil de la startup, la problemática industrial y la aplicación del proceso Lean UX. Además, desarrolló la sección de Segmentos Objetivo y la caracterización inicial de la solución.<br>**TB1:** Desarrolló la interfaz de usuario frontend móvil y la documentación técnica correspondiente, apoyando en la estructuración de las Style Guidelines, el diseño UI/UX de las aplicaciones móviles y la conducción del proceso de Validation Interviews (diseño, registro de entrevistas y evaluaciones heurísticas de usabilidad). | **AV1**<br>El equipo demostró una sólida capacidad para actualizar e incorporar conceptos avanzados de desarrollo de software. Se logró transformar requerimientos complejos en un diseño arquitectónico modular, escalable y guiado por el dominio (DDD), garantizando que la solución técnica responda directamente a las necesidades operativas de la planta.<br><br>**TB1**<br>El equipo integró conceptos modernos de diseño UI/UX, arquitectura de información, desarrollo backend y despliegue continuo en la nube. Esta actualización permitió construir un producto funcional para el Sprint 1 (móvil, web y backend) totalmente alineado con las heurísticas de usabilidad y los estándares de software actuales. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Aiquipa Poma, Sebastian Andres**<br>**AV1:** Durante el desarrollo de Requirements Specification identificó la necesidad de investigar de forma autónoma conceptos como la estimación de Vida Útil Restante (RUL), la metodología de Big Picture EventStorming y las convenciones de Spike Stories.<br>**TB1:** Investigó de forma autónoma metodologías de integración continua (CI/CD), frameworks para pruebas unitarias/integración en el backend y estándares OpenAPI/Swagger para la documentación de servicios web, garantizando un despliegue limpio y funcional para el Sprint 1.<br><br>**Choy Robles, Vanessa May Lang**<br>**AV1:** Investigó de forma autónoma metodologías de diseño de producto (Lean UX Canvas), análisis de la competencia en el sector industrial y técnicas de formulación de preguntas cualitativas.<br>**TB1:** Investigó metodologías avanzadas de diseño de interfaces e interacción móvil para entornos industriales, aprendiendo el uso de herramientas de prototipado interactivo para garantizar que los operadores a pie de planta naveguen con la menor carga cognitiva posible.<br><br>**Seminario Castillo, Diego Vicente**<br>**AV1:** Investigó de manera independiente metodologías de mapeo de experiencia de usuario (UX mapping) y técnicas de especificación de requerimientos ágiles.<br>**TB1:** Investigó mejores prácticas en arquitectura de información web, optimización SEO y diseño responsive para Landing Pages de productos SaaS B2B, logrando comunicar la propuesta de valor del producto de forma clara a los decisores de planta.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**AV1:** Investigó de forma autónoma metodologías modernas de diseño de producto (Lean UX Process) e indicadores de la Industria 4.0.<br>**TB1:** Estudió técnicas de evaluación heurística de usabilidad de Jakob Nielsen y metodologías de entrevistas de validación con usuarios finales, adaptando el feedback recolectado en mejoras directas sobre la interfaz gráfica del producto. | **AV1**<br>La constante investigación e integración de metodologías modernas de arquitectura de software y tecnologías de la Industria 4.0 demostró la importancia del aprendizaje continuo, asegurando una arquitectura robusta y mantenible.<br><br>**TB1**<br>La autoformación continua en desarrollo web/móvil, pruebas automatizadas y evaluación heurística de interfaces permitió resolver barreras técnicas durante la implementación del Sprint 1, asegurando un producto digital de alta calidad y fácil adopción para el usuario. |
+| Criterio Específico | Acciones realizadas | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|---|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Aiquipa Poma, Sebastian Andres**<br>**AV1:** Elaboró los artefactos de Needfinding (User Personas, User Task Matrix, User Journey Maps y Empathy Maps) en UXPressia, modeló el dominio mediante Big Picture EventStorming, y desarrolló la sección de Requirements Specification redactando User Stories, Technical Stories y Spike Stories con criterios de aceptación, Impact Mapping con Business Goals y Product Backlog.<br>**TB1:** Diseñó e implementó la arquitectura backend y la lógica del Sprint 1, configurando el entorno de desarrollo, el repositorio del código fuente, las convenciones de código y la automatización del software deployment. Adicionalmente, elaboró la suite de pruebas (Testing Suite Evidence) y la documentación de servicios (Services Documentation Evidence).<br>**AV2:** Implementó la integración completa de notificaciones push (Firebase Cloud Messaging) en el backend y la app Android, el módulo de carga de evidencia fotográfica en órdenes de trabajo, la sincronización offline de acciones del técnico, la gestión de perfil de usuario, y el CRUD completo de gestión de activos (creación, edición y desactivación). Adicionalmente, lideró el desarrollo base de la aplicación cross-platform en Flutter (arquitectura Clean Architecture + DDD, modelos de dominio, pantallas de activos, alertas y órdenes de trabajo) y aplicó un rediseño del sistema visual de componentes de la app Android.<br><br>**Choy Robles, Vanessa May Lang**<br>**AV1:** Elaboró el Capítulo I estructurando el perfil de la startup, la problemática industrial y el proceso Lean UX (Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas). Además, desarrolló el Capítulo II realizando el Análisis Competitivo y diseñó, ejecutó y analizó las guías de entrevistas semiestructuradas para los dos segmentos objetivo.<br>**TB1:** Lideró el desarrollo frontend de las aplicaciones móviles y la documentación general del informe, diseñando los Wireframes, Wireflow Diagrams, Mock-ups, User Flow Diagrams y Prototipos interactivos, así como redactando las secciones de Software Configuration Management y las evidencias del Sprint Review.<br>**AV2:** Desarrolló la pantalla de detalle de activo en la aplicación Flutter, consumiendo los endpoints de detalle de activo y panel de sensores del backend.<br><br>**Seminario Castillo, Diego Vicente**<br>**AV1:** Desarrolló las secciones de Needfinding para comprender las necesidades del usuario, modeló el dominio mediante Big Picture EventStorming y Ubiquitous Language, y estructuró la especificación de requerimientos redactando las User Stories, Impact Mapping y el Product Backlog.<br>**TB1:** Se encargó del diseño e implementación integral de la Landing Page del producto (Capítulo III), definiendo los Style Guidelines generales, la Arquitectura de Información (sistemas de organización, etiquetado, SEO/Meta Tags, búsqueda y navegación), así como la elaboración de los Wireframes y Mock-ups para la web comercial.<br>**AV2:** Realizó la edición y mejora del Landing Page, incorporando las correcciones derivadas de la retroalimentación del docente.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**AV1:** Elaboró de manera integral el Capítulo I, definiendo la estructura del proyecto mediante el perfil de la startup, la problemática industrial y la aplicación del proceso Lean UX. Además, desarrolló la sección de Segmentos Objetivo y la caracterización inicial de la solución.<br>**TB1:** Desarrolló la interfaz de usuario frontend móvil y la documentación técnica correspondiente, apoyando en la estructuración de las Style Guidelines, el diseño UI/UX de las aplicaciones móviles y la conducción del proceso de Validation Interviews (diseño, registro de entrevistas y evaluaciones heurísticas de usabilidad).<br>**AV2:** Implementó la versión base de la integración de notificaciones push (FCM) en la app Android, registrando el servicio de mensajería y configurando el canal de notificaciones. Adicionalmente, corrigió el diagrama C4 de contexto, del cual había sido responsable de su versión inicial, ajustando la relación entre los usuarios de la aplicación móvil y el sistema para reflejar que estos no interactúan a través del Landing Page. | **AV1**<br>El equipo demostró una sólida capacidad para actualizar e incorporar conceptos avanzados de desarrollo de software. Se logró transformar requerimientos complejos en un diseño arquitectónico modular, escalable y guiado por el dominio (DDD), garantizando que la solución técnica responda directamente a las necesidades operativas de la planta.<br><br>**TB1**<br>El equipo integró conceptos modernos de diseño UI/UX, arquitectura de información, desarrollo backend y despliegue continuo en la nube. Esta actualización permitió construir un producto funcional para el Sprint 1 (móvil, web y backend) totalmente alineado con las heurísticas de usabilidad y los estándares de software actuales.<br><br>**AV2**<br>El equipo profundizó en tecnologías de comunicación push (Firebase Cloud Messaging), persistencia local para sincronización offline, patrones de Clean Architecture aplicados a un segundo framework (Flutter), y gestión del ciclo de vida completo de entidades de dominio (CRUD con reglas de negocio), ampliando su dominio técnico más allá de lo cubierto en el curso. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Aiquipa Poma, Sebastian Andres**<br>**AV1:** Durante el desarrollo de Requirements Specification identificó la necesidad de investigar de forma autónoma conceptos como la estimación de Vida Útil Restante (RUL), la metodología de Big Picture EventStorming y las convenciones de Spike Stories.<br>**TB1:** Investigó de forma autónoma metodologías de integración continua (CI/CD), frameworks para pruebas unitarias/integración en el backend y estándares OpenAPI/Swagger para la documentación de servicios web, garantizando un despliegue limpio y funcional para el Sprint 1.<br>**AV2:** Investigó de forma autónoma el protocolo MQTT y su integración con Mosquitto y Eclipse Paho (Spike SP-01), así como técnicas estadísticas de detección de anomalías mediante z-score con Apache Commons Math (Spike SP-02). Asimismo, diagnosticó y corrigió de manera autodidacta fallos de configuración en Firebase Cloud Messaging —declaración incorrecta de intent-filter y ausencia de credenciales de servicio— que no habían sido cubiertos en clase.<br><br>**Choy Robles, Vanessa May Lang**<br>**AV1:** Investigó de forma autónoma metodologías de diseño de producto (Lean UX Canvas), análisis de la competencia en el sector industrial y técnicas de formulación de preguntas cualitativas.<br>**TB1:** Investigó metodologías avanzadas de diseño de interfaces e interacción móvil para entornos industriales, aprendiendo el uso de herramientas de prototipado interactivo para garantizar que los operadores a pie de planta naveguen con la menor carga cognitiva posible.<br>**AV2:** Investigó patrones de consumo de APIs REST con estructuras de datos anidadas en Flutter, aplicados a la representación del panel de sensores de un activo.<br><br>**Seminario Castillo, Diego Vicente**<br>**AV1:** Investigó de manera independiente metodologías de mapeo de experiencia de usuario (UX mapping) y técnicas de especificación de requerimientos ágiles.<br>**TB1:** Investigó mejores prácticas en arquitectura de información web, optimización SEO y diseño responsive para Landing Pages de productos SaaS B2B, logrando comunicar la propuesta de valor del producto de forma clara a los decisores de planta.<br>**AV2:** Investigó buenas prácticas de diseño responsivo y optimización de contenido visual para la actualización del Landing Page del producto.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**AV1:** Investigó de forma autónoma metodologías modernas de diseño de producto (Lean UX Process) e indicadores de la Industria 4.0.<br>**TB1:** Estudió técnicas de evaluación heurística de usabilidad de Jakob Nielsen y metodologías de entrevistas de validación con usuarios finales, adaptando el feedback recolectado en mejoras directas sobre la interfaz gráfica del producto.<br>**AV2:** Investigó la configuración de Firebase Cloud Messaging en Android y aplicó buenas prácticas de modelado de Software Architecture Context Level Diagrams para corregir las relaciones entre actores del sistema. | **AV1**<br>La constante investigación e integración de metodologías modernas de arquitectura de software y tecnologías de la Industria 4.0 demostró la importancia del aprendizaje continuo, asegurando una arquitectura robusta y mantenible.<br><br>**TB1**<br>La autoformación continua en desarrollo web/móvil, pruebas automatizadas y evaluación heurística de interfaces permitió resolver barreras técnicas durante la implementación del Sprint 1, asegurando un producto digital de alta calidad y fácil adopción para el usuario.<br><br>**AV2**<br>La resolución de problemas técnicos no cubiertos en el syllabus, como la depuración de la entrega de notificaciones push y la integración de un broker MQTT, reforzó en el equipo la importancia del aprendizaje autodidacta y la investigación técnica dirigida para resolver bloqueos reales durante el desarrollo de un proyecto de software.                                                                                                                                                                                                            |
 
 
 # Objetivos SMART
@@ -321,7 +343,7 @@ Hemos observado que no existe una herramienta digital SaaS especializada que con
 
 **¿QUIÉN ES EL USUARIO?**
 
-Nuestros usuarios pertenecen a dos grupos clave dentro de la planta: el Área de Mantenimiento y Gestión Operativa (Jefes e Ingenieros de Mantenimiento que planifican y toman decisiones sobre los activos) y los Operadores de Maquinaria y Planta (técnicos a pie de planta que interactúan directamente con los equipos y ejecutan las labores operativas).
+Nuestros usuarios pertenecen a dos grupos clave dentro de la planta: los Jefes de Mantenimiento que planifican y toman decisiones sobre los activos, y los Técnicos Operadores de maquinarias que trabajan a pie de planta, interactúan directamente con los equipos y ejecutan las labores operativas).
 
 **¿DÓNDE ENCAJA NUESTRO PRODUCTO EN SU VIDA?**
 
@@ -366,15 +388,15 @@ El producto debe ser intuitivo, claro y con un alto nivel de precisión técnica
 
 **User Assumptions**
 * Creemos que los Jefes de Mantenimiento necesitan un tablero centralizado para monitorear la salud de los activos y justificar presupuestos con datos reales.
-* Creemos que los Operadores de Maquinaria necesitan un sistema visual simple (código de colores) que les alerte inmediatamente sobre anomalías sin interrumpir su trabajo.
-* Creemos que el personal técnico busca eliminar la carga administrativa de llenar bitácoras físicas en papel tras cada turno.
-* Creemos que los decisores prefieren un software agnóstico que pueda conectarse con diversos tipos de sensores IoT del mercado (MQTT/Modbus).
+* Creemos que los Técnicos Operadores de Maquinaria necesitan un sistema visual simple (código de colores) que les alerte inmediatamente sobre anomalías sin interrumpir su trabajo.
+* Creemos que los Técnicos Operadores buscan eliminar la carga administrativa de llenar bitácoras físicas en papel tras cada turno.
+* Creemos que los Jefes de Mantenimiento prefieren un software agnóstico que pueda conectarse con diversos tipos de sensores IoT del mercado (MQTT/Modbus).
 
 **User Outcome and Benefit Assumptions**
 * Los Jefes de Mantenimiento logran planificar intervenciones con días de anticipación sin afectar la cuota de producción de la planta.
 * Los Operadores de Maquinaria trabajan en un entorno laboral más seguro al prevenir fallas catastróficas o sobrecalentamientos en los activos.
-* El equipo técnico reduce en un 40% el tiempo empleado en diagnósticos manuales o inspecciones visuales de rutina.
-* La gerencia de operaciones obtiene visibilidad clara sobre el ROI del mantenimiento y la vida útil restante de sus inversiones en maquinaria.
+* Los Técnicos Operadores reducen en un 40% el tiempo empleado en diagnósticos manuales o inspecciones visuales de rutina.
+* Los Jefes de Mantenimiento obtienen visibilidad clara sobre el ROI del mantenimiento y la vida útil restante de sus inversiones en maquinaria.
 
 **Feature Assumptions**
 * **Feature 1:** Panel de monitoreo de telemetría IoT en tiempo real (temperatura, vibración y presión) con tableros visuales dinámicos.
@@ -389,31 +411,31 @@ El producto debe ser intuitivo, claro y con un alto nivel de precisión técnica
 
 * **Hypothesis 1 (para Feature 1):**
   Creemos que lograremos un incremento del 20% en la Eficiencia General de los Equipos (OEE)
-  Si los Operadores de Maquinaria y Jefes de Mantenimiento
+  Si los Técnicos Operadores de Maquinaria y Jefes de Mantenimiento
   Consiguen una reducción del 40% en el tiempo dedicado a inspecciones rutinarias manuales
   Con un panel de monitoreo de telemetría IoT en tiempo real que muestre temperatura, vibración y presión.
 
 * **Hypothesis 2 (para Feature 2):**
   Creemos que lograremos una reducción del 30% en el tiempo de inactividad no planificado de la planta
-  Si los Jefes de Mantenimiento y Gerentes de Operaciones
+  Si los Jefes de Mantenimiento y Técnico Operadores de Maquinaria
   Consiguen la capacidad de programar reparaciones con días de anticipación sin interrumpir las cuotas de producción
   Con un algoritmo predictivo para el cálculo de Vida Útil Restante (RUL) y detección temprana de anomalías.
 
 * **Hypothesis 3 (para Feature 3):**
   Creemos que lograremos una disminución del 35% en el tiempo de resolución de anomalías críticas en los equipos
-  Si los Operadores de Maquinaria
+  Si los Técnicos Operadores de Maquinaria
   Consiguen visibilidad inmediata de la salud del equipo y trabajan en un entorno de planta más seguro
   Con un sistema de alertas multicanal automatizado activado por sobrepaso de umbrales críticos en los sensores.
 
 * **Hypothesis 4 (para Feature 4):**
   Creemos que lograremos reducir el tiempo promedio entre la detección de anomalías y la emisión de Órdenes de Trabajo a menos de 5 minutos
-  Si los Jefes de Mantenimiento y el Personal Técnico
+  Si los Jefes de Mantenimiento y los Técnicos Operadores de Maquinaria
   Consiguen un flujo de trabajo automatizado y sin papel para asignar y rastrear tareas de mantenimiento
   Con un módulo automatizado de generación y asignación de Órdenes de Trabajo vinculado directamente a las alertas de los sensores.
 
 * **Hypothesis 5 (para Feature 5):**
   Creemos que lograremos una tasa de retención mensual de clientes SaaS superior al 95%
-  Si los Gerentes de Operaciones
+  Si los Jefes de Mantenimiento
   Consiguen visibilidad histórica completa sobre las tendencias de degradación de las máquinas y una clara justificación del ROI
   Con un catálogo digital centralizado de activos y un tablero consolidado de historial de fallas.
 
@@ -427,7 +449,7 @@ El producto debe ser intuitivo, claro y con un alto nivel de precisión técnica
 
 ## 1.3. Segmentos objetivo
 
-**Segmento Objetivo 1:** Operadores de Maquinaria y Planta (Usuarios operativos)  
+**Segmento Objetivo 1:** Técnicos Operadores de Maquinaria (Usuarios operativos)  
 Este segmento está conformado por el personal técnico a pie de planta directamente responsable de la operación diaria de la maquinaria, líneas de producción y equipos electromecánicos.
 
 * **Características demográficas:**
@@ -449,7 +471,7 @@ Este segmento está conformado por el personal técnico a pie de planta directam
 
 ---
 
-**Segmento Objetivo 2:** Área de Mantenimiento y Gestión Operativa (Decisores y planificadores)  
+**Segmento Objetivo 2:** Jefe de Mantenimiento (Decisores y planificadores)  
 Este segmento está compuesto por los responsables de la planificación estratégica, ejecución de mantenimientos y toma de decisiones sobre la continuidad operativa y presupuestal de los activos de la planta.
 
 * **Características demográficas:**
@@ -522,7 +544,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 ---
 
-**Segmento #1: Operador de Maquinaria y Planta (Usuario Operativo)**
+**Segmento #1: Técnico Operador de Maquinaria  (Usuario Operativo)**
 
 **Preguntas principales:**
 1. ¿Cómo te va actualmente con la forma en que identificas y reportas las fallas mecánicas en los equipos de tu turno?
@@ -537,7 +559,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 ---
 
-**Segmento #2: Área de Mantenimiento y Gestión Operativa (Jefe de Mantenimiento / Ingeniero de Planta)**
+**Segmento #2: Jefe de Mantenimiento (Ingeniero de Planta)**
 
 **Preguntas principales:**
 1. ¿Cómo está actualmente la planta con la forma en que gestionan las fallas e intervenciones de la maquinaria crítica?
@@ -554,11 +576,11 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 ### 2.2.2. Registro de entrevistas
 
-#### Segmento 1: Operadores de Maquinaria y Planta
+#### Segmento 1: Técnicos Operadores de Maquinaria
 
 **Entrevista 1**
 * **Entrevistado:** Juan Carlos Quispe (28 años)
-* **Cargo / Ocupación:** Operador de Máquina Extrusora
+* **Cargo / Ocupación:** Técnico Operador de Máquina Extrusora
 * **Ubicación / Empresa:** San Juan de Lurigancho, Lima / Planta de plásticos industriales
 * **Inicio entrevista:** 00:00:00
 * **Duración:** 00:03:45
@@ -569,7 +591,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 **Entrevista 2**
 * **Entrevistado:** Angie Santos Torres (35 años)
-* **Cargo / Ocupación:** Operador de Línea de Envasado
+* **Cargo / Ocupación:** Técnico Operador de Línea de Envasado
 * **Ubicación / Empresa:** Ate, Lima / Planta procesadora de alimentos
 * **Duración:** 00:04:10
 * **Resumen de respuestas:** Angie Santos menciona que cuando detecta una vibración anómala debe esperar a que el supervisor pase por su zona o comunicarse mediante radiofrecuencia, lo que retrasa la atención. En una oportunidad previa, la rotura no detectada de un rodamiento detuvo la producción durante seis horas, lo que le provocó gran ansiedad por no cumplir su cuota del día. Es un usuario digital habitual de marcas como Xiaomi, utiliza activamente el navegador Google Chrome para búsquedas y la aplicación Facebook para informarse. Valora sobre todo la seguridad laboral y la rapidez de respuesta del equipo técnico. Afirma que utilizaría una plataforma móvil o pantalla táctil si cuenta con semáforos de alerta en tiempo real, destacando la necesidad de un botón de reporte directo de averías y la visualización directa del estado operativo del equipo.
@@ -578,7 +600,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 **Entrevista 3**
 * **Entrevistado:** Melisa Ramos Gómez (42 años)
-* **Cargo / Ocupación:** Operador de Compresores y Maquinaria Auxiliar
+* **Cargo / Ocupación:** Técnica Operadora de Compresores y Maquinaria Auxiliar
 * **Ubicación / Empresa:** Callao / Planta metalmecánica
 * **Duración:** 00:03:15
 * **Resumen de respuestas:** Melisa Ramos explica que el sistema actual de reporte en hojas de cálculo compartidas resulta tedioso e interrumpe su ritmo de trabajo. Cuando nota fallas térmicas en los compresores, suele reducir manualmente la velocidad del equipo por temor a una explosión o accidente. Es nativo digital, utiliza un smartphone Motorola con Android, navega mediante Mozilla Firefox y utiliza Telegram para comunicaciones laborales grupales. Le motiva la implementación de tecnología moderna en planta. Manifiesta que un sistema visual basado en códigos de color le facilitaría significativamente su labor cotidiana, pidiendo que incluya alertas sonoras para entornos ruidosos y un historial sencillo de las últimas fallas de la máquina.
@@ -587,7 +609,7 @@ Para la validación de necesidades del proyecto, se diseñaron dos guías de ent
 
 
 
-#### Segmento 2: Área de Mantenimiento y Gestión Operativa
+#### Segmento 2: Jefe de Mantenimiento
 
 **Entrevista 1**
 * **Entrevistado:** Cristian Parado(32 años)
@@ -624,7 +646,7 @@ Video:<br>
 
 ### 2.2.3. Análisis de entrevistas
 
-### Análisis del Segmento 1: Operadores de Maquinaria y Planta (Usuarios operativos)
+### Análisis del Segmento 1: Técnicos Operadores de Maquinaria (Usuarios operativos)
 
 Este segmento ($N = 3$) está compuesto por Juan Carlos Quispe (28 años), Miguel Ángel Torres (35 años) y Luis Alberto Gómez (24 años). A continuación, se presenta la consolidación estadística de sus características demográficas, tecnológicas, puntos de dolor y requerimientos de solución.
 
@@ -653,7 +675,7 @@ Este segmento ($N = 3$) está compuesto por Juan Carlos Quispe (28 años), Migue
 
 ---
 
-### Análisis del Segmento 2: Área de Mantenimiento y Gestión Operativa (Decisores)
+### Análisis del Segmento 2: Jefes de Mantenimiento (Decisores)
 
 Este segmento ($N = 3$) está compuesto por Cristian Parado (32 años, Ingeniero de Planta), Jorge Salazar (50 años, Supervisor de Mantenimiento) y Carlos Mendoza (41 años, Jefe de Mantenimiento). A continuación, se detalla el análisis estadístico de sus respuestas.
 
@@ -696,16 +718,14 @@ y afinidad tecnológica; constituyeron la fuente principal para la
 construcción de cada arquetipo.
 
 Se elaboró una ficha por cada segmento objetivo:
-- **Renzo Huamán** representa al Área de Mantenimiento y Gestión
-  Operativa (Jefe de Mantenimiento).
-- **Jhonatan Torres** representa a los Operadores de Maquinaria y
-  Planta (Técnico de Mantenimiento).
+- **Renzo Huamán** representa al Jefe de Mantenimiento (decisores).
+- **Jhonatan Torres** representa a los Técnicos Operadores de Maquinaria (operadores).
 
 ![User Persona - JefeDeMantenimiento](assets/cap2/userPersonas/renzoHuaman.png)
 ![User Persona - Tecnico](assets/cap2/userPersonas/jhonatanTorres.png)
 ### 2.3.2. User Task Matrix
 
-| Tarea | Renzo Huamán (Jefe de Mantenimiento) — Frecuencia / Importancia | Jhonatan Torres (Técnico de Mantenimiento) — Frecuencia / Importancia |
+| Tarea | Renzo Huamán (Jefe de Mantenimiento) — Frecuencia / Importancia | Jhonatan Torres (Técnico Operador de Mantenimiento) — Frecuencia / Importancia |
 |---|---|---|
 | Inspeccionar el estado físico de la maquinaria | Semanal / Media | Diaria / Alta |
 | Detectar señales de anomalía durante la operación (ruido, vibración, calor) | No aplica | Diaria / Alta |
@@ -783,28 +803,28 @@ En esta sección se presenta la especificación de los requisitos de PredictiveM
 
 | Epic ID | Título | Descripción |
 |---|---|---|
-| EP-01 | Monitoreo en Tiempo Real de Activos | Como equipo, necesitamos monitorear en tiempo real las variables físicas de los activos industriales, para detectar comportamientos anómalos antes de que deriven en una falla. |
-| EP-02 | Alertas y Diagnóstico Predictivo de Fallas | Como equipo, necesitamos generar alertas predictivas basadas en patrones anómalos de comportamiento y estimar la Vida Útil Restante (RUL) de los activos, para permitir intervenciones antes de una parada no planificada. |
-| EP-03 | Gestión de Órdenes de Trabajo | Como equipo, necesitamos gestionar la creación, asignación y seguimiento de órdenes de trabajo derivadas de alertas confirmadas, para garantizar una atención trazable de las incidencias. |
-| EP-04 | Registro y Administración de Activos Industriales | Como equipo, necesitamos registrar, actualizar y dar de baja activos industriales junto con sus sensores asociados, para mantener consistente el alcance del monitoreo predictivo. |
-| EP-05 | Reportes y Analítica Histórica | Como equipo, necesitamos generar reportes históricos de fallas, disponibilidad, Eficiencia General de los Equipos (OEE) y desempeño comparativo de los activos, para soportar la toma de decisiones de mantenimiento. |
-| EP-06 | Gestión de Suscripción y Planes | Como equipo, necesitamos gestionar los planes de suscripción según el volumen de activos conectados, para sostener el modelo de negocio de la plataforma. |
-| EP-07 | Gestión de Identidad y Acceso | Como equipo, necesitamos gestionar el registro, autenticación y perfiles de los usuarios (Jefe de Mantenimiento, Técnico), para garantizar acceso seguro y diferenciado a la plataforma. |
-| EP-08 | Experiencia en Landing Page | Como equipo, necesitamos un Landing Page informativo que comunique la propuesta de valor de PredictiveMaintain a los segmentos objetivo. |
-| EP-09 | Integración de Sensores IoT y Servicios Backend | Como equipo, necesitamos exponer servicios backend que permitan la ingesta, procesamiento y explotación de la información generada por los sensores IoT y el modelo predictivo. |
+| EP-01 | Monitoreo en Tiempo Real de Activos | Como Jefe de Mantenimiento y Técnico, necesitamos monitorear en tiempo real las variables físicas de los activos industriales, para detectar comportamientos anómalos antes de que deriven en una falla. |
+| EP-02 | Alertas y Diagnóstico Predictivo de Fallas | Como Jefe de Mantenimiento, necesito recibir alertas predictivas basadas en patrones anómalos de comportamiento y conocer la Vida Útil Restante (RUL) de los activos, para intervenir antes de una parada no planificada. |
+| EP-03 | Gestión de Órdenes de Trabajo | Como Jefe de Mantenimiento y Técnico, necesitamos gestionar la creación, asignación y seguimiento de órdenes de trabajo derivadas de alertas confirmadas, para garantizar una atención trazable de las incidencias. |
+| EP-04 | Registro y Administración de Activos Industriales | Como Jefe de Mantenimiento, necesito registrar, actualizar y dar de baja activos industriales junto con sus sensores asociados, para mantener consistente el alcance del monitoreo predictivo. |
+| EP-05 | Reportes y Analítica Histórica | Como Jefe de Mantenimiento, necesito generar reportes históricos de fallas, disponibilidad, Eficiencia General de los Equipos (OEE) y desempeño comparativo de los activos, para soportar la toma de decisiones de mantenimiento. |
+| EP-06 | Gestión de Suscripción y Planes | Como Jefe de Mantenimiento, necesito gestionar el plan de suscripción de mi empresa según el volumen de activos conectados, para sostener el acceso de mi equipo a la plataforma. |
+| EP-07 | Gestión de Identidad y Acceso | Como Jefe de Mantenimiento o Técnico, necesito registrarme, autenticarme y administrar mi perfil, para acceder de forma segura y diferenciada según mi rol dentro de la plataforma. |
+| EP-08 | Experiencia en Landing Page | Como visitante, necesito un Landing Page informativo que me comunique la propuesta de valor de PredictiveMaintain, para evaluar si la plataforma resuelve mis necesidades antes de solicitar una demo. |
+| EP-09 | Integración de Sensores IoT y Servicios Backend | Como Técnico, necesito que los sensores que instalo y mantengo transmitan datos de forma confiable al sistema a través de servicios backend, para que la plataforma procese y explote esa información en tiempo real. |
 
 #### User Stories y Technical Stories
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |---|---|---|---|---|
-| US-01 | Visualizar variables físicas de un activo en tiempo real | Como Técnico de Mantenimiento, deseo visualizar en tiempo real las variables físicas de un activo industrial, para detectar comportamientos anómalos antes de que deriven en una falla. | **Escenario 1: Lectura de variables disponible**<br>Dado que el activo cuenta con sensores IoT conectados y transmitiendo datos<br>Cuando el sistema recibe una nueva lectura de variables físicas del activo<br>Entonces el sistema actualiza y expone los valores actuales de cada variable registrada<br><br>**Escenario 2: Activo sin comunicación**<br>Dado que un activo deja de transmitir datos por un periodo mayor a 5 minutos<br>Cuando el sistema evalúa el estado de comunicación del activo<br>Entonces el sistema marca el estado del activo como "sin comunicación" junto con la marca de tiempo de la última lectura recibida<br><br>**Escenario 3: Valor fuera de rango**<br>Dado que los valores de una variable física superan el rango normal configurado para el activo<br>Cuando el sistema procesa la lectura entrante<br>Entonces el sistema clasifica dicha variable como valor fuera de rango | EP-01 |
+| US-01 | Visualizar variables físicas de un activo en tiempo real | Como usuario de la plataforma, deseo visualizar en tiempo real las variables físicas de un activo industrial, para detectar comportamientos anómalos antes de que deriven en una falla. | **Escenario 1: Lectura de variables disponible**<br>Dado que el activo cuenta con sensores IoT conectados y transmitiendo datos<br>Cuando el sistema recibe una nueva lectura de variables físicas del activo<br>Entonces el sistema actualiza y expone los valores actuales de cada variable registrada<br><br>**Escenario 2: Activo sin comunicación**<br>Dado que un activo deja de transmitir datos por un periodo mayor a 5 minutos<br>Cuando el sistema evalúa el estado de comunicación del activo<br>Entonces el sistema marca el estado del activo como "sin comunicación" junto con la marca de tiempo de la última lectura recibida<br><br>**Escenario 3: Valor fuera de rango con alerta automática**<br>Dado que los valores de una variable física superan el umbral configurado para el activo<br>Cuando el sistema procesa la lectura entrante<br>Entonces el sistema clasifica la variable como fuera de rango y, si han transcurrido al menos 10 minutos desde la última alerta del activo, genera automáticamente una alerta con su nivel de severidad | EP-01 |
 | US-02 | Consultar listado de activos por planta y su estado de comunicación | Como Jefe de Mantenimiento, deseo consultar el listado de activos de mi planta junto con su estado de comunicación actual, y filtrarlo por línea de producción o tipo de sensor, para identificar rápidamente equipos que requieren atención. | **Escenario 1: Listado con estados**<br>Dado que existen activos registrados en la planta<br>Cuando se consulta el listado<br>Entonces el sistema retorna cada activo con su estado ("operativo", "en alerta", "sin comunicación")<br><br>**Escenario 2: Filtro por estado**<br>Dado que se filtra el listado por estado "en alerta"<br>Cuando se aplica el filtro<br>Entonces el sistema retorna únicamente los activos que cumplen dicha condición<br><br>**Escenario 3: Filtro por línea de producción**<br>Dado que se filtra el listado por línea de producción<br>Cuando se aplica el filtro<br>Entonces el sistema retorna únicamente los activos asociados a dicha línea<br><br>**Escenario 4: Filtro por tipo de sensor**<br>Dado que se filtra el listado por tipo de sensor asociado<br>Cuando se aplica el filtro<br>Entonces el sistema retorna únicamente los activos que cuentan con ese tipo de sensor | EP-01 |
 | US-03 | Configurar umbrales de variables físicas por activo | Como Jefe de Mantenimiento, deseo configurar los umbrales normales de cada variable física por activo, para que el sistema pueda identificar correctamente los valores fuera de rango. | **Escenario 1: Configuración válida**<br>Dado que se ingresan valores mínimo y máximo válidos para una variable<br>Cuando se guarda la configuración<br>Entonces el sistema actualiza el umbral y lo aplica a las lecturas futuras<br><br>**Escenario 2: Rango inválido**<br>Dado que se ingresa un valor mínimo mayor al máximo<br>Cuando se intenta guardar la configuración<br>Entonces el sistema rechaza la operación e indica el error de rango | EP-01 |
 | US-04 | Recibir alerta predictiva de falla incipiente | Como Jefe de Mantenimiento, deseo recibir una alerta cuando el sistema detecte un patrón anómalo asociado a una posible falla, para programar una intervención antes de una parada no planificada. | **Escenario 1: Generación de alerta**<br>Dado que el modelo predictivo identifica un patrón anómalo<br>Cuando se supera el umbral de confianza configurado<br>Entonces el sistema genera una alerta con su nivel de severidad<br><br>**Escenario 2: Notificación al responsable**<br>Dado que se genera una alerta de severidad alta<br>Cuando el Jefe de Mantenimiento está registrado como responsable del activo<br>Entonces el sistema lo notifica de forma inmediata<br><br>**Escenario 3: Registro de estado**<br>Dado que una alerta ha sido generada<br>Cuando se actualiza su estado<br>Entonces el sistema lo registra como "en revisión", "confirmada" o "descartada"<br><br>**Escenario 4: Descarte con motivo obligatorio**<br>Dado que una alerta es marcada como "descartada"<br>Cuando se registra el descarte<br>Entonces el sistema exige un motivo antes de aceptar el cambio | EP-02 |
 | US-05 | Visualizar detalle diagnóstico de una alerta | Como Técnico de Mantenimiento, deseo visualizar el detalle diagnóstico de una alerta, incluyendo las variables y valores que la originaron, para comprender la causa probable antes de intervenir. | **Escenario 1: Detalle disponible**<br>Dado que una alerta existe en el sistema<br>Cuando el técnico consulta su detalle<br>Entonces el sistema muestra las variables físicas, valores registrados y el umbral que fue superado<br><br>**Escenario 2: Múltiples variables involucradas**<br>Dado que una alerta fue generada por múltiples variables simultáneamente<br>Cuando se consulta el detalle<br>Entonces el sistema lista cada variable involucrada de forma independiente | EP-02 |
 | US-06 | Configurar destinatarios y canal de notificación de alertas por planta | Como Jefe de Mantenimiento, deseo configurar qué usuarios reciben notificaciones de alertas según la planta o tipo de activo, y por qué canal las reciben, para asegurar que la persona correcta sea informada de la forma más oportuna. | **Escenario 1: Asignación de destinatario**<br>Dado que se asigna un usuario como destinatario de un tipo de activo<br>Cuando se genera una alerta de ese tipo<br>Entonces el sistema lo incluye en la notificación<br><br>**Escenario 2: Sin destinatario configurado**<br>Dado que no existe ningún destinatario configurado para un activo<br>Cuando se genera una alerta<br>Entonces el sistema notifica al responsable general de la planta por defecto<br><br>**Escenario 3: Selección de canal de notificación**<br>Dado que se configura un destinatario para un tipo de activo<br>Cuando se selecciona el canal de notificación preferido (push o correo electrónico)<br>Entonces el sistema envía las alertas futuras por el canal configurado | EP-02 |
 | US-30 | Consultar la Vida Útil Restante (RUL) estimada de un activo | Como Jefe de Mantenimiento, deseo consultar la Vida Útil Restante estimada de un activo crítico, para planificar su intervención o reemplazo antes de que ocurra una falla catastrófica. | **Escenario 1: Estimación disponible**<br>Dado que un activo cuenta con historial suficiente de lecturas<br>Cuando el modelo predictivo calcula su RUL<br>Entonces el sistema expone el valor estimado en días u horas de operación restante<br><br>**Escenario 2: Historial insuficiente**<br>Dado que un activo no cuenta con historial suficiente para una estimación confiable<br>Cuando se consulta su RUL<br>Entonces el sistema indica que la estimación aún no está disponible para dicho activo<br><br>**Escenario 3: RUL por debajo del umbral crítico**<br>Dado que el RUL estimado de un activo cae por debajo de un umbral crítico configurado<br>Cuando el sistema recalcula el indicador<br>Entonces genera una alerta de planificación de reemplazo o intervención preventiva | EP-02 |
-| US-07 | Generar orden de trabajo a partir de una alerta confirmada | Como Técnico de Mantenimiento, deseo generar una orden de trabajo directamente a partir de una alerta confirmada, para atender la incidencia de forma trazable y priorizada. | **Escenario 1: Creación de orden**<br>Dado que una alerta está marcada como "confirmada"<br>Cuando se genera una orden de trabajo asociada<br>Entonces el sistema la crea con estado "pendiente" y la vincula a la alerta de origen<br><br>**Escenario 2: Historial de estados**<br>Dado que una orden de trabajo existe<br>Cuando se actualiza su estado<br>Entonces el sistema registra el historial de cambios con fecha y usuario responsable<br><br>**Escenario 3: Cierre con acciones correctivas**<br>Dado que una orden es marcada como "completada"<br>Cuando se confirma su finalización<br>Entonces el sistema exige el registro de las acciones correctivas realizadas | EP-03 |
+| US-07 | Generar orden de trabajo a partir de una alerta confirmada | Como Jefe de Mantenimiento, deseo generar una orden de trabajo directamente a partir de una alerta confirmada, para atender la incidencia de forma trazable y priorizada. | **Escenario 1: Creación de orden**<br>Dado que una alerta está marcada como "confirmada"<br>Cuando se genera una orden de trabajo asociada<br>Entonces el sistema la crea con estado "pendiente" y la vincula a la alerta de origen<br><br>**Escenario 2: Historial de estados**<br>Dado que una orden de trabajo existe<br>Cuando se actualiza su estado<br>Entonces el sistema registra el historial de cambios con fecha y usuario responsable<br><br>**Escenario 3: Cierre con acciones correctivas**<br>Dado que una orden es marcada como "completada"<br>Cuando se confirma su finalización<br>Entonces el sistema exige el registro de las acciones correctivas realizadas | EP-03 |
 | US-08 | Asignar orden de trabajo a un técnico | Como Jefe de Mantenimiento, deseo asignar una orden de trabajo a un técnico específico, para distribuir la carga de intervenciones según disponibilidad y especialidad. | **Escenario 1: Asignación exitosa**<br>Dado que una orden de trabajo está en estado "pendiente" y sin asignar<br>Cuando se le asigna un técnico<br>Entonces el sistema actualiza la orden con el responsable y notifica al técnico<br><br>**Escenario 2: Reasignación**<br>Dado que se intenta asignar una orden ya asignada a otro técnico<br>Cuando se procesa la reasignación<br>Entonces el sistema registra el cambio y notifica a ambos técnicos involucrados | EP-03 |
 | US-09 | Adjuntar evidencia fotográfica a una orden de trabajo | Como Técnico de Mantenimiento, deseo adjuntar fotografías del activo intervenido a una orden de trabajo, para documentar el estado antes y después de la intervención. | **Escenario 1: Carga exitosa**<br>Dado que una orden de trabajo está en curso<br>Cuando se adjunta una fotografía válida<br>Entonces el sistema la almacena y la asocia a la orden correspondiente<br><br>**Escenario 2: Formato no soportado**<br>Dado que se intenta adjuntar un archivo que no corresponde a un formato de imagen soportado<br>Cuando se procesa la carga<br>Entonces el sistema rechaza el archivo e indica el formato esperado | EP-03 |
 | US-10 | Consultar listado de órdenes de trabajo pendientes | Como Jefe de Mantenimiento, deseo consultar el listado de órdenes de trabajo pendientes de mi planta, para dar seguimiento al avance de las intervenciones. | **Escenario 1: Listado filtrado**<br>Dado que existen órdenes de trabajo registradas<br>Cuando se consulta el listado filtrado por estado "pendiente"<br>Entonces el sistema retorna las órdenes que cumplen dicha condición<br><br>**Escenario 2: Sin órdenes pendientes**<br>Dado que no existen órdenes pendientes en la planta<br>Cuando se consulta el listado<br>Entonces el sistema indica que no hay órdenes pendientes registradas | EP-03 |
@@ -819,9 +839,9 @@ En esta sección se presenta la especificación de los requisitos de PredictiveM
 | US-18 | Consultar consumo actual de la suscripción | Como Jefe de Mantenimiento, deseo consultar cuántos activos tengo registrados respecto al límite de mi plan actual, para anticipar la necesidad de una actualización. | **Escenario 1: Consumo visible**<br>Dado que la empresa tiene un plan activo<br>Cuando se consulta el panel de suscripción<br>Entonces el sistema muestra el número de activos usados frente al límite contratado<br><br>**Escenario 2: Advertencia de proximidad**<br>Dado que el consumo alcanza el 90% del límite del plan<br>Cuando se consulta el panel<br>Entonces el sistema resalta una advertencia de proximidad al límite | EP-06 |
 | US-19 | Recibir notificación de vencimiento de suscripción | Como Jefe de Mantenimiento, deseo recibir una notificación previa al vencimiento de mi suscripción, para renovarla sin interrumpir el monitoreo de mis activos. | **Escenario 1: Notificación previa**<br>Dado que la suscripción vence en un plazo menor o igual a 7 días<br>Cuando el sistema evalúa las fechas de vencimiento<br>Entonces notifica al responsable de la cuenta<br><br>**Escenario 2: Bloqueo por vencimiento**<br>Dado que la suscripción vence sin haberse renovado<br>Cuando se cumple la fecha de vencimiento<br>Entonces el sistema restringe el acceso al monitoreo y notifica el bloqueo | EP-06 |
 | US-20 | Registrar cuenta corporativa | Como Jefe de Mantenimiento, deseo registrar la cuenta de mi empresa en la plataforma, para habilitar el acceso de mi equipo al monitoreo predictivo. | **Escenario 1: Registro exitoso**<br>Dado que se ingresan datos corporativos válidos (correo, contraseña, razón social)<br>Cuando se envía el registro<br>Entonces el sistema crea la cuenta y la asocia a un plan de suscripción inicial<br><br>**Escenario 2: Correo duplicado**<br>Dado que el correo ingresado ya está registrado<br>Cuando se envía el registro<br>Entonces el sistema rechaza la operación e indica que la cuenta ya existe | EP-07 |
-| US-21 | Iniciar sesión en la plataforma | Como usuario registrado, deseo iniciar sesión con mis credenciales, para acceder a las funcionalidades correspondientes a mi rol. | **Escenario 1: Inicio de sesión exitoso**<br>Dado que las credenciales ingresadas son correctas<br>Cuando se procesa el inicio de sesión<br>Entonces el sistema concede acceso según el rol del usuario<br><br>**Escenario 2: Credenciales incorrectas**<br>Dado que las credenciales son incorrectas<br>Cuando se procesa el inicio de sesión<br>Entonces el sistema rechaza el acceso sin especificar cuál dato es erróneo | EP-07 |
-| US-22 | Recuperar contraseña | Como usuario registrado, deseo recuperar mi contraseña en caso de olvido, para restablecer mi acceso a la plataforma. | **Escenario 1: Recuperación exitosa**<br>Dado que el correo ingresado está registrado<br>Cuando se solicita la recuperación<br>Entonces el sistema envía un enlace de restablecimiento<br><br>**Escenario 2: Correo no registrado**<br>Dado que el correo ingresado no está registrado<br>Cuando se solicita la recuperación<br>Entonces el sistema indica que no existe una cuenta asociada | EP-07 |
-| US-23 | Gestionar perfil de usuario | Como usuario registrado, deseo actualizar los datos de mi perfil, para mantener mi información de contacto correcta. | **Escenario 1: Actualización exitosa**<br>Dado que se ingresan datos válidos<br>Cuando se guardan los cambios<br>Entonces el sistema actualiza la información del perfil<br><br>**Escenario 2: Dato inválido**<br>Dado que se ingresa un dato con formato inválido<br>Cuando se intenta guardar<br>Entonces el sistema rechaza el cambio e indica el error | EP-07 |
+| US-21 | Iniciar sesión en la plataforma | Como usuario de la plataforma, deseo iniciar sesión con mis credenciales, para acceder a las funcionalidades correspondientes a mi rol. | **Escenario 1: Inicio de sesión exitoso**<br>Dado que las credenciales ingresadas son correctas<br>Cuando se procesa el inicio de sesión<br>Entonces el sistema concede acceso según el rol del usuario<br><br>**Escenario 2: Credenciales incorrectas**<br>Dado que las credenciales son incorrectas<br>Cuando se procesa el inicio de sesión<br>Entonces el sistema rechaza el acceso sin especificar cuál dato es erróneo | EP-07 |
+| US-22 | Recuperar contraseña | Como usuario de la plataforma, deseo recuperar mi contraseña en caso de olvido, para restablecer mi acceso a la plataforma. | **Escenario 1: Recuperación exitosa**<br>Dado que el correo ingresado está registrado<br>Cuando se solicita la recuperación<br>Entonces el sistema envía un enlace de restablecimiento<br><br>**Escenario 2: Correo no registrado**<br>Dado que el correo ingresado no está registrado<br>Cuando se solicita la recuperación<br>Entonces el sistema indica que no existe una cuenta asociada | EP-07 |
+| US-23 | Gestionar perfil de usuario | Como usuario de la plataforma, deseo actualizar mi nombre de visualización, para mantener mi identificación correcta dentro de la plataforma. | **Escenario 1: Actualización exitosa**<br>Dado que se ingresa un nombre de visualización válido<br>Cuando se guardan los cambios<br>Entonces el sistema actualiza el nombre y lo refleja en el perfil<br><br>**Escenario 2: Nombre vacío**<br>Dado que se intenta guardar un nombre de visualización vacío<br>Cuando se procesa la solicitud<br>Entonces el sistema rechaza el cambio e indica el error | EP-07 |
 | US-24 | Visualizar propuesta de valor de la plataforma | Como visitante, deseo conocer la propuesta de valor de PredictiveMaintain, para entender cómo la solución puede beneficiar a mi planta industrial. | **Escenario 1: Propuesta de valor visible**<br>Dado que el visitante accede al Landing Page<br>Cuando la página carga correctamente<br>Entonces el sistema presenta la propuesta de valor y los beneficios principales de la plataforma<br><br>**Escenario 2: Casos de uso**<br>Dado que el visitante navega a la sección de beneficios<br>Cuando la sección carga<br>Entonces el sistema muestra los casos de uso principales del mantenimiento predictivo | EP-08 |
 | US-25 | Consultar planes y precios de suscripción | Como visitante, deseo consultar los planes de suscripción disponibles y sus precios, para evaluar cuál se ajusta a la cantidad de activos de mi empresa. | **Escenario 1: Planes visibles**<br>Dado que el visitante navega a la sección de planes<br>Cuando la sección carga<br>Entonces el sistema muestra los planes disponibles con su rango de activos soportados y precio referencial<br><br>**Escenario 2: Plan personalizado**<br>Dado que el visitante requiere un plan personalizado<br>Cuando selecciona la opción de contacto comercial<br>Entonces el sistema despliega un formulario de solicitud | EP-08 |
 | US-26 | Solicitar una demostración del producto | Como visitante, deseo solicitar una demostración de la plataforma, para evaluar su funcionamiento antes de contratar un plan. | **Escenario 1: Solicitud registrada**<br>Dado que se completan los datos de contacto requeridos<br>Cuando se envía la solicitud de demo<br>Entonces el sistema registra la solicitud y confirma su recepción al visitante<br><br>**Escenario 2: Correo inválido**<br>Dado que se envía el formulario con un correo de formato inválido<br>Cuando se valida la solicitud<br>Entonces el sistema rechaza el envío e indica el error | EP-08 |
@@ -2261,6 +2281,237 @@ Documentación de los endpoints RESTful implementados en el Sprint 1, disponible
 ![GitHub Collaboration Insights Sprint 1](assets/cap4/github_insights_sprint1.png)
 ---
 
+### 4.2.2. Sprint 2
+
+#### 4.2.2.1. Sprint Planning 2
+
+* **Sprint #:** 2
+* **Date:** 2026-10-28
+* **Location:** Virtual (Discord)
+* **Prepared By:** Aiquipa Poma, Sebastian Andres
+* **Attendees:** Aiquipa Poma, Sebastian Andres / Choy Robles, Vanessa May Lang / Seminario Castillo, Diego Vicente / Valverde Portuguez, Natalia Ximena
+* **Sprint Goal:**
+  - **Our focus is on** delivering the cross-platform Flutter app for maintenance managers, the autonomous learning feature (MQTT broker integration and anomaly detection library), and the remaining mobile features (photo evidence, push notifications and offline UI).
+  - **We believe it delivers** a complete multi-platform experience that allows Plant Chiefs to monitor assets and manage alerts from any device, while the system proactively detects equipment failures using real IoT data.
+  - **This will be confirmed when** a maintenance manager can log in to the Flutter app, view asset status and confirm an alert, and the Android app receives a push notification when a new predictive alert is generated.
+* **Sprint 2 Velocity:** 35 Story Points
+* **Sum of Story Points:** 35 Story Points
+
+#### 4.2.2.2. Aspect Leaders and Collaborators (LACX Matrix)
+
+| Team Member (Last Name, First Name) | GitHub Username | Landing Page (L/C) | Backend Web Services (L/C) | Android App — Kotlin (L/C) | Flutter App (L/C) | Validation & Testing (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Aiquipa Poma, Sebastian Andres | `S-aiquipa` | C | **L** | C | C | **L** |
+| Choy Robles, Vanessa May Lang | `VMLCR` | C | C | C | **L** | C |
+| Seminario Castillo, Diego Vicente | `DiegoSeminario` | **L** | C | C | C | C |
+| Valverde Portuguez, Natalia Ximena | `NatValverde15` | C | C | **L** | C | C |
+
+#### 4.2.2.3. Sprint Backlog 2
+
+| Sprint # | User Story Id | User Story Title | Work-Item Id | Work-Item Title | Description | Estimation (Hours) | Assigned To |   Status    |
+| :---: | :---: | :--- | :---: | :--- | :--- | :---: | :--- |:-----------:|
+| **2** | SP-01 | Spike: Integración de broker MQTT | TK-12 | MQTT broker research and backend prototype | Investigate MQTT broker options (Mosquitto, HiveMQ), evaluate integration with Spring Boot, document findings and implement a minimal proof-of-concept that receives sensor readings via MQTT and forwards them to the telemetry ingestion endpoint. | 10 | Aiquipa P. |    Done     |
+| **2** | SP-02 | Spike: Librería de detección de anomalías | TK-13 | Anomaly detection library research and integration | Evaluate anomaly detection libraries compatible with the JVM (e.g., Apache Commons Math, Tribuo), justify selection, and integrate a minimal statistical threshold model that flags readings deviating beyond a configurable z-score. Document the learning process. | 10 | Aiquipa P. |    Done     |
+| **2** | US-04 | Recibir alerta predictiva de falla incipiente | TK-14 | Flutter app: project setup, dependencies and login screen | Create the Flutter project in the PredictiveTech organization, configure the `http` package, implement the login screen with email and password fields, call `POST /api/v1/auth/login` and navigate to the main screen on success. | 8 | Choy R. |    Done     |
+| **2** | US-04 | Recibir alerta predictiva de falla incipiente | TK-15 | Flutter app: asset list screen connected to backend | Assets list screen using ListView.builder with status filter chips, consuming `GET /api/v1/assets` and displaying each asset's name, code and current status. | 6 | Choy R. |    Done     |
+| **2** | US-05 | Visualizar detalle diagnóstico de una alerta | TK-16 | Flutter app: alerts list screen connected to backend | Alerts list screen using ListView.builder with severity and status filter chips, consuming `GET /api/v1/alerts` and displaying each alert's asset name, severity and status. | 6 | Valverde N. |    Done     |
+| **2** | US-07 | Gestionar orden de trabajo desde la app | TK-17 | Flutter app: work orders list screen connected to backend | Work orders list screen using ListView.builder with status filter chips, consuming `GET /api/v1/work-orders` and displaying each order's asset name, assigned technician and current status. | 6 | Valverde N. |    Done     |
+| **2** | TS-08 | Notificaciones push de alertas | TK-18 | Android app: FCM push notification reception | Configure FirebaseMessaging in the Android app to receive and display push notifications when a new alert is generated by the backend; handle foreground and background notification states. | 6 | Valverde N. | In Progress |
+| **2** | TS-10 | Carga de evidencia fotográfica de órdenes de trabajo | TK-19 | Android app: photo evidence capture and upload | Integrate image_picker (camera and gallery) in the work order completion flow; upload the selected image to the backend evidence endpoint and display the uploaded photo in the work order detail screen. | 8 | Valverde N. | In Progress |
+| **2** | US-23 | Gestionar perfil de usuario | TK-20 | Android app: user profile screen | Profile screen consuming `GET /api/v1/users/me` displaying displayName, email and role; edit form using `PATCH /api/v1/users/me` to update the display name. | 4 | Seminario D. | In Progress |
+| **2** | US-28 | Continuar gestión de órdenes sin conexión | TK-21 | Android app: offline sync UI | Implement connectivity monitoring in the Android app; queue work order actions when offline and display a sync banner; trigger `POST /api/v1/sync/work-orders` automatically when connectivity is restored. | 6 | Aiquipa P. |    Done     |
+| **2** | — | Correcciones del informe y artefactos | TK-22 | Report corrections: C4 diagram, User Stories and Landing Page | Correct the C4 context diagram to reflect the actual user-to-system relationships (users interact directly with the mobile app, not through the landing page); fix actor names in User Stories; add final app screenshots to the Landing Page. | 4 | Seminario D. | In Progress |
+
+#### 4.2.2.4. Development Evidence for Sprint Review
+
+Evidencia de los commits realizados durante el Sprint 2 en los tres repositorios del proyecto.
+
+##### Backend (`predictivemaintain-backend`)
+
+| Commit | Autor | Descripción |
+| :--- | :--- | :--- |
+| `5154fc1` | Aiquipa P. | spike(SP-01): MQTT broker research and working PoC — Mosquitto + Paho + Spring Boot |
+| `31e6d57` | Aiquipa P. | spike(SP-02): anomaly detection research and z-score PoC with Apache Commons Math |
+| `d973cb4` | Aiquipa P. | feat(spike): MQTT broker integration and anomaly detection research (SP-01, SP-02) |
+| `bb2dbff` | Aiquipa P. | feat(notifications): expose device-token registration at /api/v1/notifications/device-tokens |
+
+##### Android App Kotlin (`predictivemaintain-android-app`)
+
+| Commit | Autor | Descripción |
+| :--- | :--- | :--- |
+| `3806034` | Aiquipa P. | feat(sync): implement offline sync UI with DataStore queue and SyncCoordinator (US-28) |
+| `c229230` | Aiquipa P. | feat(ui): dark login theme, app icon, light theme for main screens, improved asset cards |
+| `36fcb43` | Valverde N. | feat(android): add FCM push notifications (TK-18) |
+| `71d60af` | Aiquipa P. | fix(firebase): add missing google-services plugin and config |
+| `2796557` | Aiquipa P. | feat(android): add photo evidence display and fix upload bugs (TK-19) |
+| `508c154` | Aiquipa P. | feat(notifications): register FCM device token and request POST_NOTIFICATIONS permission |
+| `452b5a9` | Aiquipa P. | feat(iam): add profile tab with edit name, app info and logout |
+| `b2ebf6b` | Aiquipa P. | feat(app): add asset creation for the manager (US-11) |
+| `cc840ec` | Aiquipa P. | feat(maintenance): add asset editing (US-12) |
+| `9923f08` | Aiquipa P. | feat(maintenance): add asset deactivation with open work orders handling (US-13) |
+| `2dac355`, `29c58cf` | Aiquipa P. | style(ui): card redesign, accent navigation bar, screen headers, distinct asset type icons |
+
+##### Flutter App (`predictivemaintain_flutter_app`)
+
+| Commit | Autor | Descripción |
+| :--- | :--- | :--- |
+| `f2b17b1` | Aiquipa P. | chore: initial Flutter project setup |
+| `412d298` | Aiquipa P. | chore: set up Clean Architecture folder structure with DDD bounded contexts |
+| `d92d6d3` | Aiquipa P. | feat(core): add domain models, DTOs, mappers and HTTP client |
+| `36eb60f` | Aiquipa P. | feat(navigation): add home screen with bottom navigation bar and login redirect |
+| `d28d6cd` | Aiquipa P. | feat(maintenance): add assets screen connected to backend |
+| `7d59cd1` | Aiquipa P. | feat(maintenance): add alerts screen connected to backend |
+| `862cbb6` | Aiquipa P. | feat(maintenance): add work orders screen connected to backend |
+| `2eae9c9` | Choy R. | feat(flutter): add asset detail screen |
+| `78731c9` | Aiquipa P. | fix(maintenance): correct asset and sensor DTOs to match backend contract |
+
+#### 4.2.2.5. Testing Suite Evidence for Sprint Review
+
+##### Backend (`predictivemaintain-backend`)
+
+Pruebas unitarias con JUnit 5. El spike SP-02 incluye un test del detector de anomalías por z-score:
+
+* `ZScoreAnomalyDetectorTest` — 5 casos, cubriendo el cálculo de z-score, el umbral configurable de desviación (|z| > 3), y el caso límite de desviación estándar cero.
+
+Suite completa del backend: **17 tests**, 0 fallos (`./mvnw test`).
+
+##### Android App Kotlin (`predictivemaintain-android-app`)
+
+Pruebas unitarias con JUnit 4 y `kotlinx-coroutines-test`. Nuevos tests agregados en el Sprint 2:
+
+| Clase de test | Casos | Cubre |
+| :--- | :---: | :--- |
+| `RegisterDeviceTokenUseCaseTest` | — | Registro del token FCM, incluyendo el caso de sesión expirada |
+| `ProfileViewModelTest` | 8 | Carga de perfil, edición de nombre, guardado, logout |
+| `UpdateMyProfileUseCaseTest` | 2 | Actualización del perfil vía PATCH |
+| `AuthMapperTest` | +3 | Mapeo del request de actualización de perfil |
+| `CreateAssetViewModelTest` | 10 | Validación de formulario, envío, errores 409/403, red |
+| `EditAssetViewModelTest` | 11 | Precarga, validaciones, código inmutable, reenvío de `plantId`, errores |
+| `AssetDetailViewModelTest` | 10 | Desactivación, confirmación, órdenes abiertas, errores 403/404 |
+| `AssetTypeIconTest` | — | Mapeo de tipo de activo a ícono, incluyendo variantes en español |
+| `RoleDestinationsTest` | — | Reescrito para reflejar la nueva barra de navegación (tab Perfil) |
+
+Suite completa de la app Android: **105 tests**, 0 fallos (`./gradlew testDebugUnitTest`).
+
+##### Flutter App (`predictivemaintain_flutter_app`)
+
+Pruebas unitarias con `flutter_test`. Nuevos tests agregados en el Sprint 2:
+
+* `sensor_reading_dto_test.dart` — cubre la estructura anidada real del backend (`latestReading`, `threshold` como objetos nulables), los estados `CommunicationStatus` (ONLINE/NO_COMMUNICATION) y `RangeStatus` (NORMAL/OUT_OF_RANGE/UNKNOWN).
+
+Suite completa de la app Flutter: **5 tests**, 0 fallos (`flutter test`).
+
+#### 4.2.2.6. Execution Evidence for Sprint Review
+
+Recorrido funcional que demuestra las funcionalidades completadas en el Sprint 2, capturado en dispositivo/emulador físico con datos reales del backend desplegado en Railway.
+
+| Evidencia | Qué muestra | Cuenta |
+| :--- | :--- | :--- |
+| `evidencia_sprint2_01.jpeg` | Pantalla de perfil de usuario con edición de nombre (US-23) | Jefe |
+| `evidencia_sprint2_02.jpeg` | Formulario de creación de nuevo activo (US-11) | Jefe |
+| `evidencia_sprint2_03.jpeg` | Activo recién creado visible en el listado | Jefe |
+| `evidencia_sprint2_04.jpeg` | Formulario de edición de activo con datos precargados (US-12) | Jefe |
+| `evidencia_sprint2_05.jpeg` | Confirmación de desactivación de activo (US-13) | Jefe |
+| `evidencia_sprint2_06.jpeg` | Notificación push recibida en el dispositivo tras una alerta generada (TS-08) | Jefe |
+| `evidencia_sprint2_07.jpeg` | Orden de trabajo completada con evidencia fotográfica adjunta (TS-10) | Técnico |
+| `evidencia_sprint2_08.jpeg` | Banner de modo offline con acciones en cola (US-28) | Técnico |
+| `evidencia_sprint2_09.jpeg` | Confirmación de sincronización al restablecer la conexión (US-28) | Técnico |
+| `evidencia_flutter_01.jpeg` | App Flutter: login del jefe de mantenimiento | Jefe |
+| `evidencia_flutter_02.jpeg` | App Flutter: listado de activos conectado al backend | Jefe |
+| `evidencia_flutter_03.jpeg` | App Flutter: detalle de activo con panel de sensores en tiempo real | Jefe |
+| `evidencia_flutter_04.jpeg` | App Flutter: listado de alertas | Jefe |
+| `evidencia_flutter_05.jpeg` | App Flutter: listado de órdenes de trabajo | Jefe |
+
+![Perfil de usuario](assets/cap4/evidencias/evidencia_sprint2_01.png)
+![Creación de activo](assets/cap4/evidencias/evidencia_sprint2_02.png)
+![Activo creado en el listado](assets/cap4/evidencias/evidencia_sprint2_03.jpeg)
+![Edición de activo](assets/cap4/evidencias/evidencia_sprint2_04.jpeg)
+![Desactivación de activo](assets/cap4/evidencias/evidencia_sprint2_05.jpeg)
+![Notificación push recibida](assets/cap4/evidencias/evidencia_sprint2_06.jpeg)
+![Evidencia fotográfica en orden completada](assets/cap4/evidencias/evidencia_sprint2_07.jpeg)
+![Banner de modo offline](assets/cap4/evidencias/evidencia_sprint2_08.jpeg)
+![Sincronización al reconectar](assets/cap4/evidencias/evidencia_sprint2_09.jpeg)
+![Flutter - Login](assets/cap4/evidencias/evidencia_flutter_01.jpeg)
+![Flutter - Listado de activos](assets/cap4/evidencias/evidencia_flutter_02.jpeg)
+![Flutter - Detalle de activo](assets/cap4/evidencias/evidencia_flutter_03.jpeg)
+![Flutter - Listado de alertas](assets/cap4/evidencias/evidencia_flutter_04.jpeg)
+![Flutter - Listado de órdenes](assets/cap4/evidencias/evidencia_flutter_05.jpeg)
+
+#### 4.2.2.7. Services Documentation Evidence for Sprint Review
+
+Documentación de los endpoints RESTful nuevos implementados en el Sprint 2, disponible en Swagger UI:
+
+* **Swagger UI:** `https://predictivemaintain-backend-production.up.railway.app/swagger-ui/index.html`
+* **OpenAPI spec:** `https://predictivemaintain-backend-production.up.railway.app/v3/api-docs`
+
+##### Notifications - Dispositivos y push (`/api/v1/notifications/device-tokens`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Registrar token de dispositivo | `POST` | `/api/v1/notifications/device-tokens` | **Body:** `token`, `platform` (ANDROID) | `201` `{id, platform, registeredAt}`. Upsert por token: si ya existe, actualiza `lastSeenAt` y puede reasignar el usuario. |
+| Eliminar token de dispositivo | `DELETE` | `/api/v1/notifications/device-tokens/{deviceId}` | — | `204`. Usado al cerrar sesión para no notificar al siguiente usuario del dispositivo. |
+
+##### Maintenance - Evidencia fotográfica de órdenes (`/api/v1/work-orders/{workOrderId}/attachments`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Subir evidencia | `POST` | `/api/v1/work-orders/{workOrderId}/attachments` | **Multipart:** `file` (JPEG/PNG/WebP, máx. 5 MB) | `201` `{id, workOrderId, mimeType, uploadedAt}`. Solo el técnico asignado; la orden debe estar `IN_PROGRESS`. `413` si excede el tamaño. |
+| Listar evidencias | `GET` | `/api/v1/work-orders/{workOrderId}/attachments` | — | `200` array de evidencias |
+| Descargar evidencia | `GET` | `/api/v1/work-orders/{workOrderId}/attachments/{attachmentId}` | — | `200` archivo binario |
+
+##### Sync - Sincronización offline (`/api/v1/sync/work-orders`)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Sincronizar acciones en cola | `POST` | `/api/v1/sync/work-orders` | **Body:** lote de hasta 100 operaciones del usuario (acciones realizadas offline) | `200` resultado por operación (aplicada, `SUPERSEDED` o `REJECTED`) |
+
+##### Maintenance - Edición y baja de activos (ya referenciados en Sprint 1, usados activamente en Sprint 2)
+
+| Endpoint | Verbo | Ruta | Parámetros | Response |
+| :--- | :---: | :--- | :--- | :--- |
+| Actualizar activo | `PUT` | `/api/v1/assets/{assetId}` | **Body:** `name`, `location`, `assetType`, `criticality`, `plantId`, `productionLine`, `latitude`, `longitude` (`code` no editable) | `200` activo actualizado. Solo MAINTENANCE_MANAGER. `409 ASSET_INACTIVE` si el activo está desactivado. |
+| Desactivar activo | `DELETE` | `/api/v1/assets/{assetId}` | **Query:** `force` | `200` activo desactivado (baja lógica, idempotente). `409 ASSET_HAS_OPEN_WORK_ORDERS` si tiene órdenes abiertas y no se usa `force=true`. |
+
+#### 4.2.2.8. Deployment Evidence for Sprint Review
+
+**Backend:** desplegado en **Railway** (continuidad del Sprint 1), con redespliegue automático en cada push a `main`. En el Sprint 2 se agregó la credencial de servicio de Firebase (`FIREBASE_CREDENTIALS_JSON`) como variable de entorno para habilitar el envío de notificaciones push.
+
+* **URL de producción:** `https://predictivemaintain-backend-production.up.railway.app`
+* **Health check:** `https://predictivemaintain-backend-production.up.railway.app/actuator/health`
+* **Swagger UI:** `https://predictivemaintain-backend-production.up.railway.app/swagger-ui/index.html`
+
+**Landing Page:** continúa desplegada mediante **GitHub Pages**, sin cambios de infraestructura en este sprint.
+
+**Firebase Cloud Messaging:** proyecto `predictivemaintain-be84b` configurado para el envío de notificaciones push a la app Android. Service account generado y almacenado únicamente como variable de entorno en Railway (nunca en el repositorio).
+
+**Mobile Application (Android):** distribuida para pruebas internas mediante instalación directa del APK generado desde Android Studio, en dispositivo físico y emulador. La distribución mediante Firebase App Distribution continúa planificada para el Sprint 3.
+
+**Flutter Application:** ejecutada localmente desde el entorno de desarrollo (`flutter run`) apuntando al backend de producción en Railway. Sin distribución empaquetada en este sprint; validada en emulador Android (limitación de plataforma: compilación iOS requiere macOS/Xcode, no disponible en el entorno de desarrollo del equipo).
+
+**Evidencias:**
+
+![Despliegue backend en Railway (Sprint 2)](assets/cap4/deploy_railway_backend_sprint2.png)
+![Proyecto Firebase Cloud Messaging configurado](assets/cap4/firebase_fcm_config.png)
+
+#### 4.2.2.9. Team Collaboration Insights
+
+Resumen de commits a `develop` por repositorio durante el Sprint 2 (desde 2026-10-28), obtenido con `git shortlog -sn`:
+
+| Repositorio | Aiquipa P. | Choy R. | Seminario D. | Valverde N. | Total |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Backend | 4 | — | — | — | 4 |
+| Android App | 17 | — | — | 2 | 19 |
+| Flutter App | 8 | 1 | — | — | 9 |
+| Report | 7 | — | — | — | 7 |
+| **Total** | **36** | **1** | **0** | **2** | **39** |
+
+**Evidencias:**
+
+![GitHub Insights - Backend](assets/cap4/github_insights_backend_sprint2.png)
+![GitHub Insights - Android App](assets/cap4/github_insights_android_sprint2.png)
+![GitHub Insights - Flutter App](assets/cap4/github_insights_flutter_sprint2.png)
+
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
@@ -2392,7 +2643,7 @@ Lean UX: los operadores dependen en más del 80% de sus sentidos para detectar
 fallas, el flujo de reporte y asignación de órdenes consume entre 30 y 60
 minutos de tiempo no productivo, y los gestores de mantenimiento carecen de
 un indicador objetivo como el RUL para planificar intervenciones con
-anticipación. 
+anticipación.
 
 Estos hallazgos sustentan directamente la priorización de los
 Epics EP-01 (Monitoreo en tiempo real), EP-02 (Alertas predictivas y RUL) y
@@ -2405,16 +2656,55 @@ Subscription & Billing e Identity & Access Management. Su separación
 reduce el acoplamiento entre el motor predictivo y los procesos operativos
 de planta, facilitando la evolución independiente de cada componente.
 
-Como recomendaciones para las siguientes entregas, el equipo deberá
-priorizar la implementación del flujo core de detección de anomalías y
-generación de alertas (Spike SP-02), validar la viabilidad técnica del
-protocolo MQTT para ingesta de datos simulados (Spike SP-01).
+Durante el Sprint 2 (AV2), el equipo completó los spikes de aprendizaje
+autónomo planteados como recomendación en la entrega anterior: se validó la
+viabilidad técnica del protocolo MQTT para ingesta de datos de sensores
+(Spike SP-01, con una prueba de concepto funcional sobre Mosquitto y Eclipse
+Paho) y se implementó un modelo estadístico de detección de anomalías
+mediante z-score (Spike SP-02), confirmando que es posible generar alertas
+tempranas a partir de desviaciones en la telemetría sin depender aún de un
+modelo de machine learning complejo. Asimismo, se extendió la solución a una
+segunda plataforma (Flutter) para el rol de Jefe de Mantenimiento, y se
+completaron las funcionalidades de notificaciones push, evidencia fotográfica
+en órdenes de trabajo y continuidad operativa sin conexión, validando que la
+arquitectura de Bounded Contexts definida en AV1 permite incorporar estas
+capacidades sin generar acoplamiento adicional entre los módulos existentes.
+
+Como recomendaciones para la siguiente entrega (TB2), el equipo deberá
+priorizar la implementación de las funcionalidades de reportes (historial de
+fallas, OEE) y gestión de suscripciones pendientes del Product Backlog, así
+como completar el proceso de validación de la aplicación mediante pruebas de
+usuario con Firebase App Distribution, de cara a la entrega final del
+producto.
 
 # Video App Validation
 
-# Video About the product
+# Video About-the-Product
 
-# Video About the team
+PredictiveMaintain es una plataforma de mantenimiento predictivo para plantas industriales que conecta la telemetría de equipos —vibración, temperatura, presión— con alertas inteligentes que anticipan fallas antes de que ocurran. Este video presenta el modelo de negocio y las principales características del producto, dirigido tanto a visitantes del Landing Page interesados en conocer la propuesta de valor, como a los usuarios de las aplicaciones (jefes de mantenimiento y técnicos) que desean comprender los procesos que soporta la solución. Se muestra el recorrido completo: visualización de activos en tiempo real, generación y notificación de alertas predictivas, gestión de órdenes de trabajo con evidencia fotográfica, y continuidad operativa sin conexión a internet.
+
+* **Duración:** [01:02]
+* **URL (OneDrive):** [upc-pre-202620-1acc0238-4948-predictivetech-about-the-product-av2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201916755_upc_edu_pe/IQD99dIV-AH7S4lsA5VvR7O4AcldQ0AlMKIZQLbO01yDvJw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dFtfmd)
+* **URL (YouTube):** https://youtu.be/fFK1vSvN8Io
+
+![Screenshot del video About-the-Product](assets/cap4/video_about_the_product_screenshot.png)
+
+#### Video About-the-Team
+
+Este video resume el proceso de trabajo del equipo PredictiveTech durante el desarrollo del Sprint 2 del proyecto PredictiveMaintain, incluyendo escenas de sesiones de trabajo reales, coordinación vía Discord, revisión de código y seguimiento del tablero de tareas, complementadas con narración en off que describe el proceso seguido. Incluye además el testimonio ante cámara de cada integrante del equipo, describiendo las actividades realizadas durante el sprint, el logro de las dimensiones del Student Outcome, y las competencias desarrolladas a lo largo del proyecto.
+
+| Sección | Timing (04:55) |
+| :--- |:--------------:|
+| Testimonio — Aiquipa P. |  0:00 - 01:02  |
+| Testimonio — Choy R. | 01:02 - 02:20  |
+| Testimonio — Seminario D. | 02:20 - 04:02  |
+| Testimonio — Valverde N. | 04:02 - 04:54  |
+
+* **Duración:** [completar: mm:ss]
+* **URL (OneDrive):** [upc-pre-202620-1acc0238-4948-predictivetech-about-the-team-av2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201916755_upc_edu_pe/IQCty3Dde8NETaYUni_9thkrAbpRiD21powM5HNH9th_jFw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bqKMWa)
+* **URL (YouTube):** https://youtu.be/Sd-DRtSg0sU
+
+![Cuadro representativo del video About-the-Team](assets/cap4/video_about_the_team_screenshot.png)
 
 # Glosario
 
@@ -2479,7 +2769,9 @@ Flutter. (2024). *Flutter documentation*.
 https://docs.flutter.dev
 
 # Anexos
-
 ## Reporte de Participación
 El Participant Performance Report de la entrega:
+
 upc-pre-202620-1acc0238-4948-PredictiveTech-performance-av1.pdf
+
+upc-pre-202620-1acc0238-4948-PredictiveTech-performance-av2.pdf
