@@ -2643,7 +2643,7 @@ Lean UX: los operadores dependen en más del 80% de sus sentidos para detectar
 fallas, el flujo de reporte y asignación de órdenes consume entre 30 y 60
 minutos de tiempo no productivo, y los gestores de mantenimiento carecen de
 un indicador objetivo como el RUL para planificar intervenciones con
-anticipación. 
+anticipación.
 
 Estos hallazgos sustentan directamente la priorización de los
 Epics EP-01 (Monitoreo en tiempo real), EP-02 (Alertas predictivas y RUL) y
@@ -2656,10 +2656,26 @@ Subscription & Billing e Identity & Access Management. Su separación
 reduce el acoplamiento entre el motor predictivo y los procesos operativos
 de planta, facilitando la evolución independiente de cada componente.
 
-Como recomendaciones para las siguientes entregas, el equipo deberá
-priorizar la implementación del flujo core de detección de anomalías y
-generación de alertas (Spike SP-02), validar la viabilidad técnica del
-protocolo MQTT para ingesta de datos simulados (Spike SP-01).
+Durante el Sprint 2 (AV2), el equipo completó los spikes de aprendizaje
+autónomo planteados como recomendación en la entrega anterior: se validó la
+viabilidad técnica del protocolo MQTT para ingesta de datos de sensores
+(Spike SP-01, con una prueba de concepto funcional sobre Mosquitto y Eclipse
+Paho) y se implementó un modelo estadístico de detección de anomalías
+mediante z-score (Spike SP-02), confirmando que es posible generar alertas
+tempranas a partir de desviaciones en la telemetría sin depender aún de un
+modelo de machine learning complejo. Asimismo, se extendió la solución a una
+segunda plataforma (Flutter) para el rol de Jefe de Mantenimiento, y se
+completaron las funcionalidades de notificaciones push, evidencia fotográfica
+en órdenes de trabajo y continuidad operativa sin conexión, validando que la
+arquitectura de Bounded Contexts definida en AV1 permite incorporar estas
+capacidades sin generar acoplamiento adicional entre los módulos existentes.
+
+Como recomendaciones para la siguiente entrega (TB2), el equipo deberá
+priorizar la implementación de las funcionalidades de reportes (historial de
+fallas, OEE) y gestión de suscripciones pendientes del Product Backlog, así
+como completar el proceso de validación de la aplicación mediante pruebas de
+usuario con Firebase App Distribution, de cara a la entrega final del
+producto.
 
 # Video App Validation
 
@@ -2738,7 +2754,9 @@ Flutter. (2024). *Flutter documentation*.
 https://docs.flutter.dev
 
 # Anexos
-
 ## Reporte de Participación
 El Participant Performance Report de la entrega:
+
 upc-pre-202620-1acc0238-4948-PredictiveTech-performance-av1.pdf
+
+upc-pre-202620-1acc0238-4948-PredictiveTech-performance-av2.pdf
