@@ -2641,7 +2641,15 @@ protocolo MQTT para ingesta de datos simulados (Spike SP-01).
 
 # Video App Validation
 
-# Video About the product
+# Video About-the-Product
+
+PredictiveMaintain es una plataforma de mantenimiento predictivo para plantas industriales que conecta la telemetría de equipos —vibración, temperatura, presión— con alertas inteligentes que anticipan fallas antes de que ocurran. Este video presenta el modelo de negocio y las principales características del producto, dirigido tanto a visitantes del Landing Page interesados en conocer la propuesta de valor, como a los usuarios de las aplicaciones (jefes de mantenimiento y técnicos) que desean comprender los procesos que soporta la solución. Se muestra el recorrido completo: visualización de activos en tiempo real, generación y notificación de alertas predictivas, gestión de órdenes de trabajo con evidencia fotográfica, y continuidad operativa sin conexión a internet.
+
+* **Duración:** [01:02]
+* **URL (OneDrive):** [upc-pre-202620-1acc0238-4948-predictivetech-about-the-product-av2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201916755_upc_edu_pe/IQD99dIV-AH7S4lsA5VvR7O4AcldQ0AlMKIZQLbO01yDvJw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dFtfmd)
+* **URL (YouTube):** https://youtu.be/fFK1vSvN8Io
+
+![Screenshot del video About-the-Product](assets/cap4/video_about_the_product_screenshot.png)
 
 # Video About the team
 
