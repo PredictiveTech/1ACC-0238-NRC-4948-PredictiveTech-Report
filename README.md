@@ -2689,7 +2689,22 @@ PredictiveMaintain es una plataforma de mantenimiento predictivo para plantas in
 
 ![Screenshot del video About-the-Product](assets/cap4/video_about_the_product_screenshot.png)
 
-# Video About the team
+#### Video About-the-Team
+
+Este video resume el proceso de trabajo del equipo PredictiveTech durante el desarrollo del Sprint 2 del proyecto PredictiveMaintain, incluyendo escenas de sesiones de trabajo reales, coordinación vía Discord, revisión de código y seguimiento del tablero de tareas, complementadas con narración en off que describe el proceso seguido. Incluye además el testimonio ante cámara de cada integrante del equipo, describiendo las actividades realizadas durante el sprint, el logro de las dimensiones del Student Outcome, y las competencias desarrolladas a lo largo del proyecto.
+
+| Sección | Timing (04:55) |
+| :--- |:--------------:|
+| Testimonio — Aiquipa P. |  0:00 - 01:02  |
+| Testimonio — Choy R. | 01:02 - 02:20  |
+| Testimonio — Seminario D. | 02:20 - 04:02  |
+| Testimonio — Valverde N. | 04:02 - 04:54  |
+
+* **Duración:** [completar: mm:ss]
+* **URL (OneDrive):** [upc-pre-202620-1acc0238-4948-predictivetech-about-the-team-av2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201916755_upc_edu_pe/IQCty3Dde8NETaYUni_9thkrAbpRiD21powM5HNH9th_jFw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bqKMWa)
+* **URL (YouTube):** https://youtu.be/Sd-DRtSg0sU
+
+![Cuadro representativo del video About-the-Team](assets/cap4/video_about_the_team_screenshot.png)
 
 # Glosario
 
